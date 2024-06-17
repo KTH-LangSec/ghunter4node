@@ -1,0 +1,400 @@
+Analyze fuzzing/95-2024-05-31-13-05-29/EVAL (EVAL)
+Analyze fuzzing/95-2024-05-31-13-05-29/async_wrap.queueDestroyAsyncId (async_wrap.queueDestroyAsyncId)
+Analyze fuzzing/95-2024-05-31-13-05-29/async_wrap.setPromiseHooks (async_wrap.setPromiseHooks)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.byteLengthUtf8 (buffer.byteLengthUtf8)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.compare (buffer.compare)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.hexWrite (buffer.hexWrite)
+Analyze fuzzing/95-2024-05-31-13-05-29/contextify.ContextifyScript.ContextifyScript.prototype.runInContext (contextify.ContextifyScript.ContextifyScript.prototype.runInContext)
+Analyze fuzzing/95-2024-05-31-13-05-29/contextify.ContextifyScript (contextify.ContextifyScript)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.base64Write (buffer.base64Write)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.createFromString (buffer.createFromString)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.latin1Write (buffer.latin1Write)
+Analyze fuzzing/95-2024-05-31-13-05-29/cares_wrap.getaddrinfo (cares_wrap.getaddrinfo)
+Analyze fuzzing/95-2024-05-31-13-05-29/buffer.utf8Write (buffer.utf8Write)
+Analyze fuzzing/95-2024-05-31-13-05-29/contextify.makeContext (contextify.makeContext)
+Analyze fuzzing/95-2024-05-31-13-05-29/contextify.compileFunction (contextify.compileFunction)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.RSACipherJob (crypto.RSACipherJob)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.loadPKCS12 (crypto.SecureContext.SecureContext.prototype.loadPKCS12)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.KeyObjectHandle..prototype.initJwk (crypto.KeyObjectHandle..prototype.initJwk)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.KeyObjectHandle..prototype.init (crypto.KeyObjectHandle..prototype.init)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setECDHCurve (crypto.SecureContext.SecureContext.prototype.setECDHCurve)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.RsaKeyPairGenJob (crypto.RsaKeyPairGenJob)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.addCACert (crypto.SecureContext.SecureContext.prototype.addCACert)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.HashJob (crypto.HashJob)
+Analyze fuzzing/95-2024-05-31-13-05-29/contextify.isContext (contextify.isContext)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.addCRL (crypto.SecureContext.SecureContext.prototype.addCRL)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setCiphers (crypto.SecureContext.SecureContext.prototype.setCiphers)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.HmacJob (crypto.HmacJob)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.init (crypto.SecureContext.SecureContext.prototype.init)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setKey (crypto.SecureContext.SecureContext.prototype.setKey)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setDHParam (crypto.SecureContext.SecureContext.prototype.setDHParam)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.privateDecrypt (crypto.privateDecrypt)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setSessionIdContext (crypto.SecureContext.SecureContext.prototype.setSessionIdContext)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setClientCertEngine (crypto.SecureContext.SecureContext.prototype.setClientCertEngine)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setOptions (crypto.SecureContext.SecureContext.prototype.setOptions)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SignJob (crypto.SignJob)
+Analyze fuzzing/95-2024-05-31-13-05-29/errors.noSideEffectsToString (errors.noSideEffectsToString)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.close (fs.close)
+Analyze fuzzing/95-2024-05-31-13-05-29/http2.Http2Session.Http2Session.prototype.consume (http2.Http2Session.Http2Session.prototype.consume)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.publicDecrypt (crypto.publicDecrypt)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setCert (crypto.SecureContext.SecureContext.prototype.setCert)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.Sign.Sign.prototype.sign (crypto.Sign.Sign.prototype.sign)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.Verify.Verify.prototype.verify (crypto.Verify.Verify.prototype.verify)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.SecureContext.SecureContext.prototype.setSigalgs (crypto.SecureContext.SecureContext.prototype.setSigalgs)
+Analyze fuzzing/95-2024-05-31-13-05-29/tcp_wrap.TCP.TCP.prototype.listen (tcp_wrap.TCP.TCP.prototype.listen)
+[result] Collected 0 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.StatWatcher (fs.StatWatcher)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.read (fs.read)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.lstat (fs.lstat)
+Analyze fuzzing/95-2024-05-31-13-05-29/http_parser.HTTPParser.HTTPParser.prototype.execute (http_parser.HTTPParser.HTTPParser.prototype.execute)
+Analyze fuzzing/95-2024-05-31-13-05-29/inspector.console.error (inspector.console.error)
+Analyze fuzzing/95-2024-05-31-13-05-29/errors.triggerUncaughtException (errors.triggerUncaughtException)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs_event_wrap.FSEvent.FSEvent.prototype.start (fs_event_wrap.FSEvent.FSEvent.prototype.start)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.privateEncrypt (crypto.privateEncrypt)
+Analyze fuzzing/95-2024-05-31-13-05-29/crypto.publicEncrypt (crypto.publicEncrypt)
+Analyze fuzzing/95-2024-05-31-13-05-29/timers.scheduleTimer (timers.scheduleTimer)
+[result] Collected 2 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/inspector.Connection.Connection.prototype.dispatch (inspector.Connection.Connection.prototype.dispatch)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.stat (fs.stat)
+[result] Collected 1 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/pipe_wrap.Pipe.Pipe.prototype.connect (pipe_wrap.Pipe.Pipe.prototype.connect)
+Analyze fuzzing/95-2024-05-31-13-05-29/tcp_wrap.TCP.TCP.prototype.connect (tcp_wrap.TCP.TCP.prototype.connect)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.shutdown (tls_wrap.TLSWrap.TLSWrap.prototype.shutdown)
+Analyze fuzzing/95-2024-05-31-13-05-29/http2.Http2Stream.Http2Stream.prototype.pushPromise (http2.Http2Stream.Http2Stream.prototype.pushPromise)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.open (fs.open)
+Analyze fuzzing/95-2024-05-31-13-05-29/tcp_wrap.TCP.TCP.prototype.connect6 (tcp_wrap.TCP.TCP.prototype.connect6)
+Analyze fuzzing/95-2024-05-31-13-05-29/tty_wrap.TTY.TTY.prototype.getWindowSize (tty_wrap.TTY.TTY.prototype.getWindowSize)
+Analyze fuzzing/95-2024-05-31-13-05-29/fs.writeBuffer (fs.writeBuffer)
+Analyze fuzzing/95-2024-05-31-13-05-29/pipe_wrap.Pipe.Pipe.prototype.listen (pipe_wrap.Pipe.Pipe.prototype.listen)
+[result] Collected 1 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.loadSession (tls_wrap.TLSWrap.TLSWrap.prototype.loadSession)
+Analyze fuzzing/95-2024-05-31-13-05-29/string_decoder.decode (string_decoder.decode)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.setServername (tls_wrap.TLSWrap.TLSWrap.prototype.setServername)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.writeLatin1String (tls_wrap.TLSWrap.TLSWrap.prototype.writeLatin1String)
+Analyze fuzzing/95-2024-05-31-13-05-29/inspector.consoleCall (inspector.consoleCall)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.setALPNProtocols (tls_wrap.TLSWrap.TLSWrap.prototype.setALPNProtocols)
+Analyze fuzzing/95-2024-05-31-13-05-29/http2.Http2Session.Http2Session.prototype.request (http2.Http2Session.Http2Session.prototype.request)
+Analyze fuzzing/95-2024-05-31-13-05-29/messaging.checkMessagePort (messaging.checkMessagePort)
+Analyze fuzzing/95-2024-05-31-13-05-29/module_wrap.ModuleWrap (module_wrap.ModuleWrap)
+Analyze fuzzing/95-2024-05-31-13-05-29/serdes.Deserializer (serdes.Deserializer)
+Analyze fuzzing/95-2024-05-31-13-05-29/spawn_sync.spawn (spawn_sync.spawn)
+Analyze fuzzing/95-2024-05-31-13-05-29/http_parser.HTTPParser.HTTPParser.prototype.consume (http_parser.HTTPParser.HTTPParser.prototype.consume)
+Analyze fuzzing/95-2024-05-31-13-05-29/http_parser.HTTPParser.HTTPParser.prototype.initialize (http_parser.HTTPParser.HTTPParser.prototype.initialize)
+Analyze fuzzing/95-2024-05-31-13-05-29/inspector.console.log (inspector.console.log)
+Analyze fuzzing/95-2024-05-31-13-05-29/serdes.Serializer.Serializer.prototype.writeValue (serdes.Serializer.Serializer.prototype.writeValue)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.writeBuffer (tls_wrap.TLSWrap.TLSWrap.prototype.writeBuffer)
+Analyze fuzzing/95-2024-05-31-13-05-29/process_methods._rawDebug (process_methods._rawDebug)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isDataView (types.isDataView)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isMap (types.isMap)
+Analyze fuzzing/95-2024-05-31-13-05-29/process_methods.patchProcessObject (process_methods.patchProcessObject)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isArgumentsObject (types.isArgumentsObject)
+Analyze fuzzing/95-2024-05-31-13-05-29/messaging.MessagePort.MessagePort.prototype.postMessage (messaging.MessagePort.MessagePort.prototype.postMessage)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.writev (tls_wrap.TLSWrap.TLSWrap.prototype.writev)
+Analyze fuzzing/95-2024-05-31-13-05-29/messaging.DOMException (messaging.DOMException)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isDate (types.isDate)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isAnyArrayBuffer (types.isAnyArrayBuffer)
+Analyze fuzzing/95-2024-05-31-13-05-29/process_wrap.Process.Process.prototype.spawn (process_wrap.Process.Process.prototype.spawn)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.setPskIdentityHint (tls_wrap.TLSWrap.TLSWrap.prototype.setPskIdentityHint)
+Analyze fuzzing/95-2024-05-31-13-05-29/module_wrap.ModuleWrap.ModuleWrap.prototype.setExport (module_wrap.ModuleWrap.ModuleWrap.prototype.setExport)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.writeUtf8String (tls_wrap.TLSWrap.TLSWrap.prototype.writeUtf8String)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isBoxedPrimitive (types.isBoxedPrimitive)
+[result] Collected 4 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 0 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.setSession (tls_wrap.TLSWrap.TLSWrap.prototype.setSession)
+Analyze fuzzing/95-2024-05-31-13-05-29/js_stream.JSStream.JSStream.prototype.readBuffer (js_stream.JSStream.JSStream.prototype.readBuffer)
+Analyze fuzzing/95-2024-05-31-13-05-29/tls_wrap.TLSWrap.TLSWrap.prototype.receive (tls_wrap.TLSWrap.TLSWrap.prototype.receive)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isExternal (types.isExternal)
+[result] Collected 1 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 4 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 4 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 4 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 3 gadget candidates.
+[result] Collected 6 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 7 gadget candidates.
+[result] Collected 10 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 4 gadget candidates.
+[result] Collected 3 gadget candidates.
+[result] Collected 15 gadget candidates.
+[result] Collected 14 gadget candidates.
+[result] Collected 3 gadget candidates.
+[result] Collected 6 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 8 gadget candidates.
+[result] Collected 12 gadget candidates.
+[warn] File "/a/node_modules/b.js", original: "/a/node_modules/b" is not found
+[result] Collected 1 gadget candidates.
+[result] Collected 17 gadget candidates.
+[result] Collected 19 gadget candidates.
+[warn] File "/a/node_modules/b.js", original: "/a/node_modules/b" is not found
+[result] Collected 11 gadget candidates.
+[result] Collected 11 gadget candidates.
+[result] Collected 9 gadget candidates.
+[result] Collected 11 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 7 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 36 gadget candidates.
+[result] Collected 11 gadget candidates.
+[result] Collected 11 gadget candidates.
+[result] Collected 5 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 28 gadget candidates.
+[result] Collected 10 gadget candidates.
+[result] Collected 7 gadget candidates.
+[result] Collected 14 gadget candidates.
+[result] Collected 22 gadget candidates.
+[result] Collected 6 gadget candidates.
+[result] Collected 13 gadget candidates.
+[result] Collected 13 gadget candidates.
+[result] Collected 51 gadget candidates.
+[result] Collected 23 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 13 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 6 gadget candidates.
+[result] Collected 23 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 4 gadget candidates.
+[result] Collected 7 gadget candidates.
+[result] Collected 11 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 67 gadget candidates.
+[result] Collected 206 gadget candidates.
+[result] Collected 15 gadget candidates.
+[result] Collected 34 gadget candidates.
+[result] Collected 57 gadget candidates.
+[result] Collected 9 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 1 gadget candidates.
+[result] Collected 19 gadget candidates.
+[result] Collected 101 gadget candidates.
+[result] Collected 6 gadget candidates.
+[result] Collected 118 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 262 gadget candidates.
+[result] Collected 17 gadget candidates.
+[result] Collected 113 gadget candidates.
+[result] Collected 162 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 185 gadget candidates.
+[result] Collected 43 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 263 gadget candidates.
+[result] Collected 559 gadget candidates.
+[result] Collected 489 gadget candidates.
+[result] Collected 530 gadget candidates.
+[result] Collected 534 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 1224 gadget candidates.
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isMapIterator (types.isMapIterator)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isModuleNamespaceObject (types.isModuleNamespaceObject)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isPromise (types.isPromise)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isProxy (types.isProxy)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isNativeError (types.isNativeError)
+Analyze fuzzing/95-2024-05-31-13-05-29/url.parse (url.parse)
+Analyze fuzzing/95-2024-05-31-13-05-29/util.getProxyDetails (util.getProxyDetails)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isRegExp (types.isRegExp)
+Analyze fuzzing/95-2024-05-31-13-05-29/worker.Worker (worker.Worker)
+Analyze fuzzing/95-2024-05-31-13-05-29/udp_wrap.UDP.UDP.prototype.bind (udp_wrap.UDP.UDP.prototype.bind)
+Analyze fuzzing/95-2024-05-31-13-05-29/util.getConstructorName (util.getConstructorName)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isWeakSet (types.isWeakSet)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isSet (types.isSet)
+Analyze fuzzing/95-2024-05-31-13-05-29/wasi.WASI (wasi.WASI)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isSetIterator (types.isSetIterator)
+Analyze fuzzing/95-2024-05-31-13-05-29/types.isWeakMap (types.isWeakMap)
+Analyze fuzzing/95-2024-05-31-13-05-29/util.shouldAbortOnUncaughtToggle.__proto__.__proto__.__proto__.[setter]2 (util.shouldAbortOnUncaughtToggle.__proto__.__proto__.__proto__.[setter]2)
+Analyze fuzzing/95-2024-05-31-13-05-29/zlib.BrotliDecoder.BrotliDecoder.prototype.write (zlib.BrotliDecoder.BrotliDecoder.prototype.write)
+Analyze fuzzing/95-2024-05-31-13-05-29/util.getOwnNonIndexProperties (util.getOwnNonIndexProperties)
+Analyze fuzzing/95-2024-05-31-13-05-29/zlib.Zlib.Zlib.prototype.write (zlib.Zlib.Zlib.prototype.write)
+[result] Collected 1 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 2 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 3 gadget candidates.
+[result] Collected 0 gadget candidates.
+[result] Collected 315 gadget candidates.
+[result] Collected 3 gadget candidates.
+[result] Collected 539 gadget candidates.
+[result] Collected 530 gadget candidates.
+[result] Collected 487 gadget candidates.
+[result] Collected 534 gadget candidates.
+[result] Collected 491 gadget candidates.
+[result] Collected 438 gadget candidates.
+[result] Collected 534 gadget candidates.
+[result] Collected 492 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 1231 gadget candidates.
+[result] Collected 1399 gadget candidates.
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[error] test files mismatch!
+[result] Collected 1307 gadget candidates.
+RESULTS:
+{
+  'buffer.hexWrite': 0,
+  'crypto.RsaKeyPairGenJob': 2,
+  'buffer.base64Write': 1,
+  'contextify.compileFunction': 1,
+  'crypto.HashJob': 4,
+  'crypto.publicDecrypt': 1,
+  'http2.Http2Stream.Http2Stream.prototype.pushPromise': 0,
+  'crypto.privateEncrypt': 1,
+  'crypto.Verify.Verify.prototype.verify': 2,
+  'crypto.HmacJob': 4,
+  'tcp_wrap.TCP.TCP.prototype.connect': 1,
+  'crypto.Sign.Sign.prototype.sign': 2,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.receive': 1,
+  'http_parser.HTTPParser.HTTPParser.prototype.execute': 1,
+  'inspector.Connection.Connection.prototype.dispatch': 1,
+  'tty_wrap.TTY.TTY.prototype.getWindowSize': 4,
+  'fs.lstat': 2,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.loadSession': 1,
+  'crypto.privateDecrypt': 2,
+  'fs.close': 1,
+  'timers.scheduleTimer': 1,
+  'fs.open': 0,
+  'crypto.RSACipherJob': 4,
+  'buffer.compare': 1,
+  'js_stream.JSStream.JSStream.prototype.readBuffer': 1,
+  'contextify.ContextifyScript.ContextifyScript.prototype.runInContext': 3,
+  'fs.stat': 6,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.setPskIdentityHint': 2,
+  'tcp_wrap.TCP.TCP.prototype.connect6': 2,
+  'buffer.latin1Write': 7,
+  'crypto.publicEncrypt': 10,
+  'fs.StatWatcher': 2,
+  'messaging.checkMessagePort': 4,
+  'module_wrap.ModuleWrap': 3,
+  'crypto.SignJob': 15,
+  'inspector.console.error': 14,
+  'errors.noSideEffectsToString': 3,
+  'buffer.createFromString': 6,
+  'pipe_wrap.Pipe.Pipe.prototype.listen': 1,
+  'crypto.SecureContext.SecureContext.prototype.setCiphers': 8,
+  'string_decoder.decode': 12,
+  'crypto.SecureContext.SecureContext.prototype.setCert': 1,
+  'crypto.KeyObjectHandle..prototype.init': 17,
+  'contextify.makeContext': 19,
+  'crypto.SecureContext.SecureContext.prototype.setClientCertEngine': 11,
+  'crypto.SecureContext.SecureContext.prototype.addCRL': 11,
+  'http2.Http2Session.Http2Session.prototype.consume': 9,
+  'crypto.SecureContext.SecureContext.prototype.setSigalgs': 11,
+  'fs_event_wrap.FSEvent.FSEvent.prototype.start': 2,
+  'http_parser.HTTPParser.HTTPParser.prototype.consume': 7,
+  'inspector.console.log': 1,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.writeLatin1String': 36,
+  'crypto.SecureContext.SecureContext.prototype.setECDHCurve': 11,
+  'messaging.DOMException': 11,
+  'crypto.SecureContext.SecureContext.prototype.setOptions': 5,
+  EVAL: 0,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.writev': 28,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.setSession': 10,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.setServername': 7,
+  'crypto.SecureContext.SecureContext.prototype.loadPKCS12': 14,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.writeBuffer': 22,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.setALPNProtocols': 6,
+  'crypto.SecureContext.SecureContext.prototype.setSessionIdContext': 13,
+  'crypto.SecureContext.SecureContext.prototype.init': 13,
+  'crypto.KeyObjectHandle..prototype.initJwk': 51,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.writeUtf8String': 23,
+  'process_methods._rawDebug': 2,
+  'crypto.SecureContext.SecureContext.prototype.setDHParam': 13,
+  'crypto.SecureContext.SecureContext.prototype.addCACert': 1,
+  'pipe_wrap.Pipe.Pipe.prototype.connect': 6,
+  'crypto.SecureContext.SecureContext.prototype.setKey': 23,
+  'serdes.Deserializer': 1,
+  'module_wrap.ModuleWrap.ModuleWrap.prototype.setExport': 4,
+  'contextify.isContext': 7,
+  'cares_wrap.getaddrinfo': 11,
+  'tcp_wrap.TCP.TCP.prototype.listen': 2,
+  'types.isArgumentsObject': 67,
+  'errors.triggerUncaughtException': 206,
+  'process_wrap.Process.Process.prototype.spawn': 15,
+  'http_parser.HTTPParser.HTTPParser.prototype.initialize': 34,
+  'tls_wrap.TLSWrap.TLSWrap.prototype.shutdown': 57,
+  'contextify.ContextifyScript': 9,
+  'http2.Http2Session.Http2Session.prototype.request': 0,
+  'process_methods.patchProcessObject': 1,
+  'async_wrap.setPromiseHooks': 19,
+  'fs.read': 101,
+  'async_wrap.queueDestroyAsyncId': 6,
+  'fs.writeBuffer': 118,
+  'messaging.MessagePort.MessagePort.prototype.postMessage': 262,
+  'spawn_sync.spawn': 17,
+  'types.isExternal': 113,
+  'buffer.utf8Write': 162,
+  'buffer.byteLengthUtf8': 185,
+  'inspector.consoleCall': 43,
+  'serdes.Serializer.Serializer.prototype.writeValue': 263,
+  'types.isAnyArrayBuffer': 559,
+  'types.isMap': 489,
+  'types.isBoxedPrimitive': 530,
+  'types.isDataView': 534,
+  'types.isDate': 1224,
+  'udp_wrap.UDP.UDP.prototype.bind': 1,
+  'zlib.BrotliDecoder.BrotliDecoder.prototype.write': 0,
+  'zlib.Zlib.Zlib.prototype.write': 0,
+  'url.parse': 2,
+  'util.shouldAbortOnUncaughtToggle.__proto__.__proto__.__proto__.[setter]2': 0,
+  'wasi.WASI': 3,
+  'types.isProxy': 0,
+  'util.getOwnNonIndexProperties': 315,
+  'worker.Worker': 3,
+  'types.isPromise': 539,
+  'types.isWeakMap': 530,
+  'types.isSetIterator': 487,
+  'types.isModuleNamespaceObject': 534,
+  'types.isMapIterator': 491,
+  'util.getConstructorName': 438,
+  'types.isWeakSet': 534,
+  'types.isSet': 492,
+  'types.isRegExp': 1231,
+  'util.getProxyDetails': 1399,
+  'types.isNativeError': 1307
+}
+TOTAL: 13866 gadgets
+    in 23207079 test-property pairs
+   for 1661446 log files (test runs).

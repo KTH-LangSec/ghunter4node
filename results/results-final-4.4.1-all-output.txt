@@ -1,0 +1,542 @@
+[00:00|%   0|+   0|-   0]: release test-aborted-util
+Running 182 mutated tests for parallel/test-aborted-util...
+                                                    [00:00|%   0|+   0|-   0]: release test-abortsignal-any
+Running 274 mutated tests for parallel/test-abortsignal-any...
+                                                       [00:00|%   0|+   0|-   0]: release test-abortsignal-cloneable
+Running 134 mutated tests for parallel/test-abortsignal-cloneable...
+                                                             [00:00|%   0|+   0|-   0]: release test-arm-math-illegal-instruction
+Running 96 mutated tests for parallel/test-arm-math-illegal-instruction...
+                                                                    [00:00|%   0|+   0|-   0]: release test-assert
+Running 170 mutated tests for parallel/test-assert...
+                                              [00:00|%   0|+   0|-   0]: release test-assert-async
+Running 122 mutated tests for parallel/test-assert-async...
+                                                    [00:00|%   0|+   0|-   0]: release test-assert-builtins-not-read-from-files...
+Running 134 mutated tests for parallel/test-assert-builtins-not-read-from-filesystem...
+                                                                              [00:00|%   0|+   0|-   0]: release test-assert-calltracker-calls
+Running 108 mutated tests for parallel/test-assert-calltracker-calls...
+                                                                [00:00|%   0|+   0|-   0]: release test-assert-calltracker-getCalls
+Running 316 mutated tests for parallel/test-assert-calltracker-getCalls...
+                                                                   [00:00|%   0|+   0|-   0]: release test-assert-calltracker-report
+Running 106 mutated tests for parallel/test-assert-calltracker-report...
+                                                                 [00:00|%   0|+   0|-   0]: release test-assert-calltracker-verify
+Running 118 mutated tests for parallel/test-assert-calltracker-verify...
+                                                                 [00:00|%   0|+   0|-   0]: release test-assert-checktag
+Running 126 mutated tests for parallel/test-assert-checktag...
+                                                       [00:00|%   0|+   0|-   0]: release test-assert-deep
+Running 124 mutated tests for parallel/test-assert-deep...
+                                                   [00:00|%   0|+   0|-   0]: release test-assert-fail
+Running 102 mutated tests for parallel/test-assert-fail...
+                                                   [00:00|%   0|+   0|-   0]: release test-assert-fail-deprecation
+Running 130 mutated tests for parallel/test-assert-fail-deprecation...
+                                                               [00:00|%   0|+   0|-   0]: release test-assert-first-line
+Running 124 mutated tests for parallel/test-assert-first-line...
+                                                         [00:00|%   0|+   0|-   0]: release test-assert-if-error
+Running 112 mutated tests for parallel/test-assert-if-error...
+                                                       [00:00|%   0|+   0|-   0]: release test-assert-strict-exists
+Running 96 mutated tests for parallel/test-assert-strict-exists...
+                                                            [00:00|%   0|+   0|-   0]: release test-assert-typedarray-deepequal
+Running 106 mutated tests for parallel/test-assert-typedarray-deepequal...
+                                                                   [00:00|%   0|+   0|-   0]: release test-async-hooks-async-await
+Running 104 mutated tests for parallel/test-async-hooks-async-await...
+                                                               [00:00|%   0|+   0|-   0]: release test-async-hooks-asyncresource-construct...
+Running 104 mutated tests for parallel/test-async-hooks-asyncresource-constructor...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-close-during-destroy
+Running 108 mutated tests for parallel/test-async-hooks-close-during-destroy...
+                                                                        [00:00|%   0|+   0|-   0]: release test-async-hooks-constructor
+Running 106 mutated tests for parallel/test-async-hooks-constructor...
+                                                               [00:00|%   0|+   0|-   0]: release test-async-hooks-correctly-switch-promis...
+Running 106 mutated tests for parallel/test-async-hooks-correctly-switch-promise-hook...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-destroy-on-gc
+Running 108 mutated tests for parallel/test-async-hooks-destroy-on-gc...
+                                                                 [00:00|%   0|+   0|-   0]: release test-async-hooks-disable-during-promise
+Running 110 mutated tests for parallel/test-async-hooks-disable-during-promise...
+                                                                          [00:00|%   0|+   0|-   0]: release test-async-hooks-disable-gc-tracking
+Running 110 mutated tests for parallel/test-async-hooks-disable-gc-tracking...
+                                                                       [00:00|%   0|+   0|-   0]: release test-async-hooks-enable-before-promise-r...
+Running 112 mutated tests for parallel/test-async-hooks-enable-before-promise-resolve...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-enable-disable
+Running 106 mutated tests for parallel/test-async-hooks-enable-disable...
+                                                                  [00:00|%   0|+   0|-   0]: release test-async-hooks-enable-disable-enable
+Running 112 mutated tests for parallel/test-async-hooks-enable-disable-enable...
+                                                                         [00:00|%   0|+   0|-   0]: release test-async-hooks-enable-during-promise
+Running 110 mutated tests for parallel/test-async-hooks-enable-during-promise...
+                                                                         [00:00|%   0|+   0|-   0]: release test-async-hooks-enable-recursive
+Running 114 mutated tests for parallel/test-async-hooks-enable-recursive...
+                                                                    [00:00|%   0|+   0|-   0]: release test-async-hooks-execution-async-resourc...
+Running 350 mutated tests for parallel/test-async-hooks-execution-async-resource...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-execution-async-resourc...
+Running 350 mutated tests for parallel/test-async-hooks-execution-async-resource-await...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-fatal-error
+Running 132 mutated tests for parallel/test-async-hooks-fatal-error...
+                                                               [00:00|%   0|+   0|-   0]: release test-async-hooks-http-parser-destroy
+Running 740 mutated tests for parallel/test-async-hooks-http-parser-destroy...
+                                                                       [00:00|%   0|+   0|-   0]: release test-async-hooks-prevent-double-destroy
+Running 108 mutated tests for parallel/test-async-hooks-prevent-double-destroy...
+                                                                          [00:00|%   0|+   0|-   0]: release test-async-hooks-promise
+Running 110 mutated tests for parallel/test-async-hooks-promise...
+                                                           [00:00|%   0|+   0|-   0]: release test-async-hooks-promise-enable-disable
+Running 112 mutated tests for parallel/test-async-hooks-promise-enable-disable...
+                                                                          [00:00|%   0|+   0|-   0]: release test-async-hooks-promise-triggerid
+Running 108 mutated tests for parallel/test-async-hooks-promise-triggerid...
+                                                                     [00:00|%   0|+   0|-   0]: release test-async-hooks-recursive-stack-runInAs...
+Running 96 mutated tests for parallel/test-async-hooks-recursive-stack-runInAsyncScope...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-run-in-async-scope-caug...
+Running 96 mutated tests for parallel/test-async-hooks-run-in-async-scope-caught-exception...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-run-in-async-scope-this...
+Running 104 mutated tests for parallel/test-async-hooks-run-in-async-scope-this-arg...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-top-level-clearimmediat...
+Running 106 mutated tests for parallel/test-async-hooks-top-level-clearimmediate...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-vm-gc
+Running 102 mutated tests for parallel/test-async-hooks-vm-gc...
+                                                         [00:00|%   0|+   0|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Running 252 mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-1...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Running 252 mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-2...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Running 252 mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-3...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Running 250 mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-4...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-local-storage-bind
+Running 106 mutated tests for parallel/test-async-local-storage-bind...
+                                                                [00:00|%   0|+   0|-   0]: release test-async-local-storage-contexts
+Running 106 mutated tests for parallel/test-async-local-storage-contexts...
+                                                                    [00:00|%   0|+   0|-   0]: release test-async-local-storage-deep-stack
+Running 104 mutated tests for parallel/test-async-local-storage-deep-stack...
+                                                                      [00:00|%   0|+   0|-   0]: release test-async-local-storage-exit-does-not-l...
+Running 104 mutated tests for parallel/test-async-local-storage-exit-does-not-leak...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-local-storage-http-multiclien...
+Running 656 mutated tests for parallel/test-async-local-storage-http-multiclients...
+                                                                              [00:00|%   0|+   0|-   0]: release test-async-local-storage-snapshot
+Running 104 mutated tests for parallel/test-async-local-storage-snapshot...
+                                                                    [00:00|%   0|+   0|-   0]: release test-async-wrap-constructor
+Running 106 mutated tests for parallel/test-async-wrap-constructor...
+                                                              [00:00|%   0|+   0|-   0]: release test-async-wrap-pop-id-during-load
+Running 118 mutated tests for parallel/test-async-wrap-pop-id-during-load...
+                                                                     [00:00|%   0|+   0|-   0]: release test-async-wrap-promise-after-enabled
+Running 112 mutated tests for parallel/test-async-wrap-promise-after-enabled...
+                                                                        [00:00|%   0|+   0|-   0]: release test-async-wrap-tlssocket-asyncreset
+Running 366 mutated tests for parallel/test-async-wrap-tlssocket-asyncreset...
+                                                                       [00:00|%   0|+   0|-   0]: release test-async-wrap-trigger-id
+Running 98 mutated tests for parallel/test-async-wrap-trigger-id...
+                                                             [00:00|%   0|+   0|-   0]: release test-async-wrap-uncaughtexception
+Running 112 mutated tests for parallel/test-async-wrap-uncaughtexception...
+                                                                    [00:00|%   0|+   0|-   0]: release test-asyncresource-bind
+Running 128 mutated tests for parallel/test-asyncresource-bind...
+                                                          [00:00|%   0|+   0|-   0]: release test-atomics-wake
+Running 98 mutated tests for parallel/test-atomics-wake...
+                                                    [00:00|%   0|+   0|-   0]: release test-bad-unicode
+Running 96 mutated tests for parallel/test-bad-unicode...
+                                                   [00:40|%   0|+   1|-   0]: release test-bash-completion
+Running 96 mutated tests for parallel/test-bash-completion...
+                                                       [00:41|%   0|+   2|-   0]: release test-beforeexit-event-exit
+Running 98 mutated tests for parallel/test-beforeexit-event-exit...
+                                                             [00:42|%   0|+   3|-   0]: release test-benchmark-cli
+Running 98 mutated tests for parallel/test-benchmark-cli...
+                                                     [00:42|%   0|+   4|-   0]: release test-blob-buffer-too-large
+Running 96 mutated tests for parallel/test-blob-buffer-too-large...
+                                                             [00:43|%   0|+   5|-   0]: release test-blob-createobjecturl
+Running 106 mutated tests for parallel/test-blob-createobjecturl...
+                                                            [00:44|%   0|+   6|-   0]: release test-blob-file-backed
+Running 140 mutated tests for parallel/test-blob-file-backed...
+                                                        [00:45|%   0|+   7|-   0]: release test-blocklist
+Running 108 mutated tests for parallel/test-blocklist...
+                                                 [00:45|%   0|+   8|-   0]: release test-blocklist-clone
+Running 120 mutated tests for parallel/test-blocklist-clone...
+                                                       [00:45|%   0|+   9|-   0]: release test-broadcastchannel-custom-inspect
+Running 108 mutated tests for parallel/test-broadcastchannel-custom-inspect...
+                                                                       [00:45|%   0|+  10|-   0]: release test-btoa-atob
+Running 96 mutated tests for parallel/test-btoa-atob...
+                                                 [00:46|%   0|+  11|-   0]: release test-buffer-alloc
+Running 152 mutated tests for parallel/test-buffer-alloc...
+                                                    [00:46|%   0|+  12|-   0]: release test-buffer-arraybuffer
+Running 132 mutated tests for parallel/test-buffer-arraybuffer...
+                                                          [00:46|%   0|+  13|-   0]: release test-buffer-ascii
+Running 96 mutated tests for parallel/test-buffer-ascii...
+                                                    [00:46|%   0|+  14|-   0]: release test-buffer-badhex
+Running 96 mutated tests for parallel/test-buffer-badhex...
+                                                     [00:46|%   0|+  15|-   0]: release test-buffer-bigint64
+Running 96 mutated tests for parallel/test-buffer-bigint64...
+                                                       [00:47|%   0|+  16|-   0]: release test-buffer-bytelength
+Running 134 mutated tests for parallel/test-buffer-bytelength...
+                                                         [00:47|%   0|+  17|-   0]: release test-buffer-compare
+Running 96 mutated tests for parallel/test-buffer-compare...
+                                                      [00:47|%   0|+  18|-   0]: release test-buffer-compare-offset
+Running 96 mutated tests for parallel/test-buffer-compare-offset...
+                                                             [00:47|%   0|+  19|-   0]: release test-buffer-concat
+Running 100 mutated tests for parallel/test-buffer-concat...
+                                                     [00:47|%   0|+  20|-   0]: release test-buffer-constants
+Running 96 mutated tests for parallel/test-buffer-constants...
+                                                        [00:47|%   0|+  21|-   0]: release test-buffer-constructor-deprecation-erro...
+Running 134 mutated tests for parallel/test-buffer-constructor-deprecation-error...
+                                                                              [00:48|%   0|+  22|-   0]: release test-buffer-constructor-node-modules-pat...
+Running 114 mutated tests for parallel/test-buffer-constructor-node-modules-paths...
+                                                                              [00:48|%   0|+  23|-   0]: release test-buffer-constructor-outside-node-mod...
+Running 128 mutated tests for parallel/test-buffer-constructor-outside-node-modules...
+                                                                              [00:48|%   0|+  24|-   0]: release test-buffer-copy
+Running 96 mutated tests for parallel/test-buffer-copy...
+                                                   [00:48|%   0|+  25|-   0]: release test-buffer-equals
+Running 96 mutated tests for parallel/test-buffer-equals...
+                                                     [00:49|%   0|+  26|-   0]: release test-buffer-failed-alloc-typed-arrays
+Running 126 mutated tests for parallel/test-buffer-failed-alloc-typed-arrays...
+                                                                        [00:49|%   0|+  27|-   0]: release test-buffer-fakes
+Running 98 mutated tests for parallel/test-buffer-fakes...
+                                                    [00:49|%   0|+  28|-   0]: release test-buffer-from
+Running 126 mutated tests for parallel/test-buffer-from...
+                                                   [00:49|%   0|+  29|-   0]: release test-buffer-includes
+Running 96 mutated tests for parallel/test-buffer-includes...
+                                                       [00:49|%   0|+  30|-   0]: release test-buffer-indexof
+Running 96 mutated tests for parallel/test-buffer-indexof...
+                                                      [00:49|%   0|+  31|-   0]: release test-buffer-inheritance
+Running 96 mutated tests for parallel/test-buffer-inheritance...
+                                                          [00:50|%   0|+  32|-   0]: release test-buffer-inspect
+Running 104 mutated tests for parallel/test-buffer-inspect...
+                                                      [00:50|%   0|+  33|-   0]: release test-buffer-isascii
+Running 104 mutated tests for parallel/test-buffer-isascii...
+                                                      [00:50|%   0|+  34|-   0]: release test-buffer-isencoding
+Running 96 mutated tests for parallel/test-buffer-isencoding...
+                                                         [00:51|%   1|+  35|-   0]: release test-buffer-isutf8
+Running 104 mutated tests for parallel/test-buffer-isutf8...
+                                                     [00:52|%   1|+  36|-   0]: release test-buffer-iterator
+Running 98 mutated tests for parallel/test-buffer-iterator...
+                                                       [00:54|%   1|+  37|-   0]: release test-buffer-new
+Running 126 mutated tests for parallel/test-buffer-new...
+                                                  [01:04|%   1|+  38|-   0]: release test-buffer-no-negative-allocation
+Running 126 mutated tests for parallel/test-buffer-no-negative-allocation...
+                                                                     [01:04|%   1|+  39|-   0]: release test-buffer-nopendingdep-map
+Running 96 mutated tests for parallel/test-buffer-nopendingdep-map...
+                                                               [01:08|%   1|+  40|-   0]: release test-buffer-of-no-deprecation
+Running 98 mutated tests for parallel/test-buffer-of-no-deprecation...
+                                                                [01:11|%   1|+  41|-   0]: release test-buffer-over-max-length
+Running 126 mutated tests for parallel/test-buffer-over-max-length...
+                                                              [01:20|%   1|+  42|-   0]: release test-buffer-parent-property
+Running 126 mutated tests for parallel/test-buffer-parent-property...
+                                                              [01:20|%   1|+  43|-   0]: release test-buffer-pending-deprecation
+Running 110 mutated tests for parallel/test-buffer-pending-deprecation...
+                                                                  [01:22|%   1|+  44|-   0]: release test-buffer-pool-untransferable
+Running 102 mutated tests for parallel/test-buffer-pool-untransferable...
+                                                                  [01:23|%   1|+  45|-   0]: release test-buffer-prototype-inspect
+Running 98 mutated tests for parallel/test-buffer-prototype-inspect...
+                                                                [01:26|%   1|+  46|-   0]: release test-buffer-read
+Running 98 mutated tests for parallel/test-buffer-read...
+                                                   [01:27|%   1|+  47|-   0]: release test-buffer-readdouble
+Running 96 mutated tests for parallel/test-buffer-readdouble...
+                                                         [01:28|%   1|+  48|-   0]: release test-buffer-readfloat
+Running 96 mutated tests for parallel/test-buffer-readfloat...
+                                                        [01:28|%   1|+  49|-   0]: release test-buffer-readint
+Running 96 mutated tests for parallel/test-buffer-readint...
+                                                      [01:29|%   1|+  50|-   0]: release test-buffer-readuint
+Running 96 mutated tests for parallel/test-buffer-readuint...
+                                                       [01:29|%   1|+  51|-   0]: release test-buffer-safe-unsafe
+Running 126 mutated tests for parallel/test-buffer-safe-unsafe...
+                                                          [01:30|%   1|+  52|-   0]: release test-buffer-set-inspect-max-bytes
+Running 96 mutated tests for parallel/test-buffer-set-inspect-max-bytes...
+                                                                    [01:30|%   1|+  53|-   0]: release test-buffer-sharedarraybuffer
+Running 98 mutated tests for parallel/test-buffer-sharedarraybuffer...
+                                                                [01:30|%   1|+  54|-   0]: release test-buffer-slice
+Running 126 mutated tests for parallel/test-buffer-slice...
+                                                    [01:31|%   1|+  55|-   0]: release test-buffer-slow
+Running 98 mutated tests for parallel/test-buffer-slow...
+                                                   [01:31|%   1|+  56|-   0]: release test-buffer-swap
+Running 96 mutated tests for parallel/test-buffer-swap...
+                                                   [01:32|%   1|+  57|-   0]: release test-buffer-tojson
+Running 102 mutated tests for parallel/test-buffer-tojson...
+                                                     [01:32|%   1|+  58|-   0]: release test-buffer-tostring
+Running 104 mutated tests for parallel/test-buffer-tostring...
+                                                       [01:33|%   1|+  59|-   0]: release test-buffer-tostring-range
+Running 96 mutated tests for parallel/test-buffer-tostring-range...
+                                                             [01:33|%   1|+  60|-   0]: release test-buffer-tostring-rangeerror
+Running 126 mutated tests for parallel/test-buffer-tostring-rangeerror...
+                                                                  [01:35|%   1|+  61|-   0]: release test-buffer-write
+Running 106 mutated tests for parallel/test-buffer-write...
+                                                    [01:36|%   1|+  62|-   0]: release test-buffer-writedouble
+Running 96 mutated tests for parallel/test-buffer-writedouble...
+                                                          [01:36|%   1|+  63|-   0]: release test-buffer-writefloat
+Running 96 mutated tests for parallel/test-buffer-writefloat...
+                                                         [01:36|%   1|+  64|-   0]: release test-buffer-writeint
+Running 96 mutated tests for parallel/test-buffer-writeint...
+                                                       [01:38|%   1|+  65|-   0]: release test-buffer-writeuint
+Running 96 mutated tests for parallel/test-buffer-writeuint...
+                                                        [01:40|%   1|+  66|-   0]: release test-buffer-zero-fill
+Running 126 mutated tests for parallel/test-buffer-zero-fill...
+                                                        [01:41|%   1|+  67|-   0]: release test-buffer-zero-fill-cli
+Running 126 mutated tests for parallel/test-buffer-zero-fill-cli...
+                                                            [01:43|%   1|+  68|-   0]: release test-buffer-zero-fill-reset
+Running 96 mutated tests for parallel/test-buffer-zero-fill-reset...
+                                                              [01:47|%   1|+  69|-   0]: release test-c-ares
+Running 118 mutated tests for parallel/test-c-ares...
+                                              [01:49|%   2|+  70|-   0]: release test-child-process-advanced-serializatio...
+Running 184 mutated tests for parallel/test-child-process-advanced-serialization...
+                                                                              [01:50|%   2|+  71|-   0]: release test-child-process-advanced-serializatio...
+Running 138 mutated tests for parallel/test-child-process-advanced-serialization-largebuffer...
+                                                                              [01:51|%   2|+  72|-   0]: release test-child-process-can-write-to-stdout
+Running 164 mutated tests for parallel/test-child-process-can-write-to-stdout...
+                                                                         [01:52|%   2|+  73|-   0]: release test-child-process-constructor
+Running 178 mutated tests for parallel/test-child-process-constructor...
+                                                                 [01:53|%   2|+  74|-   0]: release test-child-process-cwd
+Running 268 mutated tests for parallel/test-child-process-cwd...
+                                                         [01:55|%   2|+  75|-   0]: release test-child-process-default-options
+Running 182 mutated tests for parallel/test-child-process-default-options...
+                                                                     [01:56|%   2|+  76|-   0]: release test-child-process-destroy
+Running 170 mutated tests for parallel/test-child-process-destroy...
+                                                             [01:57|%   2|+  77|-   0]: release test-child-process-detached
+Running 166 mutated tests for parallel/test-child-process-detached...
+                                                              [01:57|%   2|+  78|-   0]: release test-child-process-disconnect
+Running 224 mutated tests for parallel/test-child-process-disconnect...
+                                                                [01:59|%   2|+  79|-   0]: release test-child-process-double-pipe
+Running 200 mutated tests for parallel/test-child-process-double-pipe...
+                                                                 [02:03|%   2|+  80|-   0]: release test-child-process-env
+Running 188 mutated tests for parallel/test-child-process-env...
+                                                         [02:13|%   2|+  81|-   0]: release test-child-process-exec-abortcontroller-...
+Running 190 mutated tests for parallel/test-child-process-exec-abortcontroller-promisified...
+                                                                              [02:18|%   2|+  82|-   0]: release test-child-process-exec-any-shells-windo...
+Running 96 mutated tests for parallel/test-child-process-exec-any-shells-windows...
+                                                                              [02:20|%   2|+  83|-   0]: release test-child-process-exec-cwd
+Running 176 mutated tests for parallel/test-child-process-exec-cwd...
+                                                              [02:21|%   2|+  84|-   0]: release test-child-process-exec-encoding
+Running 250 mutated tests for parallel/test-child-process-exec-encoding...
+                                                                   [02:22|%   2|+  85|-   0]: release test-child-process-exec-env
+Running 168 mutated tests for parallel/test-child-process-exec-env...
+                                                              [02:23|%   2|+  86|-   0]: release test-child-process-exec-error
+Running 180 mutated tests for parallel/test-child-process-exec-error...
+                                                                [02:23|%   2|+  87|-   0]: release test-child-process-exec-maxbuf
+Running 360 mutated tests for parallel/test-child-process-exec-maxbuf...
+                                                                 [02:26|%   2|+  88|-   0]: release test-child-process-exec-std-encoding
+Running 180 mutated tests for parallel/test-child-process-exec-std-encoding...
+                                                                       [02:26|%   2|+  89|-   0]: release test-child-process-exec-stdout-stderr-da...
+Running 186 mutated tests for parallel/test-child-process-exec-stdout-stderr-data-string...
+                                                                              [02:28|%   2|+  90|-   0]: release test-child-process-exec-timeout-expire
+Running 174 mutated tests for parallel/test-child-process-exec-timeout-expire...
+                                                                         [02:28|%   2|+  91|-   0]: release test-child-process-exec-timeout-kill
+Running 176 mutated tests for parallel/test-child-process-exec-timeout-kill...
+                                                                       [02:28|%   2|+  92|-   0]: release test-child-process-exec-timeout-not-expi...
+Running 180 mutated tests for parallel/test-child-process-exec-timeout-not-expired...
+                                                                              [02:31|%   2|+  93|-   0]: release test-child-process-execFile-promisified-...
+Running 184 mutated tests for parallel/test-child-process-execFile-promisified-abortController...
+                                                                              [02:33|%   2|+  94|-   0]: release test-child-process-execfile
+Running 264 mutated tests for parallel/test-child-process-execfile...
+                                                              [02:33|%   2|+  95|-   0]: release test-child-process-execfile-maxbuf
+Running 274 mutated tests for parallel/test-child-process-execfile-maxbuf...
+                                                                     [02:33|%   2|+  96|-   0]: release test-child-process-execfilesync-maxbuf
+Running 120 mutated tests for parallel/test-child-process-execfilesync-maxbuf...
+                                                                         [02:37|%   2|+  97|-   0]: release test-child-process-execsync-maxbuf
+Running 100 mutated tests for parallel/test-child-process-execsync-maxbuf...
+                                                                     [02:39|%   2|+  98|-   0]: release test-child-process-exit-code
+Running 180 mutated tests for parallel/test-child-process-exit-code...
+                                                               [02:39|%   2|+  99|-   0]: release test-child-process-flush-stdio
+Running 200 mutated tests for parallel/test-child-process-flush-stdio...
+                                                                 [02:40|%   2|+ 100|-   0]: release test-child-process-fork
+Running 128 mutated tests for parallel/test-child-process-fork...
+                                                          [02:42|%   2|+ 101|-   0]: release test-child-process-fork-abort-signal
+Running 152 mutated tests for parallel/test-child-process-fork-abort-signal...
+                                                                       [02:42|%   2|+ 102|-   0]: release test-child-process-fork-and-spawn
+Running 184 mutated tests for parallel/test-child-process-fork-and-spawn...
+                                                                    [02:44|%   2|+ 103|-   0]: release test-child-process-fork-args
+Running 142 mutated tests for parallel/test-child-process-fork-args...
+                                                               [02:48|%   2|+ 104|-   0]: release test-child-process-fork-close
+Running 122 mutated tests for parallel/test-child-process-fork-close...
+                                                                [02:49|%   3|+ 105|-   0]: release test-child-process-fork-closed-channel-s...
+Running 252 mutated tests for parallel/test-child-process-fork-closed-channel-segfault...
+                                                                              [02:52|%   3|+ 106|-   0]: release test-child-process-fork-detached
+Running 172 mutated tests for parallel/test-child-process-fork-detached...
+                                                                   [03:08|%   3|+ 107|-   0]: release test-child-process-fork-dgram
+Running 144 mutated tests for parallel/test-child-process-fork-dgram...
+                                                                [03:12|%   3|+ 108|-   0]: release test-child-process-fork-exec-argv
+Running 184 mutated tests for parallel/test-child-process-fork-exec-argv...
+                                                                    [03:20|%   3|+ 109|-   0]: release test-child-process-fork-exec-path
+Running 134 mutated tests for parallel/test-child-process-fork-exec-path...
+                                                                    [03:36|%   3|+ 110|-   0]: release test-child-process-fork-getconnections
+Running 374 mutated tests for parallel/test-child-process-fork-getconnections...
+                                                                         [03:40|%   3|+ 111|-   0]: release test-child-process-fork-net
+Running 362 mutated tests for parallel/test-child-process-fork-net...
+                                                              [03:44|%   3|+ 112|-   0]: release test-child-process-fork-net-server
+Running 248 mutated tests for parallel/test-child-process-fork-net-server...
+                                                                     [04:04|%   3|+ 113|-   0]: release test-child-process-fork-net-socket
+Running 238 mutated tests for parallel/test-child-process-fork-net-socket...
+                                                                     [04:31|%   3|+ 114|-   0]: release test-child-process-fork-no-shell
+Running 120 mutated tests for parallel/test-child-process-fork-no-shell...
+                                                                   [05:11|%   3|+ 115|-   0]: release test-child-process-fork-ref
+Running 182 mutated tests for parallel/test-child-process-fork-ref...
+                                                              [05:21|%   3|+ 116|-   0]: release test-child-process-fork-ref2
+Running 124 mutated tests for parallel/test-child-process-fork-ref2...
+                                                               [05:25|%   3|+ 117|-   0]: release test-child-process-fork-stdio
+Running 190 mutated tests for parallel/test-child-process-fork-stdio...
+                                                                [05:28|%   3|+ 118|-   0]: release test-child-process-fork-stdio-string-var...
+Running 196 mutated tests for parallel/test-child-process-fork-stdio-string-variant...
+                                                                              [05:31|%   3|+ 119|-   0]: release test-child-process-fork-timeout-kill-sig...
+Running 134 mutated tests for parallel/test-child-process-fork-timeout-kill-signal...
+                                                                              [05:32|%   3|+ 120|-   0]: release test-child-process-fork-url
+Running 34 mutated tests for parallel/test-child-process-fork-url...
+                                                              [05:35|%   3|+ 121|-   0]: release test-child-process-fork3
+Running 112 mutated tests for parallel/test-child-process-fork3...
+                                                           [05:49|%   3|+ 122|-   0]: release test-child-process-internal
+Running 124 mutated tests for parallel/test-child-process-internal...
+                                                              [06:21|%   3|+ 123|-   0]: release test-child-process-ipc
+Running 176 mutated tests for parallel/test-child-process-ipc...
+                                                         [06:29|%   3|+ 124|-   0]: release test-child-process-ipc-next-tick
+Running 128 mutated tests for parallel/test-child-process-ipc-next-tick...
+                                                                   [06:42|%   3|+ 125|-   0]: release test-child-process-kill
+Running 170 mutated tests for parallel/test-child-process-kill...
+                                                          [06:45|%   3|+ 126|-   0]: release test-child-process-no-deprecation
+Running 164 mutated tests for parallel/test-child-process-no-deprecation...
+                                                                    [06:45|%   3|+ 127|-   0]: release test-child-process-pipe-dataflow
+Running 218 mutated tests for parallel/test-child-process-pipe-dataflow...
+                                                                   [06:47|%   3|+ 128|-   0]: release test-child-process-promisified
+Running 232 mutated tests for parallel/test-child-process-promisified...
+                                                                 [06:51|%   3|+ 129|-   0]: release test-child-process-prototype-tampering
+Running 460 mutated tests for parallel/test-child-process-prototype-tampering...
+                                                                         [06:52|%   3|+ 130|-   0]: release test-child-process-reject-null-bytes
+Running 120 mutated tests for parallel/test-child-process-reject-null-bytes...
+                                                                       [07:08|%   3|+ 131|-   0]: release test-child-process-send-after-close
+Running 120 mutated tests for parallel/test-child-process-send-after-close...
+                                                                      [07:17|%   3|+ 132|-   0]: release test-child-process-send-cb
+Running 124 mutated tests for parallel/test-child-process-send-cb...
+                                                             [07:18|%   3|+ 133|-   0]: release test-child-process-send-keep-open
+Running 226 mutated tests for parallel/test-child-process-send-keep-open...
+                                                                    [07:26|%   3|+ 134|-   0]: release test-child-process-send-returns-boolean
+Running 212 mutated tests for parallel/test-child-process-send-returns-boolean...
+                                                                          [07:29|%   3|+ 135|-   0]: release test-child-process-send-type-error
+Running 120 mutated tests for parallel/test-child-process-send-type-error...
+                                                                     [07:30|%   3|+ 136|-   0]: release test-child-process-send-utf8
+Running 122 mutated tests for parallel/test-child-process-send-utf8...
+                                                               [07:34|%   3|+ 137|-   0]: release test-child-process-server-close
+Running 228 mutated tests for parallel/test-child-process-server-close...
+                                                                  [07:37|%   3|+ 138|-   0]: release test-child-process-set-blocking
+Running 132 mutated tests for parallel/test-child-process-set-blocking...
+                                                                  [07:46|%   4|+ 139|-   0]: release test-child-process-silent
+Running 194 mutated tests for parallel/test-child-process-silent...
+                                                            [07:57|%   4|+ 140|-   0]: release test-child-process-spawn-args
+Running 220 mutated tests for parallel/test-child-process-spawn-args...
+                                                                [08:33|%   4|+ 141|-   0]: release test-child-process-spawn-argv0
+Running 116 mutated tests for parallel/test-child-process-spawn-argv0...
+                                                                 [08:34|%   4|+ 142|-   0]: release test-child-process-spawn-controller
+Running 280 mutated tests for parallel/test-child-process-spawn-controller...
+                                                                      [08:56|%   4|+ 143|-   0]: release test-child-process-spawn-error
+Running 174 mutated tests for parallel/test-child-process-spawn-error...
+                                                                 [09:23|%   4|+ 144|-   0]: release test-child-process-spawn-event
+Running 172 mutated tests for parallel/test-child-process-spawn-event...
+                                                                 [09:38|%   4|+ 145|-   0]: release test-child-process-spawn-shell
+Running 222 mutated tests for parallel/test-child-process-spawn-shell...
+                                                                 [09:41|%   4|+ 146|-   0]: release test-child-process-spawn-timeout-kill-si...
+Running 214 mutated tests for parallel/test-child-process-spawn-timeout-kill-signal...
+                                                                              [09:54|%   4|+ 147|-   0]: release test-child-process-spawn-typeerror
+Running 676 mutated tests for parallel/test-child-process-spawn-typeerror...
+                                                                     [10:21|%   4|+ 148|-   0]: release test-child-process-spawnsync
+Running 122 mutated tests for parallel/test-child-process-spawnsync...
+                                                               [10:35|%   4|+ 149|-   0]: release test-child-process-spawnsync-args
+Running 120 mutated tests for parallel/test-child-process-spawnsync-args...
+                                                                    [10:42|%   4|+ 150|-   0]: release test-child-process-spawnsync-env
+Running 116 mutated tests for parallel/test-child-process-spawnsync-env...
+                                                                   [10:48|%   4|+ 151|-   0]: release test-child-process-spawnsync-input
+Running 116 mutated tests for parallel/test-child-process-spawnsync-input...
+                                                                     [10:59|%   4|+ 152|-   0]: release test-child-process-spawnsync-maxbuf
+Running 116 mutated tests for parallel/test-child-process-spawnsync-maxbuf...
+                                                                      [11:00|%   4|+ 153|-   0]: release test-child-process-spawnsync-timeout
+Running 118 mutated tests for parallel/test-child-process-spawnsync-timeout...
+                                                                       [11:16|%   4|+ 154|-   0]: release test-child-process-spawnsync-validation-...
+Running 118 mutated tests for parallel/test-child-process-spawnsync-validation-errors...
+                                                                              [11:56|%   4|+ 155|-   0]: release test-child-process-stdin
+Running 174 mutated tests for parallel/test-child-process-stdin...
+                                                           [12:13|%   4|+ 156|-   0]: release test-child-process-stdin-ipc
+Running 136 mutated tests for parallel/test-child-process-stdin-ipc...
+                                                               [12:24|%   4|+ 157|-   0]: release test-child-process-stdio
+Running 206 mutated tests for parallel/test-child-process-stdio...
+                                                           [13:07|%   4|+ 158|-   0]: release test-child-process-stdio-big-write-end
+Running 234 mutated tests for parallel/test-child-process-stdio-big-write-end...
+                                                                         [13:19|%   4|+ 159|-   0]: release test-child-process-stdio-inherit
+Running 192 mutated tests for parallel/test-child-process-stdio-inherit...
+                                                                   [14:14|%   4|+ 160|-   0]: release test-child-process-stdio-merge-stdouts-i...
+Running 206 mutated tests for parallel/test-child-process-stdio-merge-stdouts-into-cat...
+                                                                              [14:20|%   4|+ 161|-   0]: release test-child-process-stdio-overlapped
+Running 204 mutated tests for parallel/test-child-process-stdio-overlapped...
+                                                                      [14:30|%   4|+ 162|-   0]: release test-child-process-stdio-reuse-readable-...
+Running 202 mutated tests for parallel/test-child-process-stdio-reuse-readable-stdio...
+                                                                              === release test-async-hooks-fatal-error ===
+Path: parallel/test-async-hooks-fatal-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-async-hooks-fatal-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [14:31|%   4|+ 163|-   0]: release test-child-process-stdout-flush
+Running 186 mutated tests for parallel/test-child-process-stdout-flush...
+                                                                  === release test-buffer-constructor-node-modules-paths ===
+Path: parallel/test-buffer-constructor-node-modules-paths
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-buffer-constructor-node-modules-paths-pp.js
+--- TIMEOUT ---
+
+
+                                                                  [14:32|%   4|+ 164|-   0]: release test-child-process-stdout-flush-exit
+Running 458 mutated tests for parallel/test-child-process-stdout-flush-exit...
+                                                                       [15:23|%   4|+ 165|-   0]: release test-child-process-stdout-ipc
+Running 138 mutated tests for parallel/test-child-process-stdout-ipc...
+                                                                [15:38|%   4|+ 166|-   0]: release test-child-process-uid-gid
+Running 114 mutated tests for parallel/test-child-process-uid-gid...
+                                                             [15:42|%   4|+ 167|-   0]: release test-cli-bad-options
+Running 114 mutated tests for parallel/test-cli-bad-options...
+                                                       [15:45|%   4|+ 168|-   0]: release test-cli-eval
+Running 786 mutated tests for parallel/test-cli-eval...
+                                                [16:04|%   4|+ 169|-   0]: release test-cli-eval-event
+Running 170 mutated tests for parallel/test-cli-eval-event...
+                                                      [16:05|%   4|+ 170|-   0]: release test-cli-node-options
+Running 836 mutated tests for parallel/test-cli-node-options...
+                                                        [16:39|%   4|+ 171|-   0]: release test-cli-options-negation
+Running 96 mutated tests for parallel/test-cli-options-negation...
+                                                            [17:08|%   4|+ 172|-   0]: release test-cli-options-precedence
+Running 114 mutated tests for parallel/test-cli-options-precedence...
+                                                              [17:13|%   4|+ 173|-   0]: release test-cli-permission-deny-fs
+Running 98 mutated tests for parallel/test-cli-permission-deny-fs...
+                                                              [17:44|%   5|+ 174|-   0]: release test-cli-permission-multiple-allow
+Running 98 mutated tests for parallel/test-cli-permission-multiple-allow...
+                                                                     [18:00|%   5|+ 175|-   0]: release test-cli-syntax-eval
+Running 212 mutated tests for parallel/test-cli-syntax-eval...
+                                                       [18:21|%   5|+ 176|-   0]: release test-cli-syntax-piped-bad
+Running 114 mutated tests for parallel/test-cli-syntax-piped-bad...
+                                                            [18:29|%   5|+ 177|-   0]: release test-cli-syntax-piped-good
+Running 114 mutated tests for parallel/test-cli-syntax-piped-good...
+                                                             [18:33|%   5|+ 178|-   0]: release test-client-request-destroy
+Running 132 mutated tests for parallel/test-client-request-destroy...
+                                                              [19:59|%   5|+ 179|-   0]: release test-cluster-advanced-serialization
+Running 148 mutated tests for parallel/test-cluster-advanced-serialization...
+                                                                      [20:01|%   5|+ 180|-   0]: release test-cluster-basic
+Running 180 mutated tests for parallel/test-cluster-basic...
+                                                     [20:03|%   5|+ 181|-   0]: release test-cluster-bind-privileged-port
+Running 96 mutated tests for parallel/test-cluster-bind-privileged-port...
+                                                                    [20:14|%   5|+ 182|-   0]: release test-cluster-bind-twice
+Running 204 mutated tests for parallel/test-cluster-bind-twice...
+                                                          [22:56|%   5|+ 183|-   0]: release test-cluster-call-and-destroy
+Running 148 mutated tests for parallel/test-cluster-call-and-destroy...
+                                                                [23:13|%   5|+ 184|-   0]: release test-cluster-child-index-dgram
+Running 200 mutated tests for parallel/test-cluster-child-index-dgram...
+                                                                 [23:19|%   5|+ 185|-   0]: release test-cluster-child-index-net
+Running 226 mutated tests for parallel/test-cluster-child-index-net...
+                                                               [23:19|%   5|+ 186|-   0]: release test-cluster-concurrent-disconnect
+Running 752 mutated tests for parallel/test-cluster-concurrent-disconnect...
+                                                                     === release test-child-process-fork-closed-channel-segfault ===
+Path: parallel/test-child-process-fork-closed-channel-segfault
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-child-process-fork-closed-channel-segfault-pp.js
+--- TIMEOUT ---
+
+
+                                                                     [25:05|%   5|+ 187|-   0]: release test-cluster-cwd
+Running 164 mutated tests for parallel/test-cluster-cwd...
+                                                   [25:44|%   5|+ 188|-   0]: release test-cluster-dgram-1
+Running 224 mutated tests for parallel/test-cluster-dgram-1...
+                                                       === release test-child-process-spawn-argv0 ===
+Path: parallel/test-child-process-spawn-argv0
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-child-process-spawn-argv0-pp.js
+--- TIMEOUT ---
+
+
+                                                       [26:42|%   5|+ 189|-   0]: release test-cluster-dgram-2
+Running 248 mutated tests for parallel/test-cluster-dgram-2...
+                                                       === release test-blob-buffer-too-large ===
+Path: parallel/test-blob-buffer-too-large
+Command: out/Release/node --no-warnings --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-blob-buffer-too-large-pp.js
+--- TIMEOUT ---
+
+
+                                                       [28:40|%   5|+ 190|-   0]: release test-cluster-dgram-ipv6only
+Running 96 mutated tests for parallel/test-cluster-dgram-ipv6only...
+                                                              [28:45|%   5|+ 190|-   0]: Done
+
+All tests passed.
+Total execution time: 34 mins 51 secs

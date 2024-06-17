@@ -1,0 +1,438 @@
+diff --git a/.gitignore b/.gitignore
+index 79920931ce..ada2a9da6d 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -26,6 +26,7 @@
+ !.yamllint.yaml
+ 
+ # === Rules for root dir ===
++/fuzzing*
+ /core
+ /vgcore.*
+ /v8*.log
+diff --git a/test/message/testcfg.py b/test/message/testcfg.py
+index 4be454b55c..7ebb64ac0c 100644
+--- a/test/message/testcfg.py
++++ b/test/message/testcfg.py
+@@ -38,7 +38,12 @@ class MessageTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, expected, arch, mode, context, config):
+     super(MessageTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.expected = expected
+     self.config = config
+     self.arch = arch
+diff --git a/test/pseudo-tty/testcfg.py b/test/pseudo-tty/testcfg.py
+index 4751188b44..9d59869236 100644
+--- a/test/pseudo-tty/testcfg.py
++++ b/test/pseudo-tty/testcfg.py
+@@ -42,7 +42,12 @@ class TTYTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, expected, input_arg, arch, mode, context, config):
+     super(TTYTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.expected = expected
+     self.input = input_arg
+     self.config = config
+diff --git a/test/testpy/__init__.py b/test/testpy/__init__.py
+index c89ab6e8b5..a033d48360 100644
+--- a/test/testpy/__init__.py
++++ b/test/testpy/__init__.py
+@@ -39,7 +39,12 @@ class SimpleTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, arch, mode, context, config, additional=None):
+     super(SimpleTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.config = config
+     self.arch = arch
+     self.mode = mode
+diff --git a/tools/test.py b/tools/test.py
+index d35b45a669..7730667dd8 100755
+--- a/tools/test.py
++++ b/tools/test.py
+@@ -45,7 +45,11 @@ import multiprocessing
+ import errno
+ import copy
+ import io
++import shutil
+ 
++def dump(obj):
++  for attr in dir(obj):
++    print("obj.%s = %r" % (attr, getattr(obj, attr)))
+ 
+ if sys.version_info >= (3, 5):
+   from importlib import machinery, util
+@@ -95,6 +99,19 @@ os.environ.pop('NODE_OPTIONS', None)
+ # --- P r o g r e s s   I n d i c a t o r s ---
+ # ---------------------------------------------
+ 
++def LoadJSHelper(path):
++  skip = False
++  def predicate(line):
++    nonlocal skip
++    if (not skip) and ('%PLACEHOLDER% SKIP' in line):
++      skip = True
++      return False
++    if skip and ('%PLACEHOLDER% END' in line):
++      skip = False
++      return False
++    return not skip
++
++  return ''.join(filter(predicate, open(path, encoding='utf8').readlines()))
+ 
+ class ProgressIndicator(object):
+ 
+@@ -118,6 +135,11 @@ class ProgressIndicator(object):
+     self.crashed = 0
+     self.lock = threading.Lock()
+     self.shutdown_event = threading.Event()
++    self.js_proxy = LoadJSHelper('../src/proxy.js')
++    self.js_buildins = LoadJSHelper('../src/buildins.js')
++    self.js_wrapper = LoadJSHelper('../src/wrapper.js')
++    self.taint_results_dir = generateNewResultPath('./fuzzing')
++    self.taint_init_data = loadTaintInitData('./fuzzing/init')
+ 
+   def GetFailureOutput(self, failure):
+     output = []
+@@ -192,6 +214,7 @@ class ProgressIndicator(object):
+           return
+       case = test
+       case.thread_id = thread_id
++      case.taint_results_dir = self.taint_results_dir
+       self.lock.acquire()
+       case.serial_id = self.serial_id
+       self.serial_id += 1
+@@ -199,22 +222,70 @@ class ProgressIndicator(object):
+       self.lock.release()
+       try:
+         start = datetime.now()
+-        output = case.Run()
+-        # SmartOS has a bug that causes unexpected ECONNREFUSED errors.
+-        # See https://smartos.org/bugview/OS-2767
+-        # If ECONNREFUSED on SmartOS, retry the test one time.
+-        if (output.UnexpectedOutput() and
+-          sys.platform == 'sunos5' and
+-          'ECONNREFUSED' in output.output.stderr):
++        if not self.taint_init_data:
++          output = case.Run()
++          # SmartOS has a bug that causes unexpected ECONNREFUSED errors.
++          # See https://smartos.org/bugview/OS-2767
++          # If ECONNREFUSED on SmartOS, retry the test one time.
++          if (output.UnexpectedOutput() and
++            sys.platform == 'sunos5' and
++            'ECONNREFUSED' in output.output.stderr):
++              output = case.Run()
++              output.diagnostic.append('ECONNREFUSED received, test retried')
++        else:
++          if case.original_file in self.taint_init_data:
++            unique_props = self.taint_init_data[case.original_file]
++            print()
++            print(f'Running baseline test for {"/".join(case.path)}...')
+             output = case.Run()
+-            output.diagnostic.append('ECONNREFUSED received, test retried')
++            if output.HasCrashed():
++              print(f'CRASH: {case.original_file}')
++              return
++            else:
++              print(f'NOCRA: {case.original_file}')
++
++            if output.HasTimedOut():
++              print(f'TIMEOUT: {case.original_file}')
++              return
++            else:
++              print(f'NOTIMEO: {case.original_file}')
++
++            print()
++            print(f'Running {len(unique_props)} mutated tests for {"/".join(case.path)}...')
++            for index, prop in enumerate(unique_props):
++              output = case.Run(prop)
++
++              test_name = os.path.basename(case.original_file)
++              stderr_path = f"./fuzzing/output/{test_name}_{index}.stderr.log"
++              stdout_path = f"./fuzzing/output/{test_name}_{index}.stdout.log"
++              if output.output.stderr.strip():
++                with open(stderr_path, "w") as file:
++                  file.write(f"{case.original_file}\n")
++                  file.write(f"{prop}\n\n")
++                  file.write(output.output.stderr)
++
++              if output.output.stdout.strip():
++                with open(stdout_path, "w") as file:
++                  file.write(f"{case.original_file}\n")
++                  file.write(f"{prop}\n\n")
++                  file.write(output.output.stdout)
++
++              if output.HasCrashed():
++                print(f'CRASH: [{prop}] {stdout_path} | {stderr_path} | {case.original_file}')
++              if output.HasTimedOut():
++                print(f'TIMEOUT: [{prop}] {stdout_path} | {stderr_path} | {case.original_file}')
++          else:
++            print()
++            print(f'Skip mutated tests for {"/".join(case.path)}, not found props.')
++            output = TestOutput(case, "", CommandOutput(0, False, "", ""), False)
++
+         case.duration = (datetime.now() - start)
+       except IOError:
+         return
+       if self.shutdown_event.is_set():
+         return
+       self.lock.acquire()
+-      if output.UnexpectedOutput():
++      if not self.taint_init_data and output.UnexpectedOutput():  # check output only for original (not mutated) test cases
+         if FLAKY in output.test.outcomes and self.flaky_tests_mode == DONTCARE:
+           self.flaky_failed.append(output)
+         elif FLAKY in output.test.outcomes and self.flaky_tests_mode == KEEP_RETRYING:
+@@ -561,6 +632,92 @@ class CommandOutput(object):
+     self.stderr = stderr
+     self.failed = None
+ 
++def uniquify(path):
++  if not os.path.exists(path):
++    return path
++
++  filename, extension = os.path.splitext(path)
++  counter = 1
++
++  while os.path.exists(path):
++      path = filename + "-" + str(counter) + extension
++      counter += 1
++
++  return path
++
++def generateNewResultPath(dir_path):
++  # Regular expression to match 'number-' pattern
++  pattern = re.compile(r'^(\d+)-')
++  n_max = 0
++  entries = os.listdir(dir_path)
++  for entry in entries:
++    match = pattern.match(entry)
++    if match and os.path.isdir(os.path.join(dir_path, entry)):
++      try:
++        # Extract number and update n_max if it's larger
++        n = int(match.group(1))
++        if n > n_max:
++          n_max = n
++      except ValueError:
++        # Skip if the entry after number is not valid
++        continue
++
++  # Generate new subdir name using n_max + 1 and current date
++  new_n = n_max + 1
++  current_date = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
++  new_subdir_name = f"{new_n}-{current_date}"
++
++  # Return the complete path of the new subdir
++  return os.path.join(dir_path, new_subdir_name)
++
++start_pattern = re.compile(r"===== START ===== \[(.*?)\]")
++undefined_prop_regex = re.compile(r'.+NOT FOUND:(.+<String\[\d+\]: #(?P<str_prop>.+)>| (?P<num_prop>\d+))')
++def collectUndefinedProps(taintLog):
++  test = ""
++  props = []
++  start = False
++  for line in taintLog:
++    line = line.strip()
++    if not start:
++      start_match = start_pattern.match(line)
++      if (start_match):
++        test = start_match.group(1).strip()
++        start = True
++      continue
++
++    # if line.startswith("[LoadIC::Load]") or line.startswith("[Runtime::GetObjectProperty]"):
++    prop_match = undefined_prop_regex.match(line)
++    if prop_match:
++      str_prop = prop_match.group('str_prop')
++      if str_prop:
++        props.append(f"'{str_prop.strip()}'")
++
++      num_prop = prop_match.group('num_prop')
++      if num_prop:
++        props.append(f"{num_prop.strip()}")
++
++  return test, list(set(props))
++
++
++def loadTaintInitData(dir_path):
++  taint_files = {}
++
++  if not os.path.exists(dir_path):
++    return taint_files
++
++  # Enumerate all files in the directory
++  for root, dirs, files in os.walk(dir_path):
++    for file in files:
++      file_path = os.path.join(root, file)
++      with open(file_path, 'r') as f:
++        test, props = collectUndefinedProps(f.readlines())
++        if test:
++          if test in taint_files:
++            taint_files[test] = list(set(taint_files[test] + props))
++          else:
++            taint_files[test] = props
++
++  return taint_files
+ 
+ class TestCase(object):
+ 
+@@ -601,15 +758,84 @@ class TestCase(object):
+                       output,
+                       self.context.store_unexpected_output)
+ 
+-  def Run(self):
++  def Run(self, undefined_prop = '', js_proxy = '', js_buildins = '', js_wrapper = ''):
+     try:
++      with open(self.file, 'w') as f:
++        # f.write("// %TESTCASE%\n") # comment
++        if undefined_prop:
++          if js_proxy:
++            f.write(js_proxy.replace('\n', ''))
++            ret_value = 'createProxy(returnValue)'
++          else:
++            ret_value = 'returnValue'
++
++          inj_code = '''let __pollutedValue = '0xEFFACED', __accessIndex = 0, __stopPollution = false;
++Object.defineProperty(
++  Object.prototype,
++  %s,
++  {
++    get: function() {
++      if (__stopPollution)
++        return __pollutedValue;
++
++      const returnValue = __pollutedValue + __accessIndex;
++      __accessIndex += 1;
++
++      try {
++          throw new Error();
++      } catch(error) {
++          log(returnValue + ' source stack: ' + error.stack.replace(/\\n/g, '\\\\n'));
++      }
++
++      return %s;
++    },
++    set: function(newValue) {
++        __stopPollution = true;
++        __pollutedValue = newValue;
++    },
++  }
++);
++''' % (undefined_prop, ret_value)
++          # f.write(inj_code.replace('\n', ''))
++          f.write(f"Object.prototype[{undefined_prop}] = '0xEFFACED';")
++          f.write("\n")
++          if js_wrapper:
++            f.write("{\n")
++            f.write(js_buildins)
++            f.write(js_wrapper)
++            f.write('''
++const { inspect } = require('util');
++function beforeFuncCallback(accessPath) {
++  log('[call]: ' + accessPath)
++//  if (accessPath === "REQUIRE('assert')") {
++//    return false;
++//  }
++
++  return false;
++}
++function afterFuncCallback(accessPath, args, ret) {
++  log('[ret]:  ' + accessPath)
++  //log('[ret]:  ' + accessPath + '-->' + inspect(ret, {breakLength: Infinity}))
++}
++
++const w = new Wrapper(log, beforeFuncCallback, afterFuncCallback);
++const m = require('module');
++m.prototype.require = w.wrap(m.prototype.require, 'REQUIRE');
++}
++''')
++        # LOG!!!
++        # f.write(f'log("\\n===== START ===== [{self.original_file}] [{undefined_prop}]\\n");\n') # comment out
++        f.writelines(open(self.original_file, encoding='utf8').readlines())
++
+       result = self.RunCommand(self.GetCommand(), {
+         "TEST_SERIAL_ID": "%d" % self.serial_id,
+         "TEST_THREAD_ID": "%d" % self.thread_id,
+         "TEST_PARALLEL" : "%d" % self.parallel,
+         "GITHUB_STEP_SUMMARY": "",
+       })
++
+     finally:
++      os.remove(self.file)
+       # Tests can leave the tty in non-blocking mode. If the test runner
+       # tries to print to stdout/stderr after that and the tty buffer is
+       # full, it'll die with a EAGAIN OSError. Ergo, put the tty back in
+@@ -661,7 +887,6 @@ class TestOutput(object):
+     else:
+       return execution_failed
+ 
+-
+ def KillProcessWithID(pid, signal_to_send=signal.SIGTERM):
+   if utils.IsWindows():
+     os.popen('taskkill /T /F /PID %d' % pid)
+@@ -687,12 +912,12 @@ def Win32SetErrorMode(mode):
+ 
+ 
+ def KillTimedOutProcess(context, pid):
+-  signal_to_send = signal.SIGTERM
++  signal_to_send = signal.SIGTERM #SIGKILL
+   if context.abort_on_timeout:
+     # Using SIGABRT here allows the OS to generate a core dump that can be
+     # looked at post-mortem, which helps for investigating failures that are
+     # difficult to reproduce.
+-    signal_to_send = signal.SIGABRT
++    signal_to_send = signal.SIGABRT #SIGKILL
+   KillProcessWithID(pid, signal_to_send)
+ 
+ 
+@@ -942,7 +1167,9 @@ class Context(object):
+   def GetVm(self, arch, mode):
+     if self.vm is not None:
+       return self.vm
+-    if arch == 'none':
++    if arch == 'sys':
++      name = '/home/yuske/.nvm/versions/node/v21.0.0/bin/node'
++    elif arch == 'none':
+       name = 'out/Debug/node' if mode == 'debug' else 'out/Release/node'
+     else:
+       name = 'out/%s.%s/node' % (arch, mode)
+@@ -1590,8 +1817,13 @@ def get_env_type(vm, options_type, context):
+ def get_asan_state():
+   return "on" if os.environ.get('ASAN') is not None else "off"
+ 
++def ignore_signal(signum, frame):
++  print("Received SIGTERM, but ignoring it.")
+ 
+ def Main():
++  # Registering the signal handler
++  signal.signal(signal.SIGTERM, ignore_signal)
++
+   parser = BuildOptions()
+   (options, args) = parser.parse_args()
+   if not ProcessOptions(options):
+@@ -1797,7 +2029,7 @@ def Main():
+     for failure in result['failed']:
+       print(EscapeCommand(failure.command))
+ 
+-  return exitcode
++  return 0 #exitcode
+ 
+ 
+ if __name__ == '__main__':

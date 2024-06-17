@@ -1,0 +1,530 @@
+[00:00|%   0|+   0|-   0]: release test-aborted-util
+Skip mutated tests for parallel/test-aborted-util, not found props.
+                                                    [00:00|%   0|+   1|-   0]: release test-abortsignal-any
+Skip mutated tests for parallel/test-abortsignal-any, not found props.
+                                                       [00:00|%   0|+   2|-   0]: release test-abortsignal-cloneable
+Skip mutated tests for parallel/test-abortsignal-cloneable, not found props.
+                                                             [00:00|%   0|+   3|-   0]: release test-arm-math-illegal-instruction
+Skip mutated tests for parallel/test-arm-math-illegal-instruction, not found props.
+                                                                    [00:00|%   0|+   4|-   0]: release test-assert
+Skip mutated tests for parallel/test-assert, not found props.
+                                              [00:00|%   0|+   5|-   0]: release test-assert-async
+Skip mutated tests for parallel/test-assert-async, not found props.
+                                                    [00:00|%   0|+   6|-   0]: release test-assert-builtins-not-read-from-files...
+Skip mutated tests for parallel/test-assert-builtins-not-read-from-filesystem, not found props.
+                                                                              [00:00|%   0|+   7|-   0]: release test-assert-calltracker-calls
+Skip mutated tests for parallel/test-assert-calltracker-calls, not found props.
+                                                                [00:00|%   0|+   8|-   0]: release test-assert-calltracker-getCalls
+Skip mutated tests for parallel/test-assert-calltracker-getCalls, not found props.
+                                                                   [00:00|%   0|+   9|-   0]: release test-assert-calltracker-report
+Skip mutated tests for parallel/test-assert-calltracker-report, not found props.
+                                                                 [00:00|%   0|+  10|-   0]: release test-assert-calltracker-verify
+Skip mutated tests for parallel/test-assert-calltracker-verify, not found props.
+                                                                 [00:00|%   0|+  11|-   0]: release test-assert-checktag
+Running 126 mutated tests for parallel/test-assert-checktag...
+                                                       [00:00|%   0|+  11|-   0]: release test-assert-deep
+Skip mutated tests for parallel/test-assert-deep, not found props.
+                                                   [00:00|%   0|+  11|-   0]: release test-assert-fail
+Skip mutated tests for parallel/test-assert-fail, not found props.
+                                                   [00:00|%   0|+  12|-   0]: release test-assert-first-line
+Skip mutated tests for parallel/test-assert-first-line, not found props.
+                                                         [00:00|%   0|+  14|-   0]: release test-assert-typedarray-deepequal
+Skip mutated tests for parallel/test-assert-typedarray-deepequal, not found props.
+                                                                   [00:00|%   0|+  15|-   0]: release test-async-hooks-async-await
+Skip mutated tests for parallel/test-async-hooks-async-await, not found props.
+                                                               [00:00|%   0|+  16|-   0]: release test-assert-if-error
+Skip mutated tests for parallel/test-assert-if-error, not found props.
+                                                       [00:00|%   0|+  17|-   0]: release test-async-hooks-close-during-destroy
+Skip mutated tests for parallel/test-async-hooks-close-during-destroy, not found props.
+                                                                        [00:00|%   0|+  18|-   0]: release test-assert-fail-deprecation
+Skip mutated tests for parallel/test-assert-fail-deprecation, not found props.
+                                                               [00:00|%   0|+  18|-   0]: release test-async-hooks-asyncresource-construct...
+Skip mutated tests for parallel/test-async-hooks-asyncresource-constructor, not found props.
+                                                                              [00:00|%   0|+  18|-   0]: release test-async-hooks-constructor
+Skip mutated tests for parallel/test-async-hooks-constructor, not found props.
+                                                               [00:00|%   0|+  18|-   0]: release test-assert-strict-exists
+Skip mutated tests for parallel/test-assert-strict-exists, not found props.
+                                                            [00:00|%   0|+  18|-   0]: release test-async-hooks-correctly-switch-promis...
+Skip mutated tests for parallel/test-async-hooks-correctly-switch-promise-hook, not found props.
+                                                                              [00:00|%   0|+  18|-   0]: release test-async-hooks-destroy-on-gc
+Skip mutated tests for parallel/test-async-hooks-destroy-on-gc, not found props.
+                                                                 [00:00|%   0|+  19|-   0]: release test-async-hooks-disable-during-promise
+Skip mutated tests for parallel/test-async-hooks-disable-during-promise, not found props.
+                                                                          [00:00|%   0|+  20|-   0]: release test-async-hooks-disable-gc-tracking
+Skip mutated tests for parallel/test-async-hooks-disable-gc-tracking, not found props.
+                                                                       [00:00|%   0|+  21|-   0]: release test-async-hooks-enable-before-promise-r...
+Skip mutated tests for parallel/test-async-hooks-enable-before-promise-resolve, not found props.
+                                                                              [00:00|%   0|+  23|-   0]: release test-async-hooks-enable-disable
+Skip mutated tests for parallel/test-async-hooks-enable-disable, not found props.
+                                                                  [00:00|%   0|+  24|-   0]: release test-async-hooks-run-in-async-scope-caug...
+Skip mutated tests for parallel/test-async-hooks-run-in-async-scope-caught-exception, not found props.
+                                                                              [00:00|%   0|+  24|-   0]: release test-async-hooks-enable-during-promise
+Skip mutated tests for parallel/test-async-hooks-enable-during-promise, not found props.
+                                                                         [00:00|%   0|+  24|-   0]: release test-async-hooks-enable-recursive
+Skip mutated tests for parallel/test-async-hooks-enable-recursive, not found props.
+                                                                    [00:00|%   0|+  25|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-2, not found props.
+                                                                              [00:00|%   0|+  25|-   0]: release test-async-hooks-execution-async-resourc...
+Running 350 mutated tests for parallel/test-async-hooks-execution-async-resource-await...
+                                                                              [00:00|%   0|+  25|-   0]: release test-async-hooks-fatal-error
+Skip mutated tests for parallel/test-async-hooks-fatal-error, not found props.
+                                                               [00:00|%   0|+  26|-   0]: release test-async-hooks-http-parser-destroy
+Running 740 mutated tests for parallel/test-async-hooks-http-parser-destroy...
+                                                                       [00:00|%   0|+  26|-   0]: release test-async-hooks-prevent-double-destroy
+Skip mutated tests for parallel/test-async-hooks-prevent-double-destroy, not found props.
+                                                                          [00:00|%   0|+  27|-   0]: release test-async-local-storage-exit-does-not-l...
+Skip mutated tests for parallel/test-async-local-storage-exit-does-not-leak, not found props.
+                                                                              [00:00|%   0|+  28|-   0]: release test-async-hooks-promise-enable-disable
+Skip mutated tests for parallel/test-async-hooks-promise-enable-disable, not found props.
+                                                                          [00:00|%   0|+  28|-   0]: release test-async-hooks-recursive-stack-runInAs...
+Skip mutated tests for parallel/test-async-hooks-recursive-stack-runInAsyncScope, not found props.
+                                                                              [00:00|%   0|+  29|-   0]: release test-async-hooks-enable-disable-enable
+Skip mutated tests for parallel/test-async-hooks-enable-disable-enable, not found props.
+                                                                         [00:00|%   0|+  29|-   0]: release test-async-hooks-run-in-async-scope-this...
+Skip mutated tests for parallel/test-async-hooks-run-in-async-scope-this-arg, not found props.
+                                                                              [00:00|%   0|+  30|-   0]: release test-async-hooks-top-level-clearimmediat...
+Skip mutated tests for parallel/test-async-hooks-top-level-clearimmediate, not found props.
+                                                                              [00:00|%   0|+  31|-   0]: release test-asyncresource-bind
+Running 128 mutated tests for parallel/test-asyncresource-bind...
+                                                          [00:00|%   0|+  32|-   0]: release test-bad-unicode
+Skip mutated tests for parallel/test-bad-unicode, not found props.
+                                                   [00:00|%   0|+  33|-   0]: release test-async-hooks-execution-async-resourc...
+Running 350 mutated tests for parallel/test-async-hooks-execution-async-resource...
+                                                                              [00:00|%   0|+  33|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-3, not found props.
+                                                                              [00:00|%   0|+  33|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-4, not found props.
+                                                                              [00:00|%   0|+  34|-   0]: release test-async-local-storage-bind
+Skip mutated tests for parallel/test-async-local-storage-bind, not found props.
+                                                                [00:00|%   0|+  34|-   0]: release test-async-local-storage-contexts
+Skip mutated tests for parallel/test-async-local-storage-contexts, not found props.
+                                                                    [00:00|%   1|+  35|-   0]: release test-buffer-alloc
+Skip mutated tests for parallel/test-buffer-alloc, not found props.
+                                                    [00:00|%   1|+  36|-   0]: release test-async-hooks-promise
+Skip mutated tests for parallel/test-async-hooks-promise, not found props.
+                                                           [00:00|%   1|+  36|-   0]: release test-async-local-storage-http-multiclien...
+Running 656 mutated tests for parallel/test-async-local-storage-http-multiclients...
+                                                                              [00:00|%   1|+  36|-   0]: release test-async-local-storage-snapshot
+Skip mutated tests for parallel/test-async-local-storage-snapshot, not found props.
+                                                                    [00:00|%   1|+  37|-   0]: release test-buffer-bigint64
+Skip mutated tests for parallel/test-buffer-bigint64, not found props.
+                                                       [00:00|%   1|+  40|-   0]: release test-async-wrap-promise-after-enabled
+Skip mutated tests for parallel/test-async-wrap-promise-after-enabled, not found props.
+                                                                        [00:00|%   1|+  41|-   0]: release test-async-wrap-tlssocket-asyncreset
+Running 366 mutated tests for parallel/test-async-wrap-tlssocket-asyncreset...
+                                                                       [00:00|%   1|+  41|-   0]: release test-async-wrap-trigger-id
+Skip mutated tests for parallel/test-async-wrap-trigger-id, not found props.
+                                                             [00:00|%   1|+  41|-   0]: release test-async-wrap-uncaughtexception
+Skip mutated tests for parallel/test-async-wrap-uncaughtexception, not found props.
+                                                                    [00:00|%   1|+  42|-   0]: release test-async-hooks-vm-gc
+Skip mutated tests for parallel/test-async-hooks-vm-gc, not found props.
+                                                         [00:00|%   1|+  42|-   0]: release test-atomics-wake
+Skip mutated tests for parallel/test-atomics-wake, not found props.
+                                                    [00:00|%   1|+  43|-   0]: release test-buffer-indexof
+Skip mutated tests for parallel/test-buffer-indexof, not found props.
+                                                      [00:00|%   1|+  44|-   0]: release test-buffer-inspect
+Skip mutated tests for parallel/test-buffer-inspect, not found props.
+                                                      [00:00|%   1|+  44|-   0]: release test-benchmark-cli
+Skip mutated tests for parallel/test-benchmark-cli, not found props.
+                                                     [00:00|%   1|+  45|-   0]: release test-blob-buffer-too-large
+Skip mutated tests for parallel/test-blob-buffer-too-large, not found props.
+                                                             [00:00|%   1|+  45|-   0]: release test-blob-createobjecturl
+Skip mutated tests for parallel/test-blob-createobjecturl, not found props.
+                                                            [00:00|%   1|+  46|-   0]: release test-buffer-nopendingdep-map
+Skip mutated tests for parallel/test-buffer-nopendingdep-map, not found props.
+                                                               [00:00|%   1|+  46|-   0]: release test-blocklist
+Skip mutated tests for parallel/test-blocklist, not found props.
+                                                 [00:00|%   1|+  47|-   0]: release test-buffer-over-max-length
+Skip mutated tests for parallel/test-buffer-over-max-length, not found props.
+                                                              [00:00|%   1|+  47|-   0]: release test-broadcastchannel-custom-inspect
+Skip mutated tests for parallel/test-broadcastchannel-custom-inspect, not found props.
+                                                                       [00:00|%   1|+  47|-   0]: release test-btoa-atob
+Skip mutated tests for parallel/test-btoa-atob, not found props.
+                                                 [00:00|%   1|+  47|-   0]: release test-async-local-storage-deep-stack
+Skip mutated tests for parallel/test-async-local-storage-deep-stack, not found props.
+                                                                      [00:00|%   1|+  48|-   0]: release test-buffer-pool-untransferable
+Skip mutated tests for parallel/test-buffer-pool-untransferable, not found props.
+                                                                  [00:00|%   1|+  49|-   0]: release test-buffer-read
+Skip mutated tests for parallel/test-buffer-read, not found props.
+                                                   [00:00|%   1|+  50|-   0]: release test-buffer-readdouble
+Skip mutated tests for parallel/test-buffer-readdouble, not found props.
+                                                         [00:00|%   1|+  51|-   0]: release test-buffer-readint
+Skip mutated tests for parallel/test-buffer-readint, not found props.
+                                                      [00:00|%   1|+  52|-   0]: release test-buffer-safe-unsafe
+Skip mutated tests for parallel/test-buffer-safe-unsafe, not found props.
+                                                          [00:00|%   1|+  52|-   0]: release test-async-wrap-pop-id-during-load
+Skip mutated tests for parallel/test-async-wrap-pop-id-during-load, not found props.
+                                                                     [00:00|%   1|+  52|-   0]: release test-buffer-compare-offset
+Skip mutated tests for parallel/test-buffer-compare-offset, not found props.
+                                                             [00:00|%   1|+  53|-   0]: release test-buffer-constants
+Skip mutated tests for parallel/test-buffer-constants, not found props.
+                                                        [00:00|%   1|+  54|-   0]: release test-buffer-constructor-deprecation-erro...
+Skip mutated tests for parallel/test-buffer-constructor-deprecation-error, not found props.
+                                                                              [00:00|%   1|+  55|-   0]: release test-buffer-slow
+Skip mutated tests for parallel/test-buffer-slow, not found props.
+                                                   [00:00|%   1|+  56|-   0]: release test-buffer-copy
+Skip mutated tests for parallel/test-buffer-copy, not found props.
+                                                   [00:00|%   1|+  58|-   0]: release test-buffer-fakes
+Skip mutated tests for parallel/test-buffer-fakes, not found props.
+                                                    [00:00|%   1|+  59|-   0]: release test-buffer-tostring-range
+Skip mutated tests for parallel/test-buffer-tostring-range, not found props.
+                                                             [00:00|%   1|+  60|-   0]: release test-buffer-tostring-rangeerror
+Skip mutated tests for parallel/test-buffer-tostring-rangeerror, not found props.
+                                                                  [00:00|%   1|+  61|-   0]: release test-buffer-write
+Skip mutated tests for parallel/test-buffer-write, not found props.
+                                                    [00:00|%   1|+  62|-   0]: release test-buffer-inheritance
+Skip mutated tests for parallel/test-buffer-inheritance, not found props.
+                                                          [00:00|%   1|+  63|-   0]: release test-beforeexit-event-exit
+Skip mutated tests for parallel/test-beforeexit-event-exit, not found props.
+                                                             [00:00|%   1|+  64|-   0]: release test-buffer-isencoding
+Skip mutated tests for parallel/test-buffer-isencoding, not found props.
+                                                         [00:00|%   1|+  65|-   0]: release test-buffer-writeuint
+Skip mutated tests for parallel/test-buffer-writeuint, not found props.
+                                                        [00:00|%   1|+  66|-   0]: release test-buffer-new
+Skip mutated tests for parallel/test-buffer-new, not found props.
+                                                  [00:00|%   1|+  67|-   0]: release test-buffer-no-negative-allocation
+Skip mutated tests for parallel/test-buffer-no-negative-allocation, not found props.
+                                                                     [00:00|%   1|+  68|-   0]: release test-buffer-zero-fill-reset
+Skip mutated tests for parallel/test-buffer-zero-fill-reset, not found props.
+                                                              [00:00|%   1|+  69|-   0]: release test-buffer-of-no-deprecation
+Skip mutated tests for parallel/test-buffer-of-no-deprecation, not found props.
+                                                                [00:00|%   2|+  70|-   0]: release test-child-process-advanced-serializatio...
+Skip mutated tests for parallel/test-child-process-advanced-serialization, not found props.
+                                                                              [00:00|%   2|+  73|-   0]: release test-buffer-pending-deprecation
+Skip mutated tests for parallel/test-buffer-pending-deprecation, not found props.
+                                                                  [00:00|%   2|+  75|-   0]: release test-child-process-default-options
+Skip mutated tests for parallel/test-child-process-default-options, not found props.
+                                                                     [00:00|%   2|+  76|-   0]: release test-buffer-prototype-inspect
+Skip mutated tests for parallel/test-buffer-prototype-inspect, not found props.
+                                                                [00:00|%   2|+  76|-   0]: release test-buffer-ascii
+Skip mutated tests for parallel/test-buffer-ascii, not found props.
+                                                    [00:00|%   2|+  77|-   0]: release test-child-process-detached
+Skip mutated tests for parallel/test-child-process-detached, not found props.
+                                                              [00:00|%   2|+  77|-   0]: release test-buffer-readfloat
+Skip mutated tests for parallel/test-buffer-readfloat, not found props.
+                                                        [00:00|%   2|+  79|-   0]: release test-child-process-double-pipe
+Skip mutated tests for parallel/test-child-process-double-pipe, not found props.
+                                                                 [00:00|%   2|+  81|-   0]: release test-child-process-exec-abortcontroller-...
+Skip mutated tests for parallel/test-child-process-exec-abortcontroller-promisified, not found props.
+                                                                              [00:00|%   2|+  82|-   0]: release test-child-process-exec-any-shells-windo...
+Skip mutated tests for parallel/test-child-process-exec-any-shells-windows, not found props.
+                                                                              [00:00|%   2|+  84|-   0]: release test-child-process-exec-encoding
+Skip mutated tests for parallel/test-child-process-exec-encoding, not found props.
+                                                                   [00:00|%   2|+  85|-   0]: release test-child-process-exec-env
+Skip mutated tests for parallel/test-child-process-exec-env, not found props.
+                                                              [00:00|%   2|+  85|-   0]: release test-buffer-constructor-outside-node-mod...
+Skip mutated tests for parallel/test-buffer-constructor-outside-node-modules, not found props.
+                                                                              [00:00|%   2|+  86|-   0]: release test-buffer-swap
+Skip mutated tests for parallel/test-buffer-swap, not found props.
+                                                   [00:00|%   2|+  87|-   0]: release test-child-process-exec-maxbuf
+Running 360 mutated tests for parallel/test-child-process-exec-maxbuf...
+                                                                 [00:00|%   2|+  87|-   0]: release test-buffer-tostring
+Skip mutated tests for parallel/test-buffer-tostring, not found props.
+                                                       [00:00|%   2|+  89|-   0]: release test-buffer-includes
+Skip mutated tests for parallel/test-buffer-includes, not found props.
+                                                       [00:00|%   2|+  90|-   0]: release test-child-process-exec-timeout-expire
+Skip mutated tests for parallel/test-child-process-exec-timeout-expire, not found props.
+                                                                         [00:00|%   2|+  90|-   0]: release test-bash-completion
+Skip mutated tests for parallel/test-bash-completion, not found props.
+                                                       [00:00|%   2|+  91|-   0]: release test-buffer-writedouble
+Skip mutated tests for parallel/test-buffer-writedouble, not found props.
+                                                          [00:00|%   2|+  92|-   0]: release test-child-process-exec-timeout-not-expi...
+Skip mutated tests for parallel/test-child-process-exec-timeout-not-expired, not found props.
+                                                                              [00:00|%   2|+  94|-   0]: release test-buffer-isutf8
+Skip mutated tests for parallel/test-buffer-isutf8, not found props.
+                                                     [00:00|%   2|+  96|-   0]: release test-buffer-zero-fill
+Skip mutated tests for parallel/test-buffer-zero-fill, not found props.
+                                                        [00:00|%   2|+  97|-   0]: release test-buffer-zero-fill-cli
+Skip mutated tests for parallel/test-buffer-zero-fill-cli, not found props.
+                                                            [00:00|%   2|+  98|-   0]: release test-blob-file-backed
+Skip mutated tests for parallel/test-blob-file-backed, not found props.
+                                                        [00:00|%   2|+  99|-   0]: release test-child-process-flush-stdio
+Skip mutated tests for parallel/test-child-process-flush-stdio, not found props.
+                                                                 [00:00|%   2|+  99|-   0]: release test-blocklist-clone
+Skip mutated tests for parallel/test-blocklist-clone, not found props.
+                                                       [00:00|%   2|+ 100|-   0]: release test-child-process-fork
+Skip mutated tests for parallel/test-child-process-fork, not found props.
+                                                          [00:00|%   2|+ 101|-   0]: release test-child-process-fork-abort-signal
+Skip mutated tests for parallel/test-child-process-fork-abort-signal, not found props.
+                                                                       [00:00|%   2|+ 102|-   0]: release test-child-process-fork-and-spawn
+Skip mutated tests for parallel/test-child-process-fork-and-spawn, not found props.
+                                                                    [00:00|%   2|+ 103|-   0]: release test-child-process-fork-args
+Skip mutated tests for parallel/test-child-process-fork-args, not found props.
+                                                               [00:00|%   2|+ 104|-   0]: release test-async-hooks-promise-triggerid
+Skip mutated tests for parallel/test-async-hooks-promise-triggerid, not found props.
+                                                                     [00:00|%   3|+ 106|-   0]: release test-child-process-fork-detached
+Skip mutated tests for parallel/test-child-process-fork-detached, not found props.
+                                                                   [00:00|%   3|+ 108|-   0]: release test-async-wrap-constructor
+Skip mutated tests for parallel/test-async-wrap-constructor, not found props.
+                                                              [00:00|%   3|+ 109|-   0]: release test-buffer-bytelength
+Skip mutated tests for parallel/test-buffer-bytelength, not found props.
+                                                         [00:00|%   3|+ 110|-   0]: release test-child-process-fork-getconnections
+Running 374 mutated tests for parallel/test-child-process-fork-getconnections...
+                                                                         [00:00|%   3|+ 110|-   0]: release test-buffer-set-inspect-max-bytes
+Skip mutated tests for parallel/test-buffer-set-inspect-max-bytes, not found props.
+                                                                    [00:00|%   3|+ 110|-   0]: release test-child-process-exec-cwd
+Skip mutated tests for parallel/test-child-process-exec-cwd, not found props.
+                                                              [00:00|%   3|+ 111|-   0]: release test-buffer-concat
+Skip mutated tests for parallel/test-buffer-concat, not found props.
+                                                     [00:00|%   3|+ 112|-   0]: release test-child-process-fork-net-server
+Skip mutated tests for parallel/test-child-process-fork-net-server, not found props.
+                                                                     [00:00|%   3|+ 113|-   0]: release test-buffer-constructor-node-modules-pat...
+Skip mutated tests for parallel/test-buffer-constructor-node-modules-paths, not found props.
+                                                                              [00:00|%   3|+ 114|-   0]: release test-child-process-fork-no-shell
+Skip mutated tests for parallel/test-child-process-fork-no-shell, not found props.
+                                                                   [00:00|%   3|+ 115|-   0]: release test-buffer-tojson
+Skip mutated tests for parallel/test-buffer-tojson, not found props.
+                                                     [00:00|%   3|+ 115|-   0]: release test-child-process-exec-std-encoding
+Skip mutated tests for parallel/test-child-process-exec-std-encoding, not found props.
+                                                                       [00:00|%   3|+ 116|-   0]: release test-buffer-from
+Skip mutated tests for parallel/test-buffer-from, not found props.
+                                                   [00:00|%   3|+ 117|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-1, not found props.
+                                                                              [00:00|%   3|+ 119|-   0]: release test-child-process-fork-timeout-kill-sig...
+Skip mutated tests for parallel/test-child-process-fork-timeout-kill-signal, not found props.
+                                                                              [00:00|%   3|+ 119|-   0]: release test-buffer-writefloat
+Skip mutated tests for parallel/test-buffer-writefloat, not found props.
+                                                         [00:00|%   3|+ 120|-   0]: release test-buffer-writeint
+Skip mutated tests for parallel/test-buffer-writeint, not found props.
+                                                       [00:00|%   3|+ 120|-   0]: release test-child-process-execFile-promisified-...
+Skip mutated tests for parallel/test-child-process-execFile-promisified-abortController, not found props.
+                                                                              [00:00|%   3|+ 121|-   0]: release test-buffer-iterator
+Skip mutated tests for parallel/test-buffer-iterator, not found props.
+                                                       [00:00|%   3|+ 122|-   0]: release test-child-process-internal
+Skip mutated tests for parallel/test-child-process-internal, not found props.
+                                                              [00:00|%   3|+ 123|-   0]: release test-child-process-ipc
+Skip mutated tests for parallel/test-child-process-ipc, not found props.
+                                                         [00:00|%   3|+ 124|-   0]: release test-child-process-ipc-next-tick
+Skip mutated tests for parallel/test-child-process-ipc-next-tick, not found props.
+                                                                   [00:00|%   3|+ 127|-   0]: release test-child-process-pipe-dataflow
+Skip mutated tests for parallel/test-child-process-pipe-dataflow, not found props.
+                                                                   [00:00|%   3|+ 128|-   0]: release test-child-process-advanced-serializatio...
+Running 138 mutated tests for parallel/test-child-process-advanced-serialization-largebuffer...
+                                                                              [00:00|%   3|+ 128|-   0]: release test-buffer-parent-property
+Skip mutated tests for parallel/test-buffer-parent-property, not found props.
+                                                              [00:00|%   3|+ 128|-   0]: release test-child-process-constructor
+Skip mutated tests for parallel/test-child-process-constructor, not found props.
+                                                                 [00:00|%   3|+ 128|-   0]: release test-child-process-cwd
+Skip mutated tests for parallel/test-child-process-cwd, not found props.
+                                                         [00:00|%   3|+ 129|-   0]: release test-child-process-prototype-tampering
+Running 460 mutated tests for parallel/test-child-process-prototype-tampering...
+                                                                         [00:00|%   3|+ 129|-   0]: release test-child-process-destroy
+Skip mutated tests for parallel/test-child-process-destroy, not found props.
+                                                             [00:00|%   3|+ 129|-   0]: release test-child-process-fork-close
+Skip mutated tests for parallel/test-child-process-fork-close, not found props.
+                                                                [00:00|%   3|+ 130|-   0]: release test-child-process-fork-closed-channel-s...
+Skip mutated tests for parallel/test-child-process-fork-closed-channel-segfault, not found props.
+                                                                              [00:00|%   3|+ 130|-   0]: release test-buffer-badhex
+Skip mutated tests for parallel/test-buffer-badhex, not found props.
+                                                     [00:00|%   3|+ 130|-   0]: release test-child-process-fork-dgram
+Skip mutated tests for parallel/test-child-process-fork-dgram, not found props.
+                                                                [00:00|%   3|+ 130|-   0]: release test-child-process-disconnect
+Skip mutated tests for parallel/test-child-process-disconnect, not found props.
+                                                                [00:00|%   3|+ 130|-   0]: release test-child-process-fork-exec-argv
+Skip mutated tests for parallel/test-child-process-fork-exec-argv, not found props.
+                                                                    [00:00|%   3|+ 130|-   0]: release test-buffer-readuint
+Skip mutated tests for parallel/test-buffer-readuint, not found props.
+                                                       [00:00|%   3|+ 131|-   0]: release test-child-process-env
+Skip mutated tests for parallel/test-child-process-env, not found props.
+                                                         [00:00|%   3|+ 131|-   0]: release test-buffer-compare
+Skip mutated tests for parallel/test-buffer-compare, not found props.
+                                                      [00:00|%   3|+ 132|-   0]: release test-child-process-send-cb
+Skip mutated tests for parallel/test-child-process-send-cb, not found props.
+                                                             [00:00|%   3|+ 133|-   0]: release test-buffer-sharedarraybuffer
+Skip mutated tests for parallel/test-buffer-sharedarraybuffer, not found props.
+                                                                [00:00|%   3|+ 133|-   0]: release test-buffer-slice
+Skip mutated tests for parallel/test-buffer-slice, not found props.
+                                                    [00:00|%   3|+ 133|-   0]: release test-child-process-fork-net-socket
+Skip mutated tests for parallel/test-child-process-fork-net-socket, not found props.
+                                                                     [00:00|%   3|+ 134|-   0]: release test-child-process-send-returns-boolean
+Skip mutated tests for parallel/test-child-process-send-returns-boolean, not found props.
+                                                                          [00:00|%   3|+ 134|-   0]: release test-buffer-equals
+Skip mutated tests for parallel/test-buffer-equals, not found props.
+                                                     [00:00|%   3|+ 134|-   0]: release test-buffer-failed-alloc-typed-arrays
+Skip mutated tests for parallel/test-buffer-failed-alloc-typed-arrays, not found props.
+                                                                        [00:00|%   3|+ 135|-   0]: release test-child-process-fork-ref
+Skip mutated tests for parallel/test-child-process-fork-ref, not found props.
+                                                              [00:00|%   3|+ 135|-   0]: release test-child-process-fork-ref2
+Skip mutated tests for parallel/test-child-process-fork-ref2, not found props.
+                                                               [00:00|%   3|+ 136|-   0]: release test-child-process-exec-stdout-stderr-da...
+Skip mutated tests for parallel/test-child-process-exec-stdout-stderr-data-string, not found props.
+                                                                              [00:00|%   3|+ 137|-   0]: release test-child-process-server-close
+Running 228 mutated tests for parallel/test-child-process-server-close...
+                                                                  [00:00|%   3|+ 137|-   0]: release test-child-process-fork-stdio-string-var...
+Skip mutated tests for parallel/test-child-process-fork-stdio-string-variant, not found props.
+                                                                              [00:00|%   3|+ 138|-   0]: release test-child-process-set-blocking
+Skip mutated tests for parallel/test-child-process-set-blocking, not found props.
+                                                                  [00:00|%   3|+ 138|-   0]: release test-buffer-isascii
+Skip mutated tests for parallel/test-buffer-isascii, not found props.
+                                                      [00:00|%   3|+ 138|-   0]: release test-child-process-fork-url
+Skip mutated tests for parallel/test-child-process-fork-url, not found props.
+                                                              [00:00|%   4|+ 139|-   0]: release test-child-process-silent
+Running 194 mutated tests for parallel/test-child-process-silent...
+                                                            [00:00|%   4|+ 139|-   0]: release test-child-process-fork3
+Skip mutated tests for parallel/test-child-process-fork3, not found props.
+                                                           [00:00|%   4|+ 139|-   0]: release test-child-process-execfile-maxbuf
+Running 274 mutated tests for parallel/test-child-process-execfile-maxbuf...
+                                                                     [00:00|%   4|+ 139|-   0]: release test-child-process-execfilesync-maxbuf
+Skip mutated tests for parallel/test-child-process-execfilesync-maxbuf, not found props.
+                                                                         [00:00|%   4|+ 140|-   0]: release test-child-process-spawn-args
+Skip mutated tests for parallel/test-child-process-spawn-args, not found props.
+                                                                [00:00|%   4|+ 141|-   0]: release test-child-process-spawn-argv0
+Skip mutated tests for parallel/test-child-process-spawn-argv0, not found props.
+                                                                 [00:00|%   4|+ 141|-   0]: release test-child-process-kill
+Skip mutated tests for parallel/test-child-process-kill, not found props.
+                                                          [00:00|%   4|+ 141|-   0]: release test-c-ares
+Skip mutated tests for parallel/test-c-ares, not found props.
+                                              [00:00|%   4|+ 141|-   0]: release test-child-process-no-deprecation
+Skip mutated tests for parallel/test-child-process-no-deprecation, not found props.
+                                                                    [00:00|%   4|+ 142|-   0]: release test-child-process-can-write-to-stdout
+Skip mutated tests for parallel/test-child-process-can-write-to-stdout, not found props.
+                                                                         [00:00|%   4|+ 142|-   0]: release test-child-process-promisified
+Running 232 mutated tests for parallel/test-child-process-promisified...
+                                                                 [00:00|%   4|+ 145|-   0]: release test-child-process-spawn-shell
+Running 222 mutated tests for parallel/test-child-process-spawn-shell...
+                                                                 [00:00|%   4|+ 147|-   0]: release test-child-process-reject-null-bytes
+Skip mutated tests for parallel/test-child-process-reject-null-bytes, not found props.
+                                                                       [00:00|%   4|+ 152|-   0]: release test-child-process-spawnsync-maxbuf
+Running 116 mutated tests for parallel/test-child-process-spawnsync-maxbuf...
+                                                                      [00:00|%   4|+ 152|-   0]: release test-child-process-send-after-close
+Skip mutated tests for parallel/test-child-process-send-after-close, not found props.
+                                                                      [00:00|%   4|+ 154|-   0]: release test-child-process-fork-net
+Running 362 mutated tests for parallel/test-child-process-fork-net...
+                                                              [00:00|%   4|+ 154|-   0]: release test-child-process-send-keep-open
+Running 226 mutated tests for parallel/test-child-process-send-keep-open...
+                                                                    [00:00|%   4|+ 158|-   0]: release test-child-process-stdio-big-write-end
+Running 234 mutated tests for parallel/test-child-process-stdio-big-write-end...
+                                                                         [00:00|%   4|+ 161|-   0]: release test-child-process-send-type-error
+Skip mutated tests for parallel/test-child-process-send-type-error, not found props.
+                                                                     [00:00|%   4|+ 162|-   0]: release test-child-process-send-utf8
+Skip mutated tests for parallel/test-child-process-send-utf8, not found props.
+                                                               [00:00|%   4|+ 163|-   0]: release test-child-process-fork-stdio
+Skip mutated tests for parallel/test-child-process-fork-stdio, not found props.
+                                                                [00:00|%   4|+ 164|-   0]: release test-child-process-exec-timeout-kill
+Skip mutated tests for parallel/test-child-process-exec-timeout-kill, not found props.
+                                                                       [00:00|%   4|+ 168|-   0]: release test-cli-eval
+Running 786 mutated tests for parallel/test-cli-eval...
+                                                [00:00|%   4|+ 170|-   0]: release test-child-process-execsync-maxbuf
+Skip mutated tests for parallel/test-child-process-execsync-maxbuf, not found props.
+                                                                     [00:00|%   4|+ 171|-   0]: release test-cli-options-negation
+Running 96 mutated tests for parallel/test-cli-options-negation...
+                                                            [00:00|%   4|+ 173|-   0]: release test-cli-permission-deny-fs
+Running 98 mutated tests for parallel/test-cli-permission-deny-fs...
+                                                              [00:00|%   5|+ 174|-   0]: release test-cli-permission-multiple-allow
+Running 98 mutated tests for parallel/test-cli-permission-multiple-allow...
+                                                                     [00:00|%   5|+ 175|-   0]: release test-cli-syntax-eval
+Running 212 mutated tests for parallel/test-cli-syntax-eval...
+                                                       [00:00|%   5|+ 175|-   0]: release test-child-process-spawn-event
+Skip mutated tests for parallel/test-child-process-spawn-event, not found props.
+                                                                 [00:00|%   5|+ 175|-   0]: release test-buffer-arraybuffer
+Skip mutated tests for parallel/test-buffer-arraybuffer, not found props.
+                                                          [00:00|%   5|+ 175|-   0]: release test-child-process-spawn-timeout-kill-si...
+Skip mutated tests for parallel/test-child-process-spawn-timeout-kill-signal, not found props.
+                                                                              [00:00|%   5|+ 175|-   0]: release test-child-process-spawn-typeerror
+Running 676 mutated tests for parallel/test-child-process-spawn-typeerror...
+                                                                     [00:00|%   5|+ 176|-   0]: release test-child-process-spawnsync
+Skip mutated tests for parallel/test-child-process-spawnsync, not found props.
+                                                               [00:00|%   5|+ 176|-   0]: release test-child-process-spawnsync-args
+Skip mutated tests for parallel/test-child-process-spawnsync-args, not found props.
+                                                                    [00:00|%   5|+ 176|-   0]: release test-child-process-spawnsync-env
+Skip mutated tests for parallel/test-child-process-spawnsync-env, not found props.
+                                                                   [00:00|%   5|+ 176|-   0]: release test-child-process-spawnsync-input
+Running 116 mutated tests for parallel/test-child-process-spawnsync-input...
+                                                                     [00:00|%   5|+ 176|-   0]: release test-child-process-fork-exec-path
+Skip mutated tests for parallel/test-child-process-fork-exec-path, not found props.
+                                                                    [00:00|%   5|+ 177|-   0]: release test-child-process-spawnsync-timeout
+Skip mutated tests for parallel/test-child-process-spawnsync-timeout, not found props.
+                                                                       [00:00|%   5|+ 178|-   0]: release test-client-request-destroy
+Running 132 mutated tests for parallel/test-client-request-destroy...
+                                                              [00:00|%   5|+ 178|-   0]: release test-child-process-stdin-ipc
+Running 136 mutated tests for parallel/test-child-process-stdin-ipc...
+                                                               [00:00|%   5|+ 178|-   0]: release test-child-process-stdio
+Running 206 mutated tests for parallel/test-child-process-stdio...
+                                                           [00:00|%   5|+ 178|-   0]: release test-child-process-exec-error
+Skip mutated tests for parallel/test-child-process-exec-error, not found props.
+                                                                [00:00|%   5|+ 179|-   0]: release test-child-process-stdio-merge-stdouts-i...
+Running 206 mutated tests for parallel/test-child-process-stdio-merge-stdouts-into-cat...
+                                                                              [00:00|%   5|+ 179|-   0]: release test-child-process-stdio-overlapped
+Running 204 mutated tests for parallel/test-child-process-stdio-overlapped...
+                                                                      [00:00|%   5|+ 180|-   0]: release test-child-process-stdio-reuse-readable-...
+Running 202 mutated tests for parallel/test-child-process-stdio-reuse-readable-stdio...
+                                                                              [00:00|%   5|+ 181|-   0]: release test-child-process-stdout-flush
+Running 186 mutated tests for parallel/test-child-process-stdout-flush...
+                                                                  [00:00|%   5|+ 182|-   0]: release test-child-process-stdout-flush-exit
+Running 458 mutated tests for parallel/test-child-process-stdout-flush-exit...
+                                                                       [00:00|%   5|+ 183|-   0]: release test-child-process-stdout-ipc
+Running 138 mutated tests for parallel/test-child-process-stdout-ipc...
+                                                                [00:00|%   5|+ 183|-   0]: release test-child-process-uid-gid
+Skip mutated tests for parallel/test-child-process-uid-gid, not found props.
+                                                             [00:00|%   5|+ 183|-   0]: release test-cli-bad-options
+Running 114 mutated tests for parallel/test-cli-bad-options...
+                                                       [00:00|%   5|+ 183|-   0]: release test-child-process-execfile
+Skip mutated tests for parallel/test-child-process-execfile, not found props.
+                                                              [00:00|%   5|+ 183|-   0]: release test-cli-eval-event
+Running 170 mutated tests for parallel/test-cli-eval-event...
+                                                      [00:00|%   5|+ 183|-   0]: release test-cli-node-options
+Running 836 mutated tests for parallel/test-cli-node-options...
+                                                        [00:00|%   5|+ 184|-   0]: release test-child-process-exit-code
+Skip mutated tests for parallel/test-child-process-exit-code, not found props.
+                                                               [00:00|%   5|+ 184|-   0]: release test-cli-options-precedence
+Running 114 mutated tests for parallel/test-cli-options-precedence...
+                                                              [00:00|%   5|+ 185|-   0]: release test-child-process-spawn-controller
+Skip mutated tests for parallel/test-child-process-spawn-controller, not found props.
+                                                                      [00:00|%   5|+ 185|-   0]: release test-child-process-spawn-error
+Skip mutated tests for parallel/test-child-process-spawn-error, not found props.
+                                                                 [00:00|%   5|+ 188|-   0]: release test-cli-syntax-piped-bad
+Running 114 mutated tests for parallel/test-cli-syntax-piped-bad...
+                                                            [00:00|%   5|+ 192|-   0]: release test-cli-syntax-piped-good
+Running 114 mutated tests for parallel/test-cli-syntax-piped-good...
+                                                             [00:00|%   5|+ 192|-   0]: release test-child-process-spawnsync-validation-...
+Skip mutated tests for parallel/test-child-process-spawnsync-validation-errors, not found props.
+                                                                              [00:00|%   5|+ 192|-   0]: release test-child-process-stdin
+Skip mutated tests for parallel/test-child-process-stdin, not found props.
+                                                           [00:00|%   5|+ 192|-   0]: release test-child-process-stdio-inherit
+Running 192 mutated tests for parallel/test-child-process-stdio-inherit...
+                                                                   [00:00|%   5|+ 192|-   0]: release test-cluster-advanced-serialization
+Running 148 mutated tests for parallel/test-cluster-advanced-serialization...
+                                                                      [00:00|%   5|+ 192|-   0]: release test-cluster-basic
+Running 180 mutated tests for parallel/test-cluster-basic...
+                                                     [00:00|%   5|+ 192|-   0]: release test-cluster-bind-privileged-port
+Running 96 mutated tests for parallel/test-cluster-bind-privileged-port...
+                                                                    [00:00|%   5|+ 192|-   0]: release test-cluster-bind-twice
+Running 204 mutated tests for parallel/test-cluster-bind-twice...
+                                                          [00:00|%   5|+ 192|-   0]: release test-cluster-call-and-destroy
+Running 148 mutated tests for parallel/test-cluster-call-and-destroy...
+                                                                [00:00|%   5|+ 194|-   0]: release test-cluster-child-index-dgram
+Running 200 mutated tests for parallel/test-cluster-child-index-dgram...
+                                                                 [00:00|%   5|+ 195|-   0]: release test-cluster-child-index-net
+Running 226 mutated tests for parallel/test-cluster-child-index-net...
+                                                               [00:00|%   5|+ 197|-   0]: release test-cluster-disconnect-race
+Running 204 mutated tests for parallel/test-cluster-disconnect-race...
+                                                               [00:00|%   5|+ 197|-   0]: release test-cluster-cwd
+Running 164 mutated tests for parallel/test-cluster-cwd...
+                                                   [00:00|%   5|+ 197|-   0]: release test-cluster-dgram-1
+Running 224 mutated tests for parallel/test-cluster-dgram-1...
+                                                       [00:00|%   5|+ 197|-   0]: release test-cluster-dgram-2
+Running 248 mutated tests for parallel/test-cluster-dgram-2...
+                                                       [00:00|%   5|+ 197|-   0]: release test-cluster-dgram-ipv6only
+Running 96 mutated tests for parallel/test-cluster-dgram-ipv6only...
+                                                              [00:00|%   5|+ 197|-   0]: release test-cluster-dgram-reuse
+Running 174 mutated tests for parallel/test-cluster-dgram-reuse...
+                                                           [00:00|%   5|+ 197|-   0]: release test-cluster-disconnect
+Running 542 mutated tests for parallel/test-cluster-disconnect...
+                                                          [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-before-exit
+Running 146 mutated tests for parallel/test-cluster-disconnect-before-exit...
+                                                                      [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-exitedAfterDisco...
+Running 150 mutated tests for parallel/test-cluster-disconnect-exitedAfterDisconnect-race...
+                                                                              [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-idle-worker
+Running 158 mutated tests for parallel/test-cluster-disconnect-idle-worker...
+                                                                      [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-leak
+Running 176 mutated tests for parallel/test-cluster-disconnect-leak...
+                                                               [00:00|%   5|+ 199|-   0]: release test-cluster-concurrent-disconnect
+Running 752 mutated tests for parallel/test-cluster-concurrent-disconnect...
+                                                                     [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-unshared-tcp
+Running 194 mutated tests for parallel/test-cluster-disconnect-unshared-tcp...
+                                                                       [00:00|%   5|+ 199|-   0]: release test-cluster-disconnect-unshared-udp
+Running 174 mutated tests for parallel/test-cluster-disconnect-unshared-udp...
+                                                                       [01:59|%   5|+ 199|-   0]: Done
+
+All tests passed.
+Total execution time: 2 mins 22 secs

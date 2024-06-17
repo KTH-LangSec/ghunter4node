@@ -1,0 +1,2479 @@
+[00:00|%   0|+   0|-   0]: release test-aborted-util
+Skip mutated tests for parallel/test-aborted-util, not found props.
+                                                    [00:00|%   0|+   1|-   0]: release test-abortsignal-any
+Skip mutated tests for parallel/test-abortsignal-any, not found props.
+                                                       [00:00|%   0|+   2|-   0]: release test-abortsignal-cloneable
+Skip mutated tests for parallel/test-abortsignal-cloneable, not found props.
+                                                             [00:00|%   0|+   3|-   0]: release test-arm-math-illegal-instruction
+Skip mutated tests for parallel/test-arm-math-illegal-instruction, not found props.
+                                                                    [00:00|%   0|+   4|-   0]: release test-assert
+Skip mutated tests for parallel/test-assert, not found props.
+                                              [00:00|%   0|+   5|-   0]: release test-assert-async
+Skip mutated tests for parallel/test-assert-async, not found props.
+                                                    [00:00|%   0|+   6|-   0]: release test-assert-builtins-not-read-from-files...
+Skip mutated tests for parallel/test-assert-builtins-not-read-from-filesystem, not found props.
+                                                                              [00:00|%   0|+   7|-   0]: release test-assert-calltracker-calls
+Skip mutated tests for parallel/test-assert-calltracker-calls, not found props.
+                                                                [00:00|%   0|+   7|-   0]: release test-assert-calltracker-getCalls
+Skip mutated tests for parallel/test-assert-calltracker-getCalls, not found props.
+                                                                   [00:00|%   0|+   8|-   0]: release test-assert-calltracker-report
+Skip mutated tests for parallel/test-assert-calltracker-report, not found props.
+                                                                 [00:00|%   0|+   9|-   0]: release test-assert-deep
+Skip mutated tests for parallel/test-assert-deep, not found props.
+                                                   [00:00|%   0|+   9|-   0]: release test-assert-checktag
+Skip mutated tests for parallel/test-assert-checktag, not found props.
+                                                       [00:00|%   0|+  10|-   0]: release test-assert-fail
+Skip mutated tests for parallel/test-assert-fail, not found props.
+                                                   [00:00|%   0|+  11|-   0]: release test-assert-first-line
+Skip mutated tests for parallel/test-assert-first-line, not found props.
+                                                         [00:00|%   0|+  13|-   0]: release test-assert-typedarray-deepequal
+Skip mutated tests for parallel/test-assert-typedarray-deepequal, not found props.
+                                                                   [00:00|%   0|+  14|-   0]: release test-assert-calltracker-verify
+Skip mutated tests for parallel/test-assert-calltracker-verify, not found props.
+                                                                 [00:00|%   0|+  14|-   0]: release test-assert-if-error
+Skip mutated tests for parallel/test-assert-if-error, not found props.
+                                                       [00:00|%   0|+  15|-   0]: release test-async-hooks-constructor
+Skip mutated tests for parallel/test-async-hooks-constructor, not found props.
+                                                               [00:00|%   0|+  15|-   0]: release test-async-hooks-async-await
+Skip mutated tests for parallel/test-async-hooks-async-await, not found props.
+                                                               [00:00|%   0|+  17|-   0]: release test-async-hooks-destroy-on-gc
+Skip mutated tests for parallel/test-async-hooks-destroy-on-gc, not found props.
+                                                                 [00:00|%   0|+  18|-   0]: release test-async-hooks-disable-gc-tracking
+Skip mutated tests for parallel/test-async-hooks-disable-gc-tracking, not found props.
+                                                                       [00:00|%   0|+  18|-   0]: release test-assert-fail-deprecation
+Skip mutated tests for parallel/test-assert-fail-deprecation, not found props.
+                                                               [00:00|%   0|+  19|-   0]: release test-async-hooks-asyncresource-construct...
+Skip mutated tests for parallel/test-async-hooks-asyncresource-constructor, not found props.
+                                                                              [00:00|%   0|+  19|-   0]: release test-async-hooks-correctly-switch-promis...
+Skip mutated tests for parallel/test-async-hooks-correctly-switch-promise-hook, not found props.
+                                                                              [00:00|%   0|+  20|-   0]: release test-async-hooks-enable-recursive
+Skip mutated tests for parallel/test-async-hooks-enable-recursive, not found props.
+                                                                    [00:00|%   0|+  21|-   0]: release test-async-hooks-close-during-destroy
+Skip mutated tests for parallel/test-async-hooks-close-during-destroy, not found props.
+                                                                        [00:00|%   0|+  22|-   0]: release test-async-hooks-enable-before-promise-r...
+Skip mutated tests for parallel/test-async-hooks-enable-before-promise-resolve, not found props.
+                                                                              [00:00|%   0|+  23|-   0]: release test-async-hooks-prevent-double-destroy
+Skip mutated tests for parallel/test-async-hooks-prevent-double-destroy, not found props.
+                                                                          [00:00|%   0|+  24|-   0]: release test-async-hooks-promise
+Skip mutated tests for parallel/test-async-hooks-promise, not found props.
+                                                           [00:00|%   0|+  25|-   0]: release test-async-hooks-promise-triggerid
+Skip mutated tests for parallel/test-async-hooks-promise-triggerid, not found props.
+                                                                     [00:00|%   0|+  26|-   0]: release test-async-hooks-execution-async-resourc...
+Skip mutated tests for parallel/test-async-hooks-execution-async-resource, not found props.
+                                                                              [00:00|%   0|+  27|-   0]: release test-async-hooks-run-in-async-scope-this...
+Skip mutated tests for parallel/test-async-hooks-run-in-async-scope-this-arg, not found props.
+                                                                              [00:00|%   0|+  29|-   0]: release test-async-hooks-http-parser-destroy
+Running 740 mutated tests for parallel/test-async-hooks-http-parser-destroy...
+                                                                       [00:00|%   0|+  30|-   0]: release test-async-hooks-enable-disable
+Skip mutated tests for parallel/test-async-hooks-enable-disable, not found props.
+                                                                  [00:00|%   0|+  31|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-4, not found props.
+                                                                              [00:00|%   0|+  32|-   0]: release test-async-hooks-promise-enable-disable
+Skip mutated tests for parallel/test-async-hooks-promise-enable-disable, not found props.
+                                                                          [00:00|%   0|+  33|-   0]: release test-async-local-storage-contexts
+Skip mutated tests for parallel/test-async-local-storage-contexts, not found props.
+                                                                    [00:00|%   0|+  34|-   0]: release test-async-hooks-recursive-stack-runInAs...
+Skip mutated tests for parallel/test-async-hooks-recursive-stack-runInAsyncScope, not found props.
+                                                                              [00:00|%   0|+  34|-   0]: release test-assert-strict-exists
+Skip mutated tests for parallel/test-assert-strict-exists, not found props.
+                                                            [00:00|%   0|+  34|-   0]: release test-async-hooks-execution-async-resourc...
+Skip mutated tests for parallel/test-async-hooks-execution-async-resource-await, not found props.
+                                                                              [00:00|%   0|+  34|-   0]: release test-async-hooks-top-level-clearimmediat...
+Skip mutated tests for parallel/test-async-hooks-top-level-clearimmediate, not found props.
+                                                                              [00:00|%   0|+  34|-   0]: release test-async-hooks-vm-gc
+Skip mutated tests for parallel/test-async-hooks-vm-gc, not found props.
+                                                         [00:00|%   1|+  35|-   0]: release test-async-wrap-pop-id-during-load
+Skip mutated tests for parallel/test-async-wrap-pop-id-during-load, not found props.
+                                                                     [00:00|%   1|+  35|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-2, not found props.
+                                                                              [00:00|%   1|+  35|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-3, not found props.
+                                                                              [00:00|%   1|+  35|-   0]: release test-async-hooks-enable-disable-enable
+Skip mutated tests for parallel/test-async-hooks-enable-disable-enable, not found props.
+                                                                         [00:00|%   1|+  36|-   0]: release test-async-wrap-uncaughtexception
+Skip mutated tests for parallel/test-async-wrap-uncaughtexception, not found props.
+                                                                    [00:00|%   1|+  37|-   0]: release test-asyncresource-bind
+Skip mutated tests for parallel/test-asyncresource-bind, not found props.
+                                                          [00:00|%   1|+  38|-   0]: release test-atomics-wake
+Skip mutated tests for parallel/test-atomics-wake, not found props.
+                                                    [00:00|%   1|+  38|-   0]: release test-async-hooks-run-in-async-scope-caug...
+Skip mutated tests for parallel/test-async-hooks-run-in-async-scope-caught-exception, not found props.
+                                                                              [00:00|%   1|+  38|-   0]: release test-async-local-storage-exit-does-not-l...
+Skip mutated tests for parallel/test-async-local-storage-exit-does-not-leak, not found props.
+                                                                              [00:00|%   1|+  39|-   0]: release test-bash-completion
+Skip mutated tests for parallel/test-bash-completion, not found props.
+                                                       [00:00|%   1|+  40|-   0]: release test-beforeexit-event-exit
+Skip mutated tests for parallel/test-beforeexit-event-exit, not found props.
+                                                             [00:00|%   1|+  43|-   0]: release test-async-hooks-fatal-error
+Skip mutated tests for parallel/test-async-hooks-fatal-error, not found props.
+                                                               [00:00|%   1|+  43|-   0]: release test-async-hooks-worker-asyncfn-terminat...
+Skip mutated tests for parallel/test-async-hooks-worker-asyncfn-terminate-1, not found props.
+                                                                              [00:00|%   1|+  44|-   0]: release test-async-wrap-promise-after-enabled
+Skip mutated tests for parallel/test-async-wrap-promise-after-enabled, not found props.
+                                                                        [00:00|%   1|+  46|-   0]: release test-buffer-arraybuffer
+Skip mutated tests for parallel/test-buffer-arraybuffer, not found props.
+                                                          [00:00|%   1|+  46|-   0]: release test-async-wrap-trigger-id
+Skip mutated tests for parallel/test-async-wrap-trigger-id, not found props.
+                                                             [00:00|%   1|+  47|-   0]: release test-buffer-bigint64
+Skip mutated tests for parallel/test-buffer-bigint64, not found props.
+                                                       [00:00|%   1|+  48|-   0]: release test-async-hooks-enable-during-promise
+Skip mutated tests for parallel/test-async-hooks-enable-during-promise, not found props.
+                                                                         [00:00|%   1|+  48|-   0]: release test-async-hooks-disable-during-promise
+Skip mutated tests for parallel/test-async-hooks-disable-during-promise, not found props.
+                                                                          [00:00|%   1|+  48|-   0]: release test-async-local-storage-deep-stack
+Skip mutated tests for parallel/test-async-local-storage-deep-stack, not found props.
+                                                                      [00:00|%   1|+  48|-   0]: release test-bad-unicode
+Skip mutated tests for parallel/test-bad-unicode, not found props.
+                                                   [00:00|%   1|+  49|-   0]: release test-buffer-constructor-deprecation-erro...
+Skip mutated tests for parallel/test-buffer-constructor-deprecation-error, not found props.
+                                                                              [00:00|%   1|+  51|-   0]: release test-buffer-constructor-outside-node-mod...
+Skip mutated tests for parallel/test-buffer-constructor-outside-node-modules, not found props.
+                                                                              [00:00|%   1|+  51|-   0]: release test-async-local-storage-snapshot
+Skip mutated tests for parallel/test-async-local-storage-snapshot, not found props.
+                                                                    [00:00|%   1|+  52|-   0]: release test-buffer-equals
+Skip mutated tests for parallel/test-buffer-equals, not found props.
+                                                     [00:00|%   1|+  53|-   0]: release test-blob-buffer-too-large
+Skip mutated tests for parallel/test-blob-buffer-too-large, not found props.
+                                                             [00:00|%   1|+  54|-   0]: release test-buffer-from
+Skip mutated tests for parallel/test-buffer-from, not found props.
+                                                   [00:00|%   1|+  55|-   0]: release test-blocklist
+Skip mutated tests for parallel/test-blocklist, not found props.
+                                                 [00:00|%   1|+  55|-   0]: release test-blocklist-clone
+Skip mutated tests for parallel/test-blocklist-clone, not found props.
+                                                       [00:00|%   1|+  56|-   0]: release test-buffer-inheritance
+Skip mutated tests for parallel/test-buffer-inheritance, not found props.
+                                                          [00:00|%   1|+  58|-   0]: release test-buffer-isencoding
+Skip mutated tests for parallel/test-buffer-isencoding, not found props.
+                                                         [00:00|%   1|+  59|-   0]: release test-buffer-iterator
+Skip mutated tests for parallel/test-buffer-iterator, not found props.
+                                                       [00:00|%   1|+  60|-   0]: release test-buffer-badhex
+Skip mutated tests for parallel/test-buffer-badhex, not found props.
+                                                     [00:00|%   1|+  61|-   0]: release test-buffer-nopendingdep-map
+Skip mutated tests for parallel/test-buffer-nopendingdep-map, not found props.
+                                                               [00:00|%   1|+  62|-   0]: release test-buffer-compare
+Skip mutated tests for parallel/test-buffer-compare, not found props.
+                                                      [00:00|%   1|+  62|-   0]: release test-buffer-compare-offset
+Skip mutated tests for parallel/test-buffer-compare-offset, not found props.
+                                                             [00:00|%   1|+  63|-   0]: release test-buffer-pool-untransferable
+Skip mutated tests for parallel/test-buffer-pool-untransferable, not found props.
+                                                                  [00:00|%   1|+  64|-   0]: release test-buffer-constants
+Skip mutated tests for parallel/test-buffer-constants, not found props.
+                                                        [00:00|%   1|+  65|-   0]: release test-buffer-readfloat
+Skip mutated tests for parallel/test-buffer-readfloat, not found props.
+                                                        [00:00|%   1|+  67|-   0]: release test-async-local-storage-http-multiclien...
+Running 656 mutated tests for parallel/test-async-local-storage-http-multiclients...
+                                                                              [00:00|%   1|+  68|-   0]: release test-buffer-sharedarraybuffer
+Skip mutated tests for parallel/test-buffer-sharedarraybuffer, not found props.
+                                                                [00:00|%   1|+  68|-   0]: release test-buffer-copy
+Skip mutated tests for parallel/test-buffer-copy, not found props.
+                                                   [00:00|%   1|+  69|-   0]: release test-async-wrap-constructor
+Skip mutated tests for parallel/test-async-wrap-constructor, not found props.
+                                                              [00:00|%   2|+  70|-   0]: release test-buffer-fakes
+Skip mutated tests for parallel/test-buffer-fakes, not found props.
+                                                    [00:00|%   2|+  71|-   0]: release test-buffer-tostring-range
+Skip mutated tests for parallel/test-buffer-tostring-range, not found props.
+                                                             [00:00|%   2|+  72|-   0]: release test-buffer-write
+Skip mutated tests for parallel/test-buffer-write, not found props.
+                                                    [00:00|%   2|+  74|-   0]: release test-buffer-indexof
+Skip mutated tests for parallel/test-buffer-indexof, not found props.
+                                                      [00:00|%   2|+  75|-   0]: release test-buffer-zero-fill-reset
+Skip mutated tests for parallel/test-buffer-zero-fill-reset, not found props.
+                                                              [00:00|%   2|+  76|-   0]: release test-buffer-inspect
+Skip mutated tests for parallel/test-buffer-inspect, not found props.
+                                                      [00:00|%   2|+  77|-   0]: release test-child-process-advanced-serializatio...
+Skip mutated tests for parallel/test-child-process-advanced-serialization-largebuffer, not found props.
+                                                                              [00:00|%   2|+  78|-   0]: release test-buffer-isutf8
+Skip mutated tests for parallel/test-buffer-isutf8, not found props.
+                                                     [00:00|%   2|+  79|-   0]: release test-child-process-cwd
+Skip mutated tests for parallel/test-child-process-cwd, not found props.
+                                                         [00:00|%   2|+  80|-   0]: release test-buffer-no-negative-allocation
+Skip mutated tests for parallel/test-buffer-no-negative-allocation, not found props.
+                                                                     [00:00|%   2|+  81|-   0]: release test-child-process-detached
+Skip mutated tests for parallel/test-child-process-detached, not found props.
+                                                              [00:00|%   2|+  81|-   0]: release test-buffer-of-no-deprecation
+Skip mutated tests for parallel/test-buffer-of-no-deprecation, not found props.
+                                                                [00:00|%   2|+  83|-   0]: release test-buffer-parent-property
+Skip mutated tests for parallel/test-buffer-parent-property, not found props.
+                                                              [00:00|%   2|+  84|-   0]: release test-buffer-pending-deprecation
+Skip mutated tests for parallel/test-buffer-pending-deprecation, not found props.
+                                                                  [00:00|%   2|+  85|-   0]: release test-buffer-concat
+Skip mutated tests for parallel/test-buffer-concat, not found props.
+                                                     [00:00|%   2|+  86|-   0]: release test-child-process-exec-maxbuf
+Skip mutated tests for parallel/test-child-process-exec-maxbuf, not found props.
+                                                                 [00:00|%   2|+  87|-   0]: release test-buffer-read
+Skip mutated tests for parallel/test-buffer-read, not found props.
+                                                   [00:00|%   2|+  89|-   0]: release test-buffer-readint
+Skip mutated tests for parallel/test-buffer-readint, not found props.
+                                                      [00:00|%   2|+  90|-   0]: release test-buffer-readuint
+Skip mutated tests for parallel/test-buffer-readuint, not found props.
+                                                       [00:00|%   2|+  91|-   0]: release test-child-process-execfilesync-maxbuf
+Skip mutated tests for parallel/test-child-process-execfilesync-maxbuf, not found props.
+                                                                         [00:00|%   2|+  92|-   0]: release test-child-process-execsync-maxbuf
+Skip mutated tests for parallel/test-child-process-execsync-maxbuf, not found props.
+                                                                     [00:00|%   2|+  93|-   0]: release test-buffer-slice
+Skip mutated tests for parallel/test-buffer-slice, not found props.
+                                                    [00:00|%   2|+  94|-   0]: release test-buffer-swap
+Skip mutated tests for parallel/test-buffer-swap, not found props.
+                                                   [00:00|%   2|+  95|-   0]: release test-child-process-fork-args
+Skip mutated tests for parallel/test-child-process-fork-args, not found props.
+                                                               [00:00|%   2|+  96|-   0]: release test-buffer-tostring
+Skip mutated tests for parallel/test-buffer-tostring, not found props.
+                                                       [00:00|%   2|+  97|-   0]: release test-blob-file-backed
+Skip mutated tests for parallel/test-blob-file-backed, not found props.
+                                                        [00:00|%   2|+  98|-   0]: release test-child-process-fork-detached
+Skip mutated tests for parallel/test-child-process-fork-detached, not found props.
+                                                                   [00:00|%   2|+  99|-   0]: release test-buffer-writedouble
+Skip mutated tests for parallel/test-buffer-writedouble, not found props.
+                                                          [00:00|%   2|+ 100|-   0]: release test-child-process-fork-exec-argv
+Skip mutated tests for parallel/test-child-process-fork-exec-argv, not found props.
+                                                                    [00:00|%   2|+ 101|-   0]: release test-child-process-fork-exec-path
+Skip mutated tests for parallel/test-child-process-fork-exec-path, not found props.
+                                                                    [00:00|%   2|+ 101|-   0]: release test-buffer-zero-fill
+Skip mutated tests for parallel/test-buffer-zero-fill, not found props.
+                                                        [00:00|%   2|+ 102|-   0]: release test-child-process-fork-getconnections
+Skip mutated tests for parallel/test-child-process-fork-getconnections, not found props.
+                                                                         [00:00|%   2|+ 102|-   0]: release test-buffer-isascii
+Skip mutated tests for parallel/test-buffer-isascii, not found props.
+                                                      [00:00|%   2|+ 103|-   0]: release test-child-process-fork-net
+Skip mutated tests for parallel/test-child-process-fork-net, not found props.
+                                                              [00:00|%   2|+ 103|-   0]: release test-buffer-alloc
+Skip mutated tests for parallel/test-buffer-alloc, not found props.
+                                                    [00:00|%   2|+ 104|-   0]: release test-child-process-fork-net-server
+Skip mutated tests for parallel/test-child-process-fork-net-server, not found props.
+                                                                     [00:00|%   3|+ 105|-   0]: release test-child-process-constructor
+Skip mutated tests for parallel/test-child-process-constructor, not found props.
+                                                                 [00:00|%   3|+ 106|-   0]: release test-child-process-fork-no-shell
+Skip mutated tests for parallel/test-child-process-fork-no-shell, not found props.
+                                                                   [00:00|%   3|+ 107|-   0]: release test-child-process-default-options
+Skip mutated tests for parallel/test-child-process-default-options, not found props.
+                                                                     [00:00|%   3|+ 108|-   0]: release test-child-process-fork-ref2
+Skip mutated tests for parallel/test-child-process-fork-ref2, not found props.
+                                                               [00:00|%   3|+ 110|-   0]: release test-child-process-fork-stdio-string-var...
+Skip mutated tests for parallel/test-child-process-fork-stdio-string-variant, not found props.
+                                                                              [00:00|%   3|+ 111|-   0]: release test-child-process-double-pipe
+Skip mutated tests for parallel/test-child-process-double-pipe, not found props.
+                                                                 [00:00|%   3|+ 112|-   0]: release test-child-process-fork-url
+Skip mutated tests for parallel/test-child-process-fork-url, not found props.
+                                                              [00:00|%   3|+ 113|-   0]: release test-child-process-fork3
+Skip mutated tests for parallel/test-child-process-fork3, not found props.
+                                                           [00:00|%   3|+ 114|-   0]: release test-child-process-exec-cwd
+Skip mutated tests for parallel/test-child-process-exec-cwd, not found props.
+                                                              [00:00|%   3|+ 115|-   0]: release test-child-process-ipc
+Skip mutated tests for parallel/test-child-process-ipc, not found props.
+                                                         [00:00|%   3|+ 116|-   0]: release test-child-process-exec-error
+Skip mutated tests for parallel/test-child-process-exec-error, not found props.
+                                                                [00:00|%   3|+ 117|-   0]: release test-child-process-kill
+Skip mutated tests for parallel/test-child-process-kill, not found props.
+                                                          [00:00|%   3|+ 118|-   0]: release test-child-process-exec-stdout-stderr-da...
+Skip mutated tests for parallel/test-child-process-exec-stdout-stderr-data-string, not found props.
+                                                                              [00:00|%   3|+ 119|-   0]: release test-child-process-pipe-dataflow
+Skip mutated tests for parallel/test-child-process-pipe-dataflow, not found props.
+                                                                   [00:00|%   3|+ 120|-   0]: release test-child-process-promisified
+Skip mutated tests for parallel/test-child-process-promisified, not found props.
+                                                                 [00:00|%   3|+ 121|-   0]: release test-child-process-execFile-promisified-...
+Skip mutated tests for parallel/test-child-process-execFile-promisified-abortController, not found props.
+                                                                              [00:00|%   3|+ 121|-   0]: release test-child-process-execfile
+Skip mutated tests for parallel/test-child-process-execfile, not found props.
+                                                              [00:00|%   3|+ 122|-   0]: release test-child-process-reject-null-bytes
+Skip mutated tests for parallel/test-child-process-reject-null-bytes, not found props.
+                                                                       [00:00|%   3|+ 123|-   0]: release test-buffer-set-inspect-max-bytes
+Skip mutated tests for parallel/test-buffer-set-inspect-max-bytes, not found props.
+                                                                    [00:00|%   3|+ 124|-   0]: release test-child-process-send-cb
+Skip mutated tests for parallel/test-child-process-send-cb, not found props.
+                                                             [00:00|%   3|+ 125|-   0]: release test-child-process-send-keep-open
+Skip mutated tests for parallel/test-child-process-send-keep-open, not found props.
+                                                                    [00:00|%   3|+ 125|-   0]: release test-benchmark-cli
+Skip mutated tests for parallel/test-benchmark-cli, not found props.
+                                                     [00:00|%   3|+ 125|-   0]: release test-child-process-fork-abort-signal
+Skip mutated tests for parallel/test-child-process-fork-abort-signal, not found props.
+                                                                       [00:00|%   3|+ 126|-   0]: release test-child-process-send-returns-boolean
+Skip mutated tests for parallel/test-child-process-send-returns-boolean, not found props.
+                                                                          [00:00|%   3|+ 127|-   0]: release test-buffer-failed-alloc-typed-arrays
+Skip mutated tests for parallel/test-buffer-failed-alloc-typed-arrays, not found props.
+                                                                        [00:00|%   3|+ 127|-   0]: release test-child-process-fork-close
+Skip mutated tests for parallel/test-child-process-fork-close, not found props.
+                                                                [00:00|%   3|+ 128|-   0]: release test-child-process-send-utf8
+Skip mutated tests for parallel/test-child-process-send-utf8, not found props.
+                                                               [00:00|%   3|+ 129|-   0]: release test-buffer-tostring-rangeerror
+Skip mutated tests for parallel/test-buffer-tostring-rangeerror, not found props.
+                                                                  [00:00|%   3|+ 130|-   0]: release test-child-process-fork-dgram
+Skip mutated tests for parallel/test-child-process-fork-dgram, not found props.
+                                                                [00:00|%   3|+ 131|-   0]: release test-child-process-silent
+Skip mutated tests for parallel/test-child-process-silent, not found props.
+                                                            [00:00|%   3|+ 132|-   0]: release test-child-process-spawn-args
+Skip mutated tests for parallel/test-child-process-spawn-args, not found props.
+                                                                [00:00|%   3|+ 132|-   0]: release test-buffer-writeuint
+Skip mutated tests for parallel/test-buffer-writeuint, not found props.
+                                                        [00:00|%   3|+ 133|-   0]: release test-broadcastchannel-custom-inspect
+Skip mutated tests for parallel/test-broadcastchannel-custom-inspect, not found props.
+                                                                       [00:00|%   3|+ 134|-   0]: release test-child-process-spawn-controller
+Skip mutated tests for parallel/test-child-process-spawn-controller, not found props.
+                                                                      [00:00|%   3|+ 135|-   0]: release test-child-process-spawn-error
+Skip mutated tests for parallel/test-child-process-spawn-error, not found props.
+                                                                 [00:00|%   3|+ 136|-   0]: release test-child-process-spawn-event
+Skip mutated tests for parallel/test-child-process-spawn-event, not found props.
+                                                                 [00:00|%   3|+ 137|-   0]: release test-child-process-can-write-to-stdout
+Skip mutated tests for parallel/test-child-process-can-write-to-stdout, not found props.
+                                                                         [00:00|%   3|+ 138|-   0]: release test-child-process-spawn-timeout-kill-si...
+Skip mutated tests for parallel/test-child-process-spawn-timeout-kill-signal, not found props.
+                                                                              [00:00|%   4|+ 139|-   0]: release test-child-process-spawn-typeerror
+Running 676 mutated tests for parallel/test-child-process-spawn-typeerror...
+                                                                     [00:00|%   4|+ 140|-   0]: release test-child-process-destroy
+Skip mutated tests for parallel/test-child-process-destroy, not found props.
+                                                             [00:00|%   4|+ 141|-   0]: release test-child-process-spawnsync-args
+Skip mutated tests for parallel/test-child-process-spawnsync-args, not found props.
+                                                                    [00:00|%   4|+ 142|-   0]: release test-child-process-spawnsync-env
+Skip mutated tests for parallel/test-child-process-spawnsync-env, not found props.
+                                                                   [00:00|%   4|+ 142|-   0]: release test-child-process-fork-timeout-kill-sig...
+Skip mutated tests for parallel/test-child-process-fork-timeout-kill-signal, not found props.
+                                                                              [00:00|%   4|+ 142|-   0]: release test-buffer-over-max-length
+Skip mutated tests for parallel/test-buffer-over-max-length, not found props.
+                                                              [00:00|%   4|+ 143|-   0]: release test-child-process-spawnsync-input
+Skip mutated tests for parallel/test-child-process-spawnsync-input, not found props.
+                                                                     [00:00|%   4|+ 143|-   0]: release test-child-process-exec-any-shells-windo...
+Skip mutated tests for parallel/test-child-process-exec-any-shells-windows, not found props.
+                                                                              [00:00|%   4|+ 144|-   0]: release test-child-process-internal
+Skip mutated tests for parallel/test-child-process-internal, not found props.
+                                                              [00:00|%   4|+ 145|-   0]: release test-child-process-spawnsync-timeout
+Skip mutated tests for parallel/test-child-process-spawnsync-timeout, not found props.
+                                                                       [00:00|%   4|+ 145|-   0]: release test-child-process-exec-env
+Skip mutated tests for parallel/test-child-process-exec-env, not found props.
+                                                              [00:00|%   4|+ 145|-   0]: release test-child-process-ipc-next-tick
+Skip mutated tests for parallel/test-child-process-ipc-next-tick, not found props.
+                                                                   [00:00|%   4|+ 147|-   0]: release test-child-process-exec-std-encoding
+Skip mutated tests for parallel/test-child-process-exec-std-encoding, not found props.
+                                                                       [00:00|%   4|+ 148|-   0]: release test-child-process-stdin-ipc
+Skip mutated tests for parallel/test-child-process-stdin-ipc, not found props.
+                                                               [00:00|%   4|+ 149|-   0]: release test-child-process-exec-timeout-expire
+Skip mutated tests for parallel/test-child-process-exec-timeout-expire, not found props.
+                                                                         [00:00|%   4|+ 150|-   0]: release test-child-process-exec-timeout-kill
+Skip mutated tests for parallel/test-child-process-exec-timeout-kill, not found props.
+                                                                       [00:00|%   4|+ 150|-   0]: release test-child-process-prototype-tampering
+Running 460 mutated tests for parallel/test-child-process-prototype-tampering...
+                                                                         [00:00|%   4|+ 150|-   0]: release test-buffer-constructor-node-modules-pat...
+Skip mutated tests for parallel/test-buffer-constructor-node-modules-paths, not found props.
+                                                                              [00:00|%   4|+ 151|-   0]: release test-child-process-stdio-inherit
+Skip mutated tests for parallel/test-child-process-stdio-inherit, not found props.
+                                                                   [00:00|%   4|+ 152|-   0]: release test-buffer-safe-unsafe
+Skip mutated tests for parallel/test-buffer-safe-unsafe, not found props.
+                                                          [00:00|%   4|+ 153|-   0]: release test-child-process-stdio-overlapped
+Skip mutated tests for parallel/test-child-process-stdio-overlapped, not found props.
+                                                                      [00:00|%   4|+ 154|-   0]: release test-child-process-stdio-reuse-readable-...
+Skip mutated tests for parallel/test-child-process-stdio-reuse-readable-stdio, not found props.
+                                                                              [00:00|%   4|+ 156|-   0]: release test-child-process-stdout-flush-exit
+Running 458 mutated tests for parallel/test-child-process-stdout-flush-exit...
+                                                                       [00:00|%   4|+ 156|-   0]: release test-buffer-slow
+Skip mutated tests for parallel/test-buffer-slow, not found props.
+                                                   [00:00|%   4|+ 156|-   0]: release test-child-process-fork-and-spawn
+Skip mutated tests for parallel/test-child-process-fork-and-spawn, not found props.
+                                                                    [00:00|%   4|+ 156|-   0]: release test-child-process-send-type-error
+Skip mutated tests for parallel/test-child-process-send-type-error, not found props.
+                                                                     [00:00|%   4|+ 156|-   0]: release test-buffer-tojson
+Skip mutated tests for parallel/test-buffer-tojson, not found props.
+                                                     [00:00|%   4|+ 157|-   0]: release test-blob-createobjecturl
+Skip mutated tests for parallel/test-blob-createobjecturl, not found props.
+                                                            [00:00|%   4|+ 157|-   0]: release test-child-process-fork-closed-channel-s...
+Skip mutated tests for parallel/test-child-process-fork-closed-channel-segfault, not found props.
+                                                                              [00:00|%   4|+ 157|-   0]: release test-child-process-server-close
+Skip mutated tests for parallel/test-child-process-server-close, not found props.
+                                                                  [00:00|%   4|+ 158|-   0]: release test-buffer-includes
+Skip mutated tests for parallel/test-buffer-includes, not found props.
+                                                       [00:00|%   4|+ 158|-   0]: release test-child-process-set-blocking
+Skip mutated tests for parallel/test-child-process-set-blocking, not found props.
+                                                                  [00:00|%   4|+ 159|-   0]: release test-buffer-writefloat
+Skip mutated tests for parallel/test-buffer-writefloat, not found props.
+                                                         [00:00|%   4|+ 161|-   0]: release test-cli-eval-event
+Skip mutated tests for parallel/test-cli-eval-event, not found props.
+                                                      [00:00|%   4|+ 163|-   0]: release test-cli-options-negation
+Skip mutated tests for parallel/test-cli-options-negation, not found props.
+                                                            [00:00|%   4|+ 165|-   0]: release test-child-process-advanced-serializatio...
+Skip mutated tests for parallel/test-child-process-advanced-serialization, not found props.
+                                                                              [00:00|%   4|+ 166|-   0]: release test-cli-permission-multiple-allow
+Skip mutated tests for parallel/test-cli-permission-multiple-allow, not found props.
+                                                                     [00:00|%   4|+ 166|-   0]: release test-child-process-spawn-shell
+Skip mutated tests for parallel/test-child-process-spawn-shell, not found props.
+                                                                 [00:00|%   4|+ 166|-   0]: release test-child-process-fork-net-socket
+Skip mutated tests for parallel/test-child-process-fork-net-socket, not found props.
+                                                                     [00:00|%   4|+ 167|-   0]: release test-buffer-ascii
+Skip mutated tests for parallel/test-buffer-ascii, not found props.
+                                                    [00:00|%   4|+ 168|-   0]: release test-buffer-new
+Skip mutated tests for parallel/test-buffer-new, not found props.
+                                                  [00:00|%   4|+ 168|-   0]: release test-child-process-spawnsync
+Skip mutated tests for parallel/test-child-process-spawnsync, not found props.
+                                                               [00:00|%   4|+ 168|-   0]: release test-async-local-storage-bind
+Skip mutated tests for parallel/test-async-local-storage-bind, not found props.
+                                                                [00:00|%   4|+ 168|-   0]: release test-child-process-fork-stdio
+Skip mutated tests for parallel/test-child-process-fork-stdio, not found props.
+                                                                [00:00|%   4|+ 169|-   0]: release test-child-process-disconnect
+Skip mutated tests for parallel/test-child-process-disconnect, not found props.
+                                                                [00:00|%   4|+ 171|-   0]: release test-cluster-advanced-serialization
+Skip mutated tests for parallel/test-cluster-advanced-serialization, not found props.
+                                                                      [00:00|%   4|+ 172|-   0]: release test-child-process-exec-abortcontroller-...
+Skip mutated tests for parallel/test-child-process-exec-abortcontroller-promisified, not found props.
+                                                                              [00:00|%   4|+ 173|-   0]: release test-child-process-spawnsync-maxbuf
+Skip mutated tests for parallel/test-child-process-spawnsync-maxbuf, not found props.
+                                                                      [00:00|%   5|+ 176|-   0]: release test-cluster-child-index-dgram
+Skip mutated tests for parallel/test-cluster-child-index-dgram, not found props.
+                                                                 [00:00|%   5|+ 177|-   0]: release test-child-process-spawnsync-validation-...
+Skip mutated tests for parallel/test-child-process-spawnsync-validation-errors, not found props.
+                                                                              [00:00|%   5|+ 177|-   0]: release test-child-process-stdin
+Skip mutated tests for parallel/test-child-process-stdin, not found props.
+                                                           [00:00|%   5|+ 178|-   0]: release test-cluster-concurrent-disconnect
+Running 752 mutated tests for parallel/test-cluster-concurrent-disconnect...
+                                                                     [00:00|%   5|+ 178|-   0]: release test-child-process-stdio
+Skip mutated tests for parallel/test-child-process-stdio, not found props.
+                                                           [00:00|%   5|+ 180|-   0]: release test-cluster-dgram-1
+Skip mutated tests for parallel/test-cluster-dgram-1, not found props.
+                                                       [00:00|%   5|+ 182|-   0]: release test-cluster-dgram-ipv6only
+Skip mutated tests for parallel/test-cluster-dgram-ipv6only, not found props.
+                                                              [00:00|%   5|+ 182|-   0]: release test-child-process-send-after-close
+Skip mutated tests for parallel/test-child-process-send-after-close, not found props.
+                                                                      [00:00|%   5|+ 183|-   0]: release test-cluster-dgram-reuse
+Skip mutated tests for parallel/test-cluster-dgram-reuse, not found props.
+                                                           [00:00|%   5|+ 185|-   0]: release test-child-process-flush-stdio
+Skip mutated tests for parallel/test-child-process-flush-stdio, not found props.
+                                                                 [00:00|%   5|+ 186|-   0]: release test-cluster-disconnect-exitedAfterDisco...
+Skip mutated tests for parallel/test-cluster-disconnect-exitedAfterDisconnect-race, not found props.
+                                                                              [00:00|%   5|+ 187|-   0]: release test-cluster-disconnect-idle-worker
+Skip mutated tests for parallel/test-cluster-disconnect-idle-worker, not found props.
+                                                                      [00:00|%   5|+ 190|-   0]: release test-cluster-disconnect-unshared-tcp
+Skip mutated tests for parallel/test-cluster-disconnect-unshared-tcp, not found props.
+                                                                       [00:00|%   5|+ 193|-   0]: release test-cluster-eaccess
+Skip mutated tests for parallel/test-cluster-eaccess, not found props.
+                                                       [00:00|%   5|+ 195|-   0]: release test-cli-bad-options
+Skip mutated tests for parallel/test-cli-bad-options, not found props.
+                                                       [00:00|%   5|+ 195|-   0]: release test-buffer-writeint
+Skip mutated tests for parallel/test-buffer-writeint, not found props.
+                                                       [00:00|%   5|+ 195|-   0]: release test-cli-eval
+Running 786 mutated tests for parallel/test-cli-eval...
+                                                [00:00|%   5|+ 195|-   0]: release test-buffer-zero-fill-cli
+Skip mutated tests for parallel/test-buffer-zero-fill-cli, not found props.
+                                                            [00:00|%   5|+ 195|-   0]: release test-cli-node-options
+Running 836 mutated tests for parallel/test-cli-node-options...
+                                                        [00:00|%   5|+ 195|-   0]: release test-child-process-spawn-argv0
+Skip mutated tests for parallel/test-child-process-spawn-argv0, not found props.
+                                                                 [00:00|%   5|+ 195|-   0]: release test-btoa-atob
+Skip mutated tests for parallel/test-btoa-atob, not found props.
+                                                 [00:00|%   5|+ 196|-   0]: release test-c-ares
+Skip mutated tests for parallel/test-c-ares, not found props.
+                                              [00:00|%   5|+ 196|-   0]: release test-cli-permission-deny-fs
+Skip mutated tests for parallel/test-cli-permission-deny-fs, not found props.
+                                                              [00:00|%   5|+ 197|-   0]: release test-async-wrap-tlssocket-asyncreset
+Skip mutated tests for parallel/test-async-wrap-tlssocket-asyncreset, not found props.
+                                                                       [00:00|%   5|+ 199|-   0]: release test-cli-syntax-eval
+Skip mutated tests for parallel/test-cli-syntax-eval, not found props.
+                                                       [00:00|%   5|+ 200|-   0]: release test-cluster-ipc-throw
+Skip mutated tests for parallel/test-cluster-ipc-throw, not found props.
+                                                         [00:00|%   5|+ 200|-   0]: release test-child-process-fork-ref
+Skip mutated tests for parallel/test-child-process-fork-ref, not found props.
+                                                              [00:00|%   5|+ 201|-   0]: release test-cluster-kill-disconnect
+Skip mutated tests for parallel/test-cluster-kill-disconnect, not found props.
+                                                               [00:00|%   5|+ 202|-   0]: release test-cluster-kill-infinite-loop
+Skip mutated tests for parallel/test-cluster-kill-infinite-loop, not found props.
+                                                                  [00:00|%   5|+ 202|-   0]: release test-cli-syntax-piped-good
+Skip mutated tests for parallel/test-cli-syntax-piped-good, not found props.
+                                                             [00:00|%   5|+ 204|-   0]: release test-child-process-env
+Skip mutated tests for parallel/test-child-process-env, not found props.
+                                                         [00:00|%   5|+ 204|-   0]: release test-cluster-basic
+Skip mutated tests for parallel/test-cluster-basic, not found props.
+                                                     [00:00|%   5|+ 206|-   0]: release test-cluster-net-listen
+Skip mutated tests for parallel/test-cluster-net-listen, not found props.
+                                                          [00:00|%   5|+ 206|-   0]: release test-cluster-bind-twice
+Skip mutated tests for parallel/test-cluster-bind-twice, not found props.
+                                                          [00:00|%   5|+ 207|-   0]: release test-cluster-net-listen-backlog
+Skip mutated tests for parallel/test-cluster-net-listen-backlog, not found props.
+                                                                  [00:00|%   5|+ 208|-   0]: release test-cluster-child-index-net
+Skip mutated tests for parallel/test-cluster-child-index-net, not found props.
+                                                               [00:00|%   6|+ 210|-   0]: release test-buffer-readdouble
+Skip mutated tests for parallel/test-buffer-readdouble, not found props.
+                                                         [00:00|%   6|+ 211|-   0]: release test-child-process-exec-timeout-not-expi...
+Skip mutated tests for parallel/test-child-process-exec-timeout-not-expired, not found props.
+                                                                              [00:00|%   6|+ 211|-   0]: release test-cluster-cwd
+Skip mutated tests for parallel/test-cluster-cwd, not found props.
+                                                   [00:00|%   6|+ 212|-   0]: release test-cluster-primary-error
+Running 258 mutated tests for parallel/test-cluster-primary-error...
+                                                             [00:00|%   6|+ 213|-   0]: release test-cluster-primary-kill
+Skip mutated tests for parallel/test-cluster-primary-kill, not found props.
+                                                            [00:00|%   6|+ 214|-   0]: release test-child-process-stdio-merge-stdouts-i...
+Skip mutated tests for parallel/test-child-process-stdio-merge-stdouts-into-cat, not found props.
+                                                                              [00:00|%   6|+ 215|-   0]: release test-cluster-disconnect
+Running 542 mutated tests for parallel/test-cluster-disconnect...
+                                                          [00:00|%   6|+ 215|-   0]: release test-child-process-exit-code
+Skip mutated tests for parallel/test-child-process-exit-code, not found props.
+                                                               [00:00|%   6|+ 216|-   0]: release test-cluster-disconnect-before-exit
+Skip mutated tests for parallel/test-cluster-disconnect-before-exit, not found props.
+                                                                      [00:00|%   6|+ 219|-   0]: release test-cluster-disconnect-leak
+Skip mutated tests for parallel/test-cluster-disconnect-leak, not found props.
+                                                               [00:00|%   6|+ 220|-   0]: release test-cluster-disconnect-race
+Skip mutated tests for parallel/test-cluster-disconnect-race, not found props.
+                                                               [00:00|%   6|+ 220|-   0]: release test-child-process-stdout-ipc
+Skip mutated tests for parallel/test-child-process-stdout-ipc, not found props.
+                                                                [00:00|%   6|+ 221|-   0]: release test-cluster-disconnect-unshared-udp
+Skip mutated tests for parallel/test-cluster-disconnect-unshared-udp, not found props.
+                                                                       [00:00|%   6|+ 222|-   0]: release test-cluster-send-socket-to-worker-http-...
+Running 256 mutated tests for parallel/test-cluster-send-socket-to-worker-http-server...
+                                                                              [00:00|%   6|+ 222|-   0]: release test-cluster-eaddrinuse
+Skip mutated tests for parallel/test-cluster-eaddrinuse, not found props.
+                                                          [00:00|%   6|+ 223|-   0]: release test-cluster-server-restart-none
+Running 214 mutated tests for parallel/test-cluster-server-restart-none...
+                                                                   [00:00|%   6|+ 224|-   0]: release test-cluster-server-restart-rr
+Running 214 mutated tests for parallel/test-cluster-server-restart-rr...
+                                                                 [00:00|%   6|+ 225|-   0]: release test-cluster-setup-primary
+Running 222 mutated tests for parallel/test-cluster-setup-primary...
+                                                             [00:00|%   6|+ 225|-   0]: release test-cli-options-precedence
+Skip mutated tests for parallel/test-cli-options-precedence, not found props.
+                                                              [00:00|%   6|+ 225|-   0]: release test-cluster-fork-stdio
+Skip mutated tests for parallel/test-cluster-fork-stdio, not found props.
+                                                          [00:00|%   6|+ 226|-   0]: release test-cluster-setup-primary-argv
+Skip mutated tests for parallel/test-cluster-setup-primary-argv, not found props.
+                                                                  [00:00|%   6|+ 227|-   0]: release test-cluster-setup-primary-cumulative
+Skip mutated tests for parallel/test-cluster-setup-primary-cumulative, not found props.
+                                                                        [00:00|%   6|+ 227|-   0]: release test-cluster-http-pipe
+Running 314 mutated tests for parallel/test-cluster-http-pipe...
+                                                         [00:00|%   6|+ 227|-   0]: release test-cluster-invalid-message
+Skip mutated tests for parallel/test-cluster-invalid-message, not found props.
+                                                               [00:00|%   6|+ 228|-   0]: release test-cli-syntax-piped-bad
+Skip mutated tests for parallel/test-cli-syntax-piped-bad, not found props.
+                                                            [00:00|%   6|+ 232|-   0]: release test-cluster-shared-leak
+Running 268 mutated tests for parallel/test-cluster-shared-leak...
+                                                           [00:00|%   6|+ 233|-   0]: release test-cluster-listen-pipe-readable-writab...
+Skip mutated tests for parallel/test-cluster-listen-pipe-readable-writable, not found props.
+                                                                              [00:00|%   6|+ 233|-   0]: release test-client-request-destroy
+Skip mutated tests for parallel/test-client-request-destroy, not found props.
+                                                              [00:00|%   6|+ 233|-   0]: release test-cluster-listening-port
+Skip mutated tests for parallel/test-cluster-listening-port, not found props.
+                                                              [00:00|%   6|+ 235|-   0]: release test-cluster-message
+Running 278 mutated tests for parallel/test-cluster-message...
+                                                       [00:00|%   6|+ 235|-   0]: release test-cluster-bind-privileged-port
+Skip mutated tests for parallel/test-cluster-bind-privileged-port, not found props.
+                                                                    [00:00|%   6|+ 236|-   0]: release test-child-process-exec-encoding
+Skip mutated tests for parallel/test-child-process-exec-encoding, not found props.
+                                                                   [00:00|%   6|+ 236|-   0]: release test-cluster-call-and-destroy
+Skip mutated tests for parallel/test-cluster-call-and-destroy, not found props.
+                                                                [00:00|%   6|+ 237|-   0]: release test-cluster-net-listen-ipv6only-false
+Skip mutated tests for parallel/test-cluster-net-listen-ipv6only-false, not found props.
+                                                                         [00:00|%   6|+ 237|-   0]: release test-buffer-prototype-inspect
+Skip mutated tests for parallel/test-buffer-prototype-inspect, not found props.
+                                                                [00:00|%   6|+ 237|-   0]: release test-cluster-net-listen-relative-path
+Skip mutated tests for parallel/test-cluster-net-listen-relative-path, not found props.
+                                                                        [00:00|%   6|+ 237|-   0]: release test-cluster-net-send
+Skip mutated tests for parallel/test-cluster-net-send, not found props.
+                                                        [00:00|%   6|+ 237|-   0]: release test-child-process-no-deprecation
+Skip mutated tests for parallel/test-child-process-no-deprecation, not found props.
+                                                                    [00:00|%   6|+ 237|-   0]: release test-cluster-net-server-drop-connection
+Running 420 mutated tests for parallel/test-cluster-net-server-drop-connection...
+                                                                          [00:00|%   6|+ 238|-   0]: release test-child-process-stdio-big-write-end
+Skip mutated tests for parallel/test-child-process-stdio-big-write-end, not found props.
+                                                                         [00:00|%   6|+ 239|-   0]: release test-cluster-dgram-2
+Skip mutated tests for parallel/test-cluster-dgram-2, not found props.
+                                                       [00:00|%   6|+ 240|-   0]: release test-cluster-process-disconnect
+Skip mutated tests for parallel/test-cluster-process-disconnect, not found props.
+                                                                  [00:00|%   6|+ 241|-   0]: release test-cluster-rr-domain-listen
+Skip mutated tests for parallel/test-cluster-rr-domain-listen, not found props.
+                                                                [00:00|%   6|+ 241|-   0]: release test-child-process-stdout-flush
+Skip mutated tests for parallel/test-child-process-stdout-flush, not found props.
+                                                                  [00:00|%   6|+ 241|-   0]: release test-cluster-rr-handle-close
+Skip mutated tests for parallel/test-cluster-rr-handle-close, not found props.
+                                                               [00:00|%   6|+ 242|-   0]: release test-cluster-worker-handle-close
+Running 258 mutated tests for parallel/test-cluster-worker-handle-close...
+                                                                   [00:00|%   6|+ 242|-   0]: release test-cluster-rr-handle-ref-unref
+Skip mutated tests for parallel/test-cluster-rr-handle-ref-unref, not found props.
+                                                                   [00:00|%   6|+ 242|-   0]: release test-cluster-rr-ref
+Skip mutated tests for parallel/test-cluster-rr-ref, not found props.
+                                                      [00:00|%   6|+ 243|-   0]: release test-cluster-send-deadlock
+Running 268 mutated tests for parallel/test-cluster-send-deadlock...
+                                                             [00:00|%   7|+ 244|-   0]: release test-cluster-worker-isconnected
+Running 150 mutated tests for parallel/test-cluster-worker-isconnected...
+                                                                  [00:00|%   7|+ 244|-   0]: release test-cluster-send-handle-twice
+Running 294 mutated tests for parallel/test-cluster-send-handle-twice...
+                                                                 [00:00|%   7|+ 244|-   0]: release test-cluster-disconnect-with-no-workers
+Skip mutated tests for parallel/test-cluster-disconnect-with-no-workers, not found props.
+                                                                          [00:00|%   7|+ 246|-   0]: release test-cluster-fork-env
+Skip mutated tests for parallel/test-cluster-fork-env, not found props.
+                                                        [00:00|%   7|+ 248|-   0]: release test-cluster-worker-no-exit
+Running 230 mutated tests for parallel/test-cluster-worker-no-exit...
+                                                              [00:00|%   7|+ 249|-   0]: release test-cluster-worker-wait-server-close
+Running 254 mutated tests for parallel/test-cluster-worker-wait-server-close...
+                                                                        [00:00|%   7|+ 249|-   0]: release test-cluster-fork-windowsHide
+Skip mutated tests for parallel/test-cluster-fork-windowsHide, not found props.
+                                                                [00:00|%   7|+ 252|-   0]: release test-common-expect-warning
+Running 236 mutated tests for parallel/test-common-expect-warning...
+                                                             [00:00|%   7|+ 253|-   0]: release test-common-gc
+Running 112 mutated tests for parallel/test-common-gc...
+                                                 [00:00|%   7|+ 253|-   0]: release test-cluster-shared-handle-bind-error
+Skip mutated tests for parallel/test-cluster-shared-handle-bind-error, not found props.
+                                                                        [00:00|%   7|+ 253|-   0]: release test-cluster-shared-handle-bind-privileg...
+Skip mutated tests for parallel/test-cluster-shared-handle-bind-privileged-port, not found props.
+                                                                              [00:00|%   7|+ 254|-   0]: release test-common-must-not-call
+Running 108 mutated tests for parallel/test-common-must-not-call...
+                                                            [00:00|%   7|+ 256|-   0]: release test-console
+Running 126 mutated tests for parallel/test-console...
+                                               [00:00|%   7|+ 256|-   0]: release test-cluster-worker-constructor
+Skip mutated tests for parallel/test-cluster-worker-constructor, not found props.
+                                                                  [00:00|%   7|+ 256|-   0]: release test-cluster-worker-death
+Skip mutated tests for parallel/test-cluster-worker-death, not found props.
+                                                            [00:00|%   7|+ 257|-   0]: release test-cluster-worker-destroy
+Skip mutated tests for parallel/test-cluster-worker-destroy, not found props.
+                                                              [00:00|%   7|+ 259|-   0]: release test-cluster-worker-disconnect
+Running 184 mutated tests for parallel/test-cluster-worker-disconnect...
+                                                                 [00:00|%   7|+ 260|-   0]: release test-console-count
+Running 96 mutated tests for parallel/test-console-count...
+                                                     [00:00|%   7|+ 263|-   0]: release test-cluster-worker-disconnect-on-error
+Running 186 mutated tests for parallel/test-cluster-worker-disconnect-on-error...
+                                                                          [00:00|%   7|+ 263|-   0]: release test-cluster-worker-events
+Skip mutated tests for parallel/test-cluster-worker-events, not found props.
+                                                             [00:00|%   7|+ 263|-   0]: release test-child-process-execfile-maxbuf
+Skip mutated tests for parallel/test-child-process-execfile-maxbuf, not found props.
+                                                                     [00:00|%   7|+ 264|-   0]: release test-console-log-stdio-broken-dest
+Running 132 mutated tests for parallel/test-console-log-stdio-broken-dest...
+                                                                     [00:00|%   7|+ 265|-   0]: release test-cluster-worker-forced-exit
+Skip mutated tests for parallel/test-cluster-worker-forced-exit, not found props.
+                                                                  [00:00|%   7|+ 267|-   0]: release test-child-process-fork
+Skip mutated tests for parallel/test-child-process-fork, not found props.
+                                                          [00:00|%   7|+ 270|-   0]: release test-cluster-worker-init
+Skip mutated tests for parallel/test-cluster-worker-init, not found props.
+                                                           [00:00|%   7|+ 271|-   0]: release test-child-process-uid-gid
+Skip mutated tests for parallel/test-child-process-uid-gid, not found props.
+                                                             [00:00|%   7|+ 271|-   0]: release test-cluster-worker-isdead
+Skip mutated tests for parallel/test-cluster-worker-isdead, not found props.
+                                                             [00:00|%   7|+ 271|-   0]: release test-cluster-worker-kill
+Running 182 mutated tests for parallel/test-cluster-worker-kill...
+                                                           [00:00|%   7|+ 272|-   0]: release test-cluster-worker-kill-signal
+Running 182 mutated tests for parallel/test-cluster-worker-kill-signal...
+                                                                  [00:00|%   7|+ 275|-   0]: release test-common
+Running 230 mutated tests for parallel/test-common...
+                                              [00:00|%   7|+ 275|-   0]: release test-common-countdown
+Running 180 mutated tests for parallel/test-common-countdown...
+                                                        [00:00|%   7|+ 275|-   0]: release test-cluster-setup-primary-emit
+Skip mutated tests for parallel/test-cluster-setup-primary-emit, not found props.
+                                                                  [00:00|%   7|+ 275|-   0]: release test-cluster-setup-primary-multiple
+Skip mutated tests for parallel/test-cluster-setup-primary-multiple, not found props.
+                                                                      [00:00|%   7|+ 276|-   0]: release test-buffer-bytelength
+Skip mutated tests for parallel/test-buffer-bytelength, not found props.
+                                                         [00:00|%   7|+ 276|-   0]: release test-cluster-uncaught-exception
+Skip mutated tests for parallel/test-cluster-uncaught-exception, not found props.
+                                                                  [00:00|%   7|+ 276|-   0]: release test-common-must-not-mutate-object-deep
+Skip mutated tests for parallel/test-common-must-not-mutate-object-deep, not found props.
+                                                                          [00:00|%   8|+ 278|-   0]: release test-crypto-async-sign-verify
+Running 120 mutated tests for parallel/test-crypto-async-sign-verify...
+                                                                [00:00|%   8|+ 278|-   0]: release test-console-assign-undefined
+Running 100 mutated tests for parallel/test-console-assign-undefined...
+                                                                [00:00|%   8|+ 279|-   0]: release test-console-async-write-error
+Running 140 mutated tests for parallel/test-console-async-write-error...
+                                                                 [00:00|%   8|+ 279|-   0]: release test-console-clear
+Running 96 mutated tests for parallel/test-console-clear...
+                                                     [00:00|%   8|+ 280|-   0]: release test-console-group
+Running 114 mutated tests for parallel/test-console-group...
+                                                     [00:00|%   8|+ 280|-   0]: release test-console-instance
+Running 122 mutated tests for parallel/test-console-instance...
+                                                        [00:00|%   8|+ 280|-   0]: release test-console-issue-43095
+Running 100 mutated tests for parallel/test-console-issue-43095...
+                                                           [00:00|%   8|+ 282|-   0]: release test-cluster-worker-exit
+Running 178 mutated tests for parallel/test-cluster-worker-exit...
+                                                           [00:00|%   8|+ 282|-   0]: release test-console-log-throw-primitive
+Running 134 mutated tests for parallel/test-console-log-throw-primitive...
+                                                                   [00:00|%   8|+ 283|-   0]: release test-console-methods
+Running 106 mutated tests for parallel/test-console-methods...
+                                                       [00:00|%   8|+ 283|-   0]: release test-console-no-swallow-stack-overflow
+Running 136 mutated tests for parallel/test-console-no-swallow-stack-overflow...
+                                                                         [00:00|%   8|+ 283|-   0]: release test-cluster-rr-handle-keep-loop-alive
+Skip mutated tests for parallel/test-cluster-rr-handle-keep-loop-alive, not found props.
+                                                                         [00:00|%   8|+ 283|-   0]: release test-console-not-call-toString
+Running 98 mutated tests for parallel/test-console-not-call-toString...
+                                                                 [00:00|%   8|+ 283|-   0]: release test-console-self-assign
+Running 96 mutated tests for parallel/test-console-self-assign...
+                                                           [00:00|%   8|+ 283|-   0]: release test-console-stdio-setters
+Running 128 mutated tests for parallel/test-console-stdio-setters...
+                                                             [00:00|%   8|+ 284|-   0]: release test-console-sync-write-error
+Running 146 mutated tests for parallel/test-console-sync-write-error...
+                                                                [00:00|%   8|+ 286|-   0]: release test-console-table
+Running 124 mutated tests for parallel/test-console-table...
+                                                     [00:00|%   8|+ 286|-   0]: release test-console-tty-colors
+Running 144 mutated tests for parallel/test-console-tty-colors...
+                                                          [00:00|%   8|+ 286|-   0]: release test-corepack-version
+Running 96 mutated tests for parallel/test-corepack-version...
+                                                        [00:00|%   8|+ 286|-   0]: release test-coverage-with-inspector-disabled
+Running 96 mutated tests for parallel/test-coverage-with-inspector-disabled...
+                                                                        [00:00|%   8|+ 288|-   0]: release test-crypto
+Running 224 mutated tests for parallel/test-crypto...
+                                              [00:00|%   8|+ 291|-   0]: release test-crypto-aes-wrap
+Running 96 mutated tests for parallel/test-crypto-aes-wrap...
+                                                       [00:00|%   8|+ 292|-   0]: release test-crypto-authenticated
+Running 114 mutated tests for parallel/test-crypto-authenticated...
+                                                            [00:00|%   8|+ 292|-   0]: release test-crypto-authenticated-stream
+Running 240 mutated tests for parallel/test-crypto-authenticated-stream...
+                                                                   [00:00|%   8|+ 292|-   0]: release test-crypto-certificate
+Running 96 mutated tests for parallel/test-crypto-certificate...
+                                                          [00:00|%   8|+ 292|-   0]: release test-crypto-cipher-decipher
+Running 122 mutated tests for parallel/test-crypto-cipher-decipher...
+                                                              [00:00|%   8|+ 292|-   0]: release test-crypto-cipheriv-decipheriv
+Running 98 mutated tests for parallel/test-crypto-cipheriv-decipheriv...
+                                                                  [00:00|%   8|+ 293|-   0]: release test-crypto-classes
+Running 110 mutated tests for parallel/test-crypto-classes...
+                                                      [00:00|%   8|+ 293|-   0]: release test-crypto-des3-wrap
+Running 96 mutated tests for parallel/test-crypto-des3-wrap...
+                                                        [00:00|%   8|+ 293|-   0]: release test-crypto-dh
+Running 98 mutated tests for parallel/test-crypto-dh...
+                                                 [00:00|%   8|+ 293|-   0]: release test-crypto-dh-constructor
+Running 96 mutated tests for parallel/test-crypto-dh-constructor...
+                                                             [00:00|%   8|+ 293|-   0]: release test-crypto-dh-curves
+Running 106 mutated tests for parallel/test-crypto-dh-curves...
+                                                        [00:00|%   8|+ 293|-   0]: release test-crypto-dh-errors
+Running 96 mutated tests for parallel/test-crypto-dh-errors...
+                                                        [00:00|%   8|+ 293|-   0]: release test-crypto-dh-generate-keys
+Running 96 mutated tests for parallel/test-crypto-dh-generate-keys...
+                                                               [00:00|%   8|+ 293|-   0]: release test-crypto-dh-group-setters
+Running 100 mutated tests for parallel/test-crypto-dh-group-setters...
+                                                               [00:00|%   8|+ 293|-   0]: release test-crypto-dh-leak
+Running 94 mutated tests for parallel/test-crypto-dh-leak...
+                                                      [00:00|%   8|+ 293|-   0]: release test-crypto-dh-modp2
+Running 96 mutated tests for parallel/test-crypto-dh-modp2...
+                                                       [29:59|%   8|+ 294|-   0]: release test-crypto-dh-modp2-views
+Running 98 mutated tests for parallel/test-crypto-dh-modp2-views...
+                                                             [29:59|%   8|+ 295|-   0]: release test-crypto-dh-odd-key
+Running 96 mutated tests for parallel/test-crypto-dh-odd-key...
+                                                         [30:00|%   8|+ 296|-   0]: release test-crypto-dh-padding
+Running 96 mutated tests for parallel/test-crypto-dh-padding...
+                                                         [30:00|%   8|+ 297|-   0]: release test-crypto-dh-shared
+Running 96 mutated tests for parallel/test-crypto-dh-shared...
+                                                        [30:00|%   8|+ 298|-   0]: release test-crypto-dh-stateless
+Running 126 mutated tests for parallel/test-crypto-dh-stateless...
+                                                           [30:00|%   8|+ 299|-   0]: release test-crypto-domain
+Running 106 mutated tests for parallel/test-crypto-domain...
+                                                     [30:00|%   8|+ 300|-   0]: release test-crypto-domains
+Running 108 mutated tests for parallel/test-crypto-domains...
+                                                      [30:01|%   8|+ 301|-   0]: release test-crypto-ecb
+Running 96 mutated tests for parallel/test-crypto-ecb...
+                                                  [30:04|%   8|+ 302|-   0]: release test-crypto-ecdh-convert-key
+Running 106 mutated tests for parallel/test-crypto-ecdh-convert-key...
+                                                               === release test-crypto-dh-constructor ===
+Path: parallel/test-crypto-dh-constructor
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-constructor-pp.js
+--- TIMEOUT ---
+
+
+                                                               [30:20|%   8|+ 303|-   0]: release test-crypto-encoding-validation-error
+Running 98 mutated tests for parallel/test-crypto-encoding-validation-error...
+                                                                        === release test-crypto-dh-leak ===
+Path: parallel/test-crypto-dh-leak
+Command: out/Release/node --expose-gc --noconcurrent_recompilation --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-leak-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [30:43|%   8|+ 304|-   0]: release test-crypto-from-binary
+Running 96 mutated tests for parallel/test-crypto-from-binary...
+                                                          === release test-console-not-call-toString ===
+Path: parallel/test-console-not-call-toString
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-not-call-toString-pp.js
+--- TIMEOUT ---
+
+
+                                                          [30:44|%   8|+ 305|-   0]: release test-crypto-getcipherinfo
+Running 102 mutated tests for parallel/test-crypto-getcipherinfo...
+                                                            === release test-console-assign-undefined ===
+Path: parallel/test-console-assign-undefined
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-assign-undefined-pp.js
+--- TIMEOUT ---
+
+
+                                                            [31:20|%   8|+ 306|-   0]: release test-crypto-hash
+Running 156 mutated tests for parallel/test-crypto-hash...
+                                                   === release test-crypto-dh-generate-keys ===
+Path: parallel/test-crypto-dh-generate-keys
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-generate-keys-pp.js
+--- TIMEOUT ---
+
+
+                                                   [31:27|%   8|+ 307|-   0]: release test-crypto-hash-stream-pipe
+Running 110 mutated tests for parallel/test-crypto-hash-stream-pipe...
+                                                               === release test-crypto-certificate ===
+Path: parallel/test-crypto-certificate
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-certificate-pp.js
+--- TIMEOUT ---
+
+
+                                                               [31:35|%   8|+ 308|-   0]: release test-crypto-hkdf
+Running 106 mutated tests for parallel/test-crypto-hkdf...
+                                                   === release test-crypto-dh ===
+Path: parallel/test-crypto-dh
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-pp.js
+--- TIMEOUT ---
+
+
+                                                   [31:39|%   8|+ 309|-   0]: release test-crypto-hmac
+Running 104 mutated tests for parallel/test-crypto-hmac...
+                                                   === release test-console-issue-43095 ===
+Path: parallel/test-console-issue-43095
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-issue-43095-pp.js
+--- TIMEOUT ---
+
+
+                                                   [31:39|%   8|+ 310|-   0]: release test-crypto-key-objects
+Running 136 mutated tests for parallel/test-crypto-key-objects...
+                                                          === release test-crypto-dh-group-setters ===
+Path: parallel/test-crypto-dh-group-setters
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-group-setters-pp.js
+--- TIMEOUT ---
+
+
+                                                          [31:39|%   8|+ 311|-   0]: release test-crypto-key-objects-messageport
+Running 248 mutated tests for parallel/test-crypto-key-objects-messageport...
+                                                                      === release test-crypto-cipheriv-decipheriv ===
+Path: parallel/test-crypto-cipheriv-decipheriv
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-cipheriv-decipheriv-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [32:05|%   8|+ 312|-   0]: release test-crypto-keygen
+Running 148 mutated tests for parallel/test-crypto-keygen...
+                                                     === release test-crypto-dh-curves ===
+Path: parallel/test-crypto-dh-curves
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-curves-pp.js
+--- TIMEOUT ---
+
+
+                                                     [33:17|%   9|+ 313|-   0]: release test-crypto-keygen-async-dsa
+Running 120 mutated tests for parallel/test-crypto-keygen-async-dsa...
+                                                               [33:38|%   9|+ 314|-   0]: release test-crypto-keygen-async-dsa-key-object
+Running 112 mutated tests for parallel/test-crypto-keygen-async-dsa-key-object...
+                                                                          === release test-common-must-not-call ===
+Path: parallel/test-common-must-not-call
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-common-must-not-call-pp.js
+--- TIMEOUT ---
+
+
+                                                                          [33:58|%   9|+ 315|-   0]: release test-crypto-keygen-async-elliptic-curve-...
+Running 112 mutated tests for parallel/test-crypto-keygen-async-elliptic-curve-jwk...
+                                                                              [35:14|%   9|+ 316|-   0]: release test-crypto-keygen-async-elliptic-curve-...
+Running 114 mutated tests for parallel/test-crypto-keygen-async-elliptic-curve-jwk-ec...
+                                                                              === release test-crypto-classes ===
+Path: parallel/test-crypto-classes
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-classes-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [35:35|%   9|+ 317|-   0]: release test-crypto-keygen-async-elliptic-curve-...
+Running 112 mutated tests for parallel/test-crypto-keygen-async-elliptic-curve-jwk-rsa...
+                                                                              === release test-console-group ===
+Path: parallel/test-console-group
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-group-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [35:54|%   9|+ 318|-   0]: release test-crypto-keygen-async-encrypted-priva...
+Running 122 mutated tests for parallel/test-crypto-keygen-async-encrypted-private-key...
+                                                                              === release test-crypto-authenticated ===
+Path: parallel/test-crypto-authenticated
+Command: out/Release/node --no-warnings --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-authenticated-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [37:32|%   9|+ 319|-   0]: release test-crypto-keygen-async-encrypted-priva...
+Running 120 mutated tests for parallel/test-crypto-keygen-async-encrypted-private-key-der...
+                                                                              === release test-crypto-cipher-decipher ===
+Path: parallel/test-crypto-cipher-decipher
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-cipher-decipher-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [38:30|%   9|+ 320|-   0]: release test-crypto-keygen-async-explicit-ellipt...
+Running 116 mutated tests for parallel/test-crypto-keygen-async-explicit-elliptic-curve...
+                                                                              === release test-crypto-async-sign-verify ===
+Path: parallel/test-crypto-async-sign-verify
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-async-sign-verify-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [38:32|%   9|+ 321|-   0]: release test-crypto-keygen-async-explicit-ellipt...
+Running 122 mutated tests for parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted-p256...
+                                                                              [38:38|%   9|+ 322|-   0]: release test-crypto-keygen-async-explicit-ellipt...
+Running 122 mutated tests for parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted.js...
+                                                                              === release test-console-table ===
+Path: parallel/test-console-table
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-table-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [39:25|%   9|+ 323|-   0]: release test-crypto-keygen-async-named-elliptic-...
+Running 116 mutated tests for parallel/test-crypto-keygen-async-named-elliptic-curve...
+                                                                              [39:42|%   9|+ 324|-   0]: release test-crypto-keygen-async-named-elliptic-...
+Running 122 mutated tests for parallel/test-crypto-keygen-async-named-elliptic-curve-encrypted...
+                                                                              === release test-console-stdio-setters ===
+Path: parallel/test-console-stdio-setters
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-stdio-setters-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [40:21|%   9|+ 325|-   0]: release test-crypto-keygen-async-named-elliptic-...
+Running 122 mutated tests for parallel/test-crypto-keygen-async-named-elliptic-curve-encrypted-p256...
+                                                                              [41:42|%   9|+ 326|-   0]: release test-crypto-keygen-async-rsa
+Running 126 mutated tests for parallel/test-crypto-keygen-async-rsa...
+                                                               === release test-console-log-throw-primitive ===
+Path: parallel/test-console-log-throw-primitive
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-log-throw-primitive-pp.js
+--- TIMEOUT ---
+
+
+                                                               [42:18|%   9|+ 327|-   0]: release test-crypto-keygen-bit-length
+Running 122 mutated tests for parallel/test-crypto-keygen-bit-length...
+                                                                === release test-console-no-swallow-stack-overflow ===
+Path: parallel/test-console-no-swallow-stack-overflow
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-no-swallow-stack-overflow-pp.js
+--- TIMEOUT ---
+
+
+                                                                [42:56|%   9|+ 328|-   0]: release test-crypto-keygen-deprecation
+Running 128 mutated tests for parallel/test-crypto-keygen-deprecation...
+                                                                 === release test-console-async-write-error ===
+Path: parallel/test-console-async-write-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-async-write-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [44:21|%   9|+ 329|-   0]: release test-crypto-keygen-dh-classic
+Running 116 mutated tests for parallel/test-crypto-keygen-dh-classic...
+                                                                [45:28|%   9|+ 330|-   0]: release test-crypto-keygen-duplicate-deprecated-...
+Running 122 mutated tests for parallel/test-crypto-keygen-duplicate-deprecated-option...
+                                                                              === release test-console-sync-write-error ===
+Path: parallel/test-console-sync-write-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-console-sync-write-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [46:09|%   9|+ 331|-   0]: release test-crypto-keygen-eddsa
+Running 106 mutated tests for parallel/test-crypto-keygen-eddsa...
+                                                           === release test-cluster-worker-isconnected ===
+Path: parallel/test-cluster-worker-isconnected
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-isconnected-pp.js
+--- TIMEOUT ---
+
+
+                                                           [49:20|%   9|+ 332|-   0]: release test-crypto-keygen-empty-passphrase-no-e...
+Running 106 mutated tests for parallel/test-crypto-keygen-empty-passphrase-no-error...
+                                                                              === release test-cluster-worker-exit ===
+Path: parallel/test-cluster-worker-exit
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-exit-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [58:46|%   9|+ 333|-   0]: release test-crypto-keygen-empty-passphrase-no-p...
+Running 124 mutated tests for parallel/test-crypto-keygen-empty-passphrase-no-prompt...
+                                                                              === release test-common-countdown ===
+Path: parallel/test-common-countdown
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-common-countdown-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [59:24|%   9|+ 334|-   0]: release test-crypto-keygen-invalid-parameter-enc...
+Running 104 mutated tests for parallel/test-crypto-keygen-invalid-parameter-encoding-dsa...
+                                                                              === release test-cluster-worker-kill ===
+Path: parallel/test-cluster-worker-kill
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-kill-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [60:09|%   9|+ 335|-   0]: release test-crypto-keygen-invalid-parameter-enc...
+Running 104 mutated tests for parallel/test-crypto-keygen-invalid-parameter-encoding-ec...
+                                                                              === release test-cluster-worker-kill-signal ===
+Path: parallel/test-cluster-worker-kill-signal
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-kill-signal-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [60:09|%   9|+ 336|-   0]: release test-crypto-keygen-key-object-without-en...
+Running 132 mutated tests for parallel/test-crypto-keygen-key-object-without-encoding...
+                                                                              === release test-cluster-worker-disconnect ===
+Path: parallel/test-cluster-worker-disconnect
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-disconnect-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [60:47|%   9|+ 337|-   0]: release test-crypto-keygen-key-objects
+Running 104 mutated tests for parallel/test-crypto-keygen-key-objects...
+                                                                 === release test-crypto-dh-padding ===
+Path: parallel/test-crypto-dh-padding
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-padding-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [61:00|%   9|+ 338|-   0]: release test-crypto-keygen-missing-oid
+Running 108 mutated tests for parallel/test-crypto-keygen-missing-oid...
+                                                                 === release test-crypto-ecb ===
+Path: parallel/test-crypto-ecb
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-ecb-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [61:00|%   9|+ 339|-   0]: release test-crypto-keygen-no-rsassa-pss-params
+Running 122 mutated tests for parallel/test-crypto-keygen-no-rsassa-pss-params...
+                                                                          === release test-crypto-dh-shared ===
+Path: parallel/test-crypto-dh-shared
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-shared-pp.js
+--- TIMEOUT ---
+
+
+                                                                          [61:00|%   9|+ 340|-   0]: release test-crypto-keygen-non-standard-public-e...
+Running 102 mutated tests for parallel/test-crypto-keygen-non-standard-public-exponent...
+                                                                              === release test-cluster-worker-disconnect-on-error ===
+Path: parallel/test-cluster-worker-disconnect-on-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-disconnect-on-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [61:19|%   9|+ 341|-   0]: release test-crypto-keygen-promisify
+Running 120 mutated tests for parallel/test-crypto-keygen-promisify...
+                                                               === release test-crypto-dh-odd-key ===
+Path: parallel/test-crypto-dh-odd-key
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-odd-key-pp.js
+--- TIMEOUT ---
+
+
+                                                               [61:20|%   9|+ 342|-   0]: release test-crypto-keygen-rfc8017-9-1
+Running 118 mutated tests for parallel/test-crypto-keygen-rfc8017-9-1...
+                                                                 === release test-crypto-dh-modp2-views ===
+Path: parallel/test-crypto-dh-modp2-views
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-modp2-views-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [61:40|%   9|+ 343|-   0]: release test-crypto-keygen-rfc8017-a-2-3
+Running 120 mutated tests for parallel/test-crypto-keygen-rfc8017-a-2-3...
+                                                                   === release test-crypto-encoding-validation-error ===
+Path: parallel/test-crypto-encoding-validation-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-encoding-validation-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                   [62:01|%   9|+ 344|-   0]: release test-crypto-keygen-rsa-pss
+Running 136 mutated tests for parallel/test-crypto-keygen-rsa-pss...
+                                                             === release test-crypto-from-binary ===
+Path: parallel/test-crypto-from-binary
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-from-binary-pp.js
+--- TIMEOUT ---
+
+
+                                                             [62:42|%   9|+ 345|-   0]: release test-crypto-keygen-sync
+Running 112 mutated tests for parallel/test-crypto-keygen-sync...
+                                                          === release test-crypto-getcipherinfo ===
+Path: parallel/test-crypto-getcipherinfo
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-getcipherinfo-pp.js
+--- TIMEOUT ---
+
+
+                                                          [63:37|%   9|+ 346|-   0]: release test-crypto-lazy-transform-writable
+Running 112 mutated tests for parallel/test-crypto-lazy-transform-writable...
+                                                                      === release test-crypto-ecdh-convert-key ===
+Path: parallel/test-crypto-ecdh-convert-key
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-ecdh-convert-key-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [64:18|%   9|+ 347|-   0]: release test-crypto-no-algorithm
+Running 124 mutated tests for parallel/test-crypto-no-algorithm...
+                                                           === release test-crypto-domain ===
+Path: parallel/test-crypto-domain
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-domain-pp.js
+--- TIMEOUT ---
+
+
+                                                           [64:18|%  10|+ 348|-   0]: release test-crypto-op-during-process-exit
+Running 104 mutated tests for parallel/test-crypto-op-during-process-exit...
+                                                                     === release test-crypto-domains ===
+Path: parallel/test-crypto-domains
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-domains-pp.js
+--- TIMEOUT ---
+
+
+                                                                     [64:58|%  10|+ 349|-   0]: release test-crypto-padding
+Running 96 mutated tests for parallel/test-crypto-padding...
+                                                      === release test-crypto-hmac ===
+Path: parallel/test-crypto-hmac
+node:internal/bootstrap/realm:398
+          ret = ReflectApply(source, this, arguments);
+                ^
+
+TypeError: Invalid digest: FORIN
+    at f.init (node:internal/bootstrap/realm:398:17)
+    at new Hmac (node:internal/crypto/hash:132:17)
+    at Object.createHmac (node:crypto:170:10)
+    at testHmac (/srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hmac-pp.js:59:25)
+    at Object.<anonymous> (/srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hmac-pp.js:119:5)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1201:32)
+    at Module._load (node:internal/modules/cjs/loader:1017:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:122:12) {
+  code: 'ERR_CRYPTO_INVALID_DIGEST'
+}
+
+Node.js v21.0.0
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hmac-pp.js
+
+
+                                                      [65:17|%  10|+ 350|-   0]: release test-crypto-padding-aes256
+Running 96 mutated tests for parallel/test-crypto-padding-aes256...
+                                                             === release test-crypto-hkdf ===
+Path: parallel/test-crypto-hkdf
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hkdf-pp.js
+--- TIMEOUT ---
+
+
+                                                             [65:57|%  10|+ 351|-   0]: release test-crypto-pbkdf2
+Running 104 mutated tests for parallel/test-crypto-pbkdf2...
+                                                     === release test-crypto-hash-stream-pipe ===
+Path: parallel/test-crypto-hash-stream-pipe
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hash-stream-pipe-pp.js
+--- TIMEOUT ---
+
+
+                                                     [67:18|%  10|+ 352|-   0]: release test-crypto-prime
+Running 112 mutated tests for parallel/test-crypto-prime...
+                                                    [70:15|%  10|+ 353|-   0]: release test-crypto-private-decrypt-gh32240
+Running 118 mutated tests for parallel/test-crypto-private-decrypt-gh32240...
+                                                                      [70:16|%  10|+ 354|-   0]: release test-crypto-psychic-signatures
+Running 124 mutated tests for parallel/test-crypto-psychic-signatures...
+                                                                 === release test-cluster-server-restart-none ===
+Path: parallel/test-cluster-server-restart-none
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-server-restart-none-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [70:56|%  10|+ 355|-   0]: release test-crypto-publicDecrypt-fails-first-ti...
+Running 114 mutated tests for parallel/test-crypto-publicDecrypt-fails-first-time...
+                                                                              === release test-cluster-server-restart-rr ===
+Path: parallel/test-cluster-server-restart-rr
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-server-restart-rr-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [70:56|%  10|+ 356|-   0]: release test-crypto-random
+Running 124 mutated tests for parallel/test-crypto-random...
+                                                     === release test-crypto-dh-stateless ===
+Path: parallel/test-crypto-dh-stateless
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-dh-stateless-pp.js
+--- TIMEOUT ---
+
+
+                                                     [71:16|%  10|+ 357|-   0]: release test-crypto-randomfillsync-regression
+Running 96 mutated tests for parallel/test-crypto-randomfillsync-regression...
+                                                                        === release test-crypto-keygen-async-elliptic-curve-jwk-rsa ===
+Path: parallel/test-crypto-keygen-async-elliptic-curve-jwk-rsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-elliptic-curve-jwk-rsa-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [72:16|%  10|+ 358|-   0]: release test-crypto-randomuuid
+Running 96 mutated tests for parallel/test-crypto-randomuuid...
+                                                         === release test-crypto ===
+Path: parallel/test-crypto
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-pp.js
+--- TIMEOUT ---
+
+
+                                                         [72:16|%  10|+ 359|-   0]: release test-crypto-rsa-dsa
+Running 116 mutated tests for parallel/test-crypto-rsa-dsa...
+                                                      === release test-crypto-keygen-async-elliptic-curve-jwk-ec ===
+Path: parallel/test-crypto-keygen-async-elliptic-curve-jwk-ec
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-elliptic-curve-jwk-ec-pp.js
+--- TIMEOUT ---
+
+
+                                                      [72:36|%  10|+ 360|-   0]: release test-crypto-secret-keygen
+Running 106 mutated tests for parallel/test-crypto-secret-keygen...
+                                                            === release test-crypto-keygen-async-dsa ===
+Path: parallel/test-crypto-keygen-async-dsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-dsa-pp.js
+--- TIMEOUT ---
+
+
+                                                            [72:37|%  10|+ 361|-   0]: release test-crypto-secure-heap
+Running 188 mutated tests for parallel/test-crypto-secure-heap...
+                                                          === release test-cluster-setup-primary ===
+Path: parallel/test-cluster-setup-primary
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-setup-primary-pp.js
+--- TIMEOUT ---
+
+
+                                                          [73:37|%  10|+ 362|-   0]: release test-crypto-sign-verify
+Running 218 mutated tests for parallel/test-crypto-sign-verify...
+                                                          [75:31|%  10|+ 363|-   0]: release test-crypto-stream
+Running 112 mutated tests for parallel/test-crypto-stream...
+                                                     [76:08|%  10|+ 364|-   0]: release test-crypto-subtle-zero-length
+Running 110 mutated tests for parallel/test-crypto-subtle-zero-length...
+                                                                 === release test-crypto-key-objects ===
+Path: parallel/test-crypto-key-objects
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-key-objects-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [76:12|%  10|+ 365|-   0]: release test-crypto-update-encoding
+Running 98 mutated tests for parallel/test-crypto-update-encoding...
+                                                              === release test-cluster-worker-no-exit ===
+Path: parallel/test-cluster-worker-no-exit
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-no-exit-pp.js
+--- TIMEOUT ---
+
+
+                                                              [76:19|%  10|+ 366|-   0]: release test-crypto-verify-failure
+Running 292 mutated tests for parallel/test-crypto-verify-failure...
+                                                             === release test-common ===
+Path: parallel/test-common
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-common-pp.js
+--- TIMEOUT ---
+
+
+                                                             [76:34|%  10|+ 367|-   0]: release test-crypto-webcrypto-aes-decrypt-tag-to...
+Running 104 mutated tests for parallel/test-crypto-webcrypto-aes-decrypt-tag-too-small...
+                                                                              === release test-crypto-keygen-async-encrypted-private-key-der ===
+Path: parallel/test-crypto-keygen-async-encrypted-private-key-der
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-encrypted-private-key-der-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [76:51|%  10|+ 368|-   0]: release test-crypto-worker-thread
+Running 266 mutated tests for parallel/test-crypto-worker-thread...
+                                                            [77:06|%  10|+ 369|-   0]: release test-cwd-enoent
+Running 176 mutated tests for parallel/test-cwd-enoent...
+                                                  === release test-common-expect-warning ===
+Path: parallel/test-common-expect-warning
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-common-expect-warning-pp.js
+--- TIMEOUT ---
+
+
+                                                  [77:57|%  10|+ 370|-   0]: release test-cwd-enoent-preload
+Running 186 mutated tests for parallel/test-cwd-enoent-preload...
+                                                          === release test-crypto-keygen-async-explicit-elliptic-curve-encrypted.js ===
+Path: parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted.js
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted.js-pp.js
+--- TIMEOUT ---
+
+
+                                                          [78:22|%  10|+ 371|-   0]: release test-cwd-enoent-repl
+Running 184 mutated tests for parallel/test-cwd-enoent-repl...
+                                                       === release test-crypto-keygen-async-explicit-elliptic-curve-encrypted-p256 ===
+Path: parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted-p256
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-explicit-elliptic-curve-encrypted-p256-pp.js
+--- TIMEOUT ---
+
+
+                                                       [78:22|%  10|+ 372|-   0]: release test-datetime-change-notify
+Running 96 mutated tests for parallel/test-datetime-change-notify...
+                                                              === release test-crypto-authenticated-stream ===
+Path: parallel/test-crypto-authenticated-stream
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-authenticated-stream-pp.js
+--- TIMEOUT ---
+
+
+                                                              [78:56|%  10|+ 373|-   0]: release test-debugger-address
+Running 126 mutated tests for parallel/test-debugger-address...
+                                                        === release test-crypto-keygen-async-named-elliptic-curve-encrypted ===
+Path: parallel/test-crypto-keygen-async-named-elliptic-curve-encrypted
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-named-elliptic-curve-encrypted-pp.js
+--- TIMEOUT ---
+
+
+                                                        [79:23|%  10|+ 374|-   0]: release test-debugger-auto-resume
+Running 114 mutated tests for parallel/test-debugger-auto-resume...
+                                                            [80:02|%  10|+ 375|-   0]: release test-debugger-backtrace
+Running 2960 mutated tests for parallel/test-debugger-backtrace...
+                                                          === release test-crypto-keygen ===
+Path: parallel/test-crypto-keygen
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-pp.js
+--- TIMEOUT ---
+
+
+                                                          [80:23|%  10|+ 376|-   0]: release test-debugger-break
+Running 2510 mutated tests for parallel/test-debugger-break...
+                                                      === release test-crypto-keygen-eddsa ===
+Path: parallel/test-crypto-keygen-eddsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-eddsa-pp.js
+--- TIMEOUT ---
+
+
+                                                      [80:43|%  10|+ 377|-   0]: release test-debugger-breakpoint-exists
+Running 1758 mutated tests for parallel/test-debugger-breakpoint-exists...
+                                                                  === release test-crypto-keygen-bit-length ===
+Path: parallel/test-crypto-keygen-bit-length
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-bit-length-pp.js
+--- TIMEOUT ---
+
+
+                                                                  [82:01|%  10|+ 378|-   0]: release test-debugger-clear-breakpoints
+Running 246 mutated tests for parallel/test-debugger-clear-breakpoints...
+                                                                  === release test-crypto-keygen-dh-classic ===
+Path: parallel/test-crypto-keygen-dh-classic
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-dh-classic-pp.js
+--- TIMEOUT ---
+
+
+                                                                  [82:21|%  10|+ 379|-   0]: release test-debugger-exceptions
+Running 1190 mutated tests for parallel/test-debugger-exceptions...
+                                                           === release test-crypto-hash ===
+Path: parallel/test-crypto-hash
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-hash-pp.js
+--- TIMEOUT ---
+
+
+                                                           [82:21|%  10|+ 380|-   0]: release test-debugger-exec
+Running 2914 mutated tests for parallel/test-debugger-exec...
+                                                     === release test-crypto-keygen-async-rsa ===
+Path: parallel/test-crypto-keygen-async-rsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-async-rsa-pp.js
+--- TIMEOUT ---
+
+
+                                                     [82:41|%  10|+ 381|-   0]: release test-debugger-exec-scope
+Running 2846 mutated tests for parallel/test-debugger-exec-scope...
+                                                           === release test-crypto-keygen-empty-passphrase-no-error ===
+Path: parallel/test-crypto-keygen-empty-passphrase-no-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-empty-passphrase-no-error-pp.js
+--- TIMEOUT ---
+
+
+                                                           [84:01|%  11|+ 382|-   0]: release test-debugger-extract-function-name
+Running 116 mutated tests for parallel/test-debugger-extract-function-name...
+                                                                      === release test-cluster-send-socket-to-worker-http-server ===
+Path: parallel/test-cluster-send-socket-to-worker-http-server
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-send-socket-to-worker-http-server-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [84:18|%  11|+ 383|-   0]: release test-debugger-heap-profiler
+Running 3000 mutated tests for parallel/test-debugger-heap-profiler...
+                                                              === release test-cluster-worker-wait-server-close ===
+Path: parallel/test-cluster-worker-wait-server-close
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-wait-server-close-pp.js
+--- TIMEOUT ---
+
+
+                                                              [84:36|%  11|+ 384|-   0]: release test-debugger-help
+Running 116 mutated tests for parallel/test-debugger-help...
+                                                     === release test-crypto-keygen-deprecation ===
+Path: parallel/test-crypto-keygen-deprecation
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-deprecation-pp.js
+--- TIMEOUT ---
+
+
+                                                     [84:42|%  11|+ 385|-   0]: release test-debugger-invalid-json
+Running 214 mutated tests for parallel/test-debugger-invalid-json...
+                                                             === release test-crypto-keygen-duplicate-deprecated-option ===
+Path: parallel/test-crypto-keygen-duplicate-deprecated-option
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-duplicate-deprecated-option-pp.js
+--- TIMEOUT ---
+
+
+                                                             [85:20|%  11|+ 386|-   0]: release test-debugger-list
+Running 2920 mutated tests for parallel/test-debugger-list...
+                                                     === release test-cluster-primary-error ===
+Path: parallel/test-cluster-primary-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-primary-error-pp.js
+--- TIMEOUT ---
+
+
+                                                     [85:32|%  11|+ 387|-   0]: release test-debugger-low-level
+Running 3086 mutated tests for parallel/test-debugger-low-level...
+                                                          === release test-cluster-worker-handle-close ===
+Path: parallel/test-cluster-worker-handle-close
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-worker-handle-close-pp.js
+--- TIMEOUT ---
+
+
+                                                          [85:40|%  11|+ 388|-   0]: release test-debugger-object-type-remote-object
+Running 2886 mutated tests for parallel/test-debugger-object-type-remote-object...
+                                                                          === release test-cluster-shared-leak ===
+Path: parallel/test-cluster-shared-leak
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-shared-leak-pp.js
+--- TIMEOUT ---
+
+
+                                                                          [89:19|%  11|+ 389|-   0]: release test-debugger-pid
+Running 172 mutated tests for parallel/test-debugger-pid...
+                                                    === release test-cluster-send-deadlock ===
+Path: parallel/test-cluster-send-deadlock
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-send-deadlock-pp.js
+--- TIMEOUT ---
+
+
+                                                    [89:20|%  11|+ 390|-   0]: release test-debugger-preserve-breaks
+Running 3058 mutated tests for parallel/test-debugger-preserve-breaks...
+                                                                === release test-cluster-message ===
+Path: parallel/test-cluster-message
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-message-pp.js
+--- TIMEOUT ---
+
+
+                                                                [92:18|%  11|+ 391|-   0]: release test-debugger-profile
+Running 200 mutated tests for parallel/test-debugger-profile...
+                                                        === release test-crypto-keygen-invalid-parameter-encoding-dsa ===
+Path: parallel/test-crypto-keygen-invalid-parameter-encoding-dsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-invalid-parameter-encoding-dsa-pp.js
+--- TIMEOUT ---
+
+
+                                                        [93:25|%  11|+ 392|-   0]: release test-debugger-profile-command
+Running 3028 mutated tests for parallel/test-debugger-profile-command...
+                                                                [94:03|%  11|+ 393|-   0]: release test-debugger-random-port
+Running 198 mutated tests for parallel/test-debugger-random-port...
+                                                            === release test-crypto-keygen-non-standard-public-exponent ===
+Path: parallel/test-crypto-keygen-non-standard-public-exponent
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-non-standard-public-exponent-pp.js
+--- TIMEOUT ---
+
+
+                                                            [94:22|%  11|+ 394|-   0]: release test-debugger-random-port-with-inspect-p...
+Running 206 mutated tests for parallel/test-debugger-random-port-with-inspect-port...
+                                                                              === release test-crypto-keygen-key-objects ===
+Path: parallel/test-crypto-keygen-key-objects
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-key-objects-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [94:42|%  11|+ 395|-   0]: release test-debugger-repeat-last
+Running 2600 mutated tests for parallel/test-debugger-repeat-last...
+                                                            === release test-crypto-keygen-missing-oid ===
+Path: parallel/test-crypto-keygen-missing-oid
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-missing-oid-pp.js
+--- TIMEOUT ---
+
+
+                                                            [96:20|%  11|+ 396|-   0]: release test-debugger-restart-message
+Running 3058 mutated tests for parallel/test-debugger-restart-message...
+                                                                === release test-crypto-padding ===
+Path: parallel/test-crypto-padding
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-padding-pp.js
+--- TIMEOUT ---
+
+
+                                                                [96:20|%  11|+ 397|-   0]: release test-debugger-run-after-quit-restart
+Running 210 mutated tests for parallel/test-debugger-run-after-quit-restart...
+                                                                       === release test-crypto-padding-aes256 ===
+Path: parallel/test-crypto-padding-aes256
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-padding-aes256-pp.js
+--- TIMEOUT ---
+
+
+                                                                       [96:40|%  11|+ 398|-   0]: release test-debugger-sb-before-load
+Running 3004 mutated tests for parallel/test-debugger-sb-before-load...
+                                                               === release test-cluster-send-handle-twice ===
+Path: parallel/test-cluster-send-handle-twice
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-send-handle-twice-pp.js
+--- TIMEOUT ---
+
+
+                                                               [98:12|%  11|+ 399|-   0]: release test-debugger-scripts
+Running 2964 mutated tests for parallel/test-debugger-scripts...
+                                                        [98:22|%  11|+ 400|-   0]: release test-debugger-set-context-line-number
+Running 120 mutated tests for parallel/test-debugger-set-context-line-number...
+                                                                        [99:18|%  11|+ 401|-   0]: release test-debugger-unavailable-port
+Running 292 mutated tests for parallel/test-debugger-unavailable-port...
+                                                                 [99:19|%  11|+ 402|-   0]: release test-debugger-use-strict
+Running 198 mutated tests for parallel/test-debugger-use-strict...
+                                                           === release test-crypto-keygen-rfc8017-9-1 ===
+Path: parallel/test-crypto-keygen-rfc8017-9-1
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-rfc8017-9-1-pp.js
+--- TIMEOUT ---
+
+
+                                                           [99:59|%  11|+ 403|-   0]: release test-debugger-watch-validation
+Running 3062 mutated tests for parallel/test-debugger-watch-validation...
+                                                                 === release test-crypto-pbkdf2 ===
+Path: parallel/test-crypto-pbkdf2
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-pbkdf2-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [99:59|%  11|+ 404|-   0]: release test-debugger-watchers
+Running 210 mutated tests for parallel/test-debugger-watchers...
+                                                         === release test-crypto-lazy-transform-writable ===
+Path: parallel/test-crypto-lazy-transform-writable
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-lazy-transform-writable-pp.js
+--- TIMEOUT ---
+
+
+                                                         [100:19|%  11|+ 405|-   0]: release test-debugger-websocket-secret-mismatch
+Running 224 mutated tests for parallel/test-debugger-websocket-secret-mismatch...
+                                                                           === release test-crypto-keygen-promisify ===
+Path: parallel/test-crypto-keygen-promisify
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-promisify-pp.js
+--- TIMEOUT ---
+
+
+                                                                           [100:39|%  11|+ 406|-   0]: release test-delayed-require
+Running 106 mutated tests for parallel/test-delayed-require...
+                                                        === release test-crypto-keygen-no-rsassa-pss-params ===
+Path: parallel/test-crypto-keygen-no-rsassa-pss-params
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-no-rsassa-pss-params-pp.js
+--- TIMEOUT ---
+
+
+                                                        [100:59|%  11|+ 407|-   0]: release test-dgram-abort-closed
+Running 118 mutated tests for parallel/test-dgram-abort-closed...
+                                                           === release test-crypto-keygen-rfc8017-a-2-3 ===
+Path: parallel/test-crypto-keygen-rfc8017-a-2-3
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-rfc8017-a-2-3-pp.js
+--- TIMEOUT ---
+
+
+                                                           [100:59|%  11|+ 408|-   0]: release test-dgram-address
+Running 112 mutated tests for parallel/test-dgram-address...
+                                                      === release test-crypto-randomfillsync-regression ===
+Path: parallel/test-crypto-randomfillsync-regression
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-randomfillsync-regression-pp.js
+--- TIMEOUT ---
+
+
+                                                      [102:37|%  11|+ 409|-   0]: release test-dgram-async-dispose
+Running 180 mutated tests for parallel/test-dgram-async-dispose...
+                                                            === release test-crypto-keygen-key-object-without-encoding ===
+Path: parallel/test-crypto-keygen-key-object-without-encoding
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-key-object-without-encoding-pp.js
+--- TIMEOUT ---
+
+
+                                                            [103:17|%  11|+ 410|-   0]: release test-dgram-bind
+Running 110 mutated tests for parallel/test-dgram-bind...
+                                                   [103:32|%  11|+ 411|-   0]: release test-dgram-bind-default-address
+Running 110 mutated tests for parallel/test-dgram-bind-default-address...
+                                                                   === release test-crypto-prime ===
+Path: parallel/test-crypto-prime
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-prime-pp.js
+--- TIMEOUT ---
+
+
+                                                                   [103:52|%  11|+ 412|-   0]: release test-dgram-bind-error-repeat
+Running 114 mutated tests for parallel/test-dgram-bind-error-repeat...
+                                                                === release test-cluster-http-pipe ===
+Path: parallel/test-cluster-http-pipe
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-http-pipe-pp.js
+--- TIMEOUT ---
+
+
+                                                                [104:24|%  11|+ 413|-   0]: release test-dgram-bytes-length
+Running 110 mutated tests for parallel/test-dgram-bytes-length...
+                                                           [104:50|%  11|+ 414|-   0]: release test-dgram-close-in-listening
+Running 116 mutated tests for parallel/test-dgram-close-in-listening...
+                                                                 === release test-crypto-keygen-rsa-pss ===
+Path: parallel/test-crypto-keygen-rsa-pss
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-keygen-rsa-pss-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [106:26|%  11|+ 415|-   0]: release test-dgram-close-is-not-callback
+Running 116 mutated tests for parallel/test-dgram-close-is-not-callback...
+                                                                    [106:59|%  11|+ 416|-   0]: release test-dgram-close-signal
+Running 132 mutated tests for parallel/test-dgram-close-signal...
+                                                           === release test-crypto-update-encoding ===
+Path: parallel/test-crypto-update-encoding
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-update-encoding-pp.js
+--- TIMEOUT ---
+
+
+                                                           [107:59|%  12|+ 417|-   0]: release test-dgram-cluster-close-during-bind
+Running 170 mutated tests for parallel/test-dgram-cluster-close-during-bind...
+                                                                        === release test-crypto-publicDecrypt-fails-first-time ===
+Path: parallel/test-crypto-publicDecrypt-fails-first-time
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-publicDecrypt-fails-first-time-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [108:00|%  12|+ 418|-   0]: release test-dgram-cluster-close-in-listening
+Running 198 mutated tests for parallel/test-dgram-cluster-close-in-listening...
+                                                                         === release test-crypto-private-decrypt-gh32240 ===
+Path: parallel/test-crypto-private-decrypt-gh32240
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-private-decrypt-gh32240-pp.js
+--- TIMEOUT ---
+
+
+                                                                         [108:37|%  12|+ 419|-   0]: release test-dgram-connect
+Running 116 mutated tests for parallel/test-dgram-connect...
+                                                      === release test-datetime-change-notify ===
+Path: parallel/test-datetime-change-notify
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-datetime-change-notify-pp.js
+--- TIMEOUT ---
+
+
+                                                      [109:41|%  12|+ 420|-   0]: release test-dgram-connect-send-callback-buffer
+Running 110 mutated tests for parallel/test-dgram-connect-send-callback-buffer...
+                                                                           === release test-crypto-rsa-dsa ===
+Path: parallel/test-crypto-rsa-dsa
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-rsa-dsa-pp.js
+--- TIMEOUT ---
+
+
+                                                                           [110:01|%  12|+ 421|-   0]: release test-dgram-connect-send-callback-buffer...
+Running 110 mutated tests for parallel/test-dgram-connect-send-callback-buffer-length...
+                                                                              [110:13|%  12|+ 422|-   0]: release test-dgram-connect-send-callback-multi-...
+Running 112 mutated tests for parallel/test-dgram-connect-send-callback-multi-buffer...
+                                                                              === release test-crypto-psychic-signatures ===
+Path: parallel/test-crypto-psychic-signatures
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-psychic-signatures-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [110:42|%  12|+ 423|-   0]: release test-dgram-connect-send-default-host
+Running 120 mutated tests for parallel/test-dgram-connect-send-default-host...
+                                                                        === release test-crypto-random ===
+Path: parallel/test-crypto-random
+Command: out/Release/node --pending-deprecation --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-random-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [111:14|%  12|+ 424|-   0]: release test-dgram-connect-send-empty-array
+Running 112 mutated tests for parallel/test-dgram-connect-send-empty-array...
+                                                                       === release test-crypto-stream ===
+Path: parallel/test-crypto-stream
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-stream-pp.js
+--- TIMEOUT ---
+
+
+                                                                       [111:54|%  12|+ 425|-   0]: release test-dgram-connect-send-empty-buffer
+Running 112 mutated tests for parallel/test-dgram-connect-send-empty-buffer...
+                                                                        === release test-crypto-subtle-zero-length ===
+Path: parallel/test-crypto-subtle-zero-length
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-subtle-zero-length-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [111:56|%  12|+ 426|-   0]: release test-dgram-connect-send-empty-packet
+Running 114 mutated tests for parallel/test-dgram-connect-send-empty-packet...
+                                                                        === release test-crypto-key-objects-messageport ===
+Path: parallel/test-crypto-key-objects-messageport
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-key-objects-messageport-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [112:37|%  12|+ 427|-   0]: release test-dgram-connect-send-multi-buffer-co...
+Running 112 mutated tests for parallel/test-dgram-connect-send-multi-buffer-copy...
+                                                                              === release test-debugger-auto-resume ===
+Path: parallel/test-debugger-auto-resume
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-auto-resume-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                              [117:11|%  12|+ 428|-   0]: release test-dgram-connect-send-multi-string-ar...
+Running 112 mutated tests for parallel/test-dgram-connect-send-multi-string-array...
+                                                                              === release test-debugger-address ===
+Path: parallel/test-debugger-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-address-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                              [120:39|%  12|+ 429|-   0]: release test-dgram-createSocket-type
+Running 122 mutated tests for parallel/test-dgram-createSocket-type...
+                                                                === release test-debugger-extract-function-name ===
+Path: parallel/test-debugger-extract-function-name
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-extract-function-name-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                [122:24|%  12|+ 430|-   0]: release test-dgram-custom-lookup
+Running 120 mutated tests for parallel/test-dgram-custom-lookup...
+                                                            === release test-debugger-help ===
+Path: parallel/test-debugger-help
+node:internal/bootstrap/realm:398
+          ret = ReflectApply(source, this, arguments);
+                ^
+
+Error: Timeout (5000) while waiting for /break (?:on start )?in/i; found: 
+    at Timeout.<anonymous> (/srv/source-code/js-runtime-taint/nodejs-taint/test/common/debugger.js:90:18)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+
+Node.js v21.0.0
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-help-pp.mjs
+
+
+                                                            [122:51|%  12|+ 431|-   0]: release test-dgram-deprecation-error
+Running 182 mutated tests for parallel/test-dgram-deprecation-error...
+                                                                === release test-crypto-secure-heap ===
+Path: parallel/test-crypto-secure-heap
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-secure-heap-pp.js
+--- TIMEOUT ---
+
+
+                                                                [134:45|%  12|+ 432|-   0]: release test-dgram-error-message-address
+Running 114 mutated tests for parallel/test-dgram-error-message-address...
+                                                                    [134:56|%  12|+ 433|-   0]: release test-dgram-exclusive-implicit-bind
+Running 628 mutated tests for parallel/test-dgram-exclusive-implicit-bind...
+                                                                      === release test-cwd-enoent ===
+Path: parallel/test-cwd-enoent
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cwd-enoent-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [135:17|%  12|+ 434|-   0]: release test-dgram-implicit-bind
+Running 118 mutated tests for parallel/test-dgram-implicit-bind...
+                                                            === release test-dgram-address ===
+Path: parallel/test-dgram-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-address-pp.js
+--- TIMEOUT ---
+
+
+                                                            [137:11|%  12|+ 435|-   0]: release test-dgram-ipv6only
+Running 96 mutated tests for parallel/test-dgram-ipv6only...
+                                                       === release test-debugger-set-context-line-number ===
+Path: parallel/test-debugger-set-context-line-number
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-set-context-line-number-pp.mjs
+--- TIMEOUT ---
+
+
+                                                       [137:56|%  12|+ 436|-   0]: release test-dgram-listen-after-bind
+Running 110 mutated tests for parallel/test-dgram-listen-after-bind...
+                                                                === release test-dgram-bind ===
+Path: parallel/test-dgram-bind
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-bind-pp.js
+--- TIMEOUT ---
+
+
+                                                                [138:36|%  12|+ 437|-   0]: release test-dgram-membership
+Running 120 mutated tests for parallel/test-dgram-membership...
+                                                         === release test-dgram-bind-default-address ===
+Path: parallel/test-dgram-bind-default-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-bind-default-address-pp.js
+--- TIMEOUT ---
+
+
+                                                         [139:05|%  12|+ 438|-   0]: release test-dgram-msgsize
+Running 118 mutated tests for parallel/test-dgram-msgsize...
+                                                      === release test-dgram-abort-closed ===
+Path: parallel/test-dgram-abort-closed
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-abort-closed-pp.js
+--- TIMEOUT ---
+
+
+                                                      [139:05|%  12|+ 439|-   0]: release test-dgram-multicast-loopback
+Running 112 mutated tests for parallel/test-dgram-multicast-loopback...
+                                                                 === release test-cwd-enoent-repl ===
+Path: parallel/test-cwd-enoent-repl
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cwd-enoent-repl-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [139:39|%  12|+ 440|-   0]: release test-dgram-multicast-set-interface
+Running 112 mutated tests for parallel/test-dgram-multicast-set-interface...
+                                                                      === release test-cwd-enoent-preload ===
+Path: parallel/test-cwd-enoent-preload
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cwd-enoent-preload-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [139:50|%  12|+ 441|-   0]: release test-dgram-multicast-setTTL
+Running 112 mutated tests for parallel/test-dgram-multicast-setTTL...
+                                                               === release test-dgram-bytes-length ===
+Path: parallel/test-dgram-bytes-length
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-bytes-length-pp.js
+--- TIMEOUT ---
+
+
+                                                               [139:58|%  12|+ 442|-   0]: release test-dgram-oob-buffer
+Running 116 mutated tests for parallel/test-dgram-oob-buffer...
+                                                         === release test-cluster-net-server-drop-connection ===
+Path: parallel/test-cluster-net-server-drop-connection
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-net-server-drop-connection-pp.js
+--- TIMEOUT ---
+
+
+                                                         [140:12|%  12|+ 443|-   0]: release test-dgram-ref
+Running 110 mutated tests for parallel/test-dgram-ref...
+                                                  === release test-dgram-bind-error-repeat ===
+Path: parallel/test-dgram-bind-error-repeat
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-bind-error-repeat-pp.js
+--- TIMEOUT ---
+
+
+                                                  [140:40|%  12|+ 444|-   0]: release test-dgram-send-address-types
+Running 110 mutated tests for parallel/test-dgram-send-address-types...
+                                                                 === release test-dgram-close-in-listening ===
+Path: parallel/test-dgram-close-in-listening
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-close-in-listening-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [142:21|%  12|+ 445|-   0]: release test-dgram-send-bad-arguments
+Running 116 mutated tests for parallel/test-dgram-send-bad-arguments...
+                                                                 === release test-dgram-close-is-not-callback ===
+Path: parallel/test-dgram-close-is-not-callback
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-close-is-not-callback-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [143:59|%  12|+ 446|-   0]: release test-dgram-send-callback-buffer
+Running 110 mutated tests for parallel/test-dgram-send-callback-buffer...
+                                                                   === release test-dgram-connect-send-callback-buffer ===
+Path: parallel/test-dgram-connect-send-callback-buffer
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-callback-buffer-pp.js
+--- TIMEOUT ---
+
+
+                                                                   [145:14|%  12|+ 447|-   0]: release test-dgram-send-callback-buffer-empty-a...
+Running 110 mutated tests for parallel/test-dgram-send-callback-buffer-empty-address...
+                                                                              === release test-dgram-connect-send-callback-buffer-length ===
+Path: parallel/test-dgram-connect-send-callback-buffer-length
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-callback-buffer-length-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [145:34|%  12|+ 448|-   0]: release test-dgram-send-callback-buffer-length
+Running 110 mutated tests for parallel/test-dgram-send-callback-buffer-length...
+                                                                          === release test-dgram-connect ===
+Path: parallel/test-dgram-connect
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-pp.js
+--- TIMEOUT ---
+
+
+                                                                          [146:07|%  12|+ 449|-   0]: release test-dgram-send-callback-buffer-length-...
+Running 110 mutated tests for parallel/test-dgram-send-callback-buffer-length-empty-address...
+                                                                              === release test-crypto-sign-verify ===
+Path: parallel/test-crypto-sign-verify
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-sign-verify-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [146:11|%  12|+ 450|-   0]: release test-dgram-send-callback-multi-buffer
+Running 112 mutated tests for parallel/test-dgram-send-callback-multi-buffer...
+                                                                         === release test-debugger-pid ===
+Path: parallel/test-debugger-pid
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-pid-pp.js
+--- TIMEOUT ---
+
+
+                                                                         [146:25|%  12|+ 451|-   0]: release test-dgram-send-callback-multi-buffer-e...
+Running 112 mutated tests for parallel/test-dgram-send-callback-multi-buffer-empty-address...
+                                                                              === release test-dgram-connect-send-callback-multi-buffer ===
+Path: parallel/test-dgram-connect-send-callback-multi-buffer
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-callback-multi-buffer-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [146:27|%  13|+ 452|-   0]: release test-dgram-send-callback-recursive
+Running 112 mutated tests for parallel/test-dgram-send-callback-recursive...
+                                                                      === release test-dgram-connect-send-empty-array ===
+Path: parallel/test-dgram-connect-send-empty-array
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-empty-array-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [147:28|%  13|+ 453|-   0]: release test-dgram-send-cb-quelches-error
+Running 120 mutated tests for parallel/test-dgram-send-cb-quelches-error...
+                                                                     [148:04|%  13|+ 454|-   0]: release test-dgram-send-default-host
+Running 116 mutated tests for parallel/test-dgram-send-default-host...
+                                                                === release test-dgram-connect-send-empty-packet ===
+Path: parallel/test-dgram-connect-send-empty-packet
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-empty-packet-pp.js
+--- TIMEOUT ---
+
+
+                                                                [148:44|%  13|+ 455|-   0]: release test-dgram-send-empty-array
+Running 114 mutated tests for parallel/test-dgram-send-empty-array...
+                                                               === release test-dgram-connect-send-multi-buffer-copy ===
+Path: parallel/test-dgram-connect-send-multi-buffer-copy
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-multi-buffer-copy-pp.js
+--- TIMEOUT ---
+
+
+                                                               [148:44|%  13|+ 456|-   0]: release test-dgram-send-empty-buffer
+Running 114 mutated tests for parallel/test-dgram-send-empty-buffer...
+                                                                === release test-child-process-prototype-tampering ===
+Path: parallel/test-child-process-prototype-tampering
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-child-process-prototype-tampering-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                [149:10|%  13|+ 457|-   0]: release test-dgram-send-empty-packet
+Running 114 mutated tests for parallel/test-dgram-send-empty-packet...
+                                                                [149:24|%  13|+ 458|-   0]: release test-dgram-send-invalid-msg-type
+Running 102 mutated tests for parallel/test-dgram-send-invalid-msg-type...
+                                                                    === release test-dgram-close-signal ===
+Path: parallel/test-dgram-close-signal
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-close-signal-pp.js
+--- TIMEOUT ---
+
+
+                                                                    [149:43|%  13|+ 459|-   0]: release test-dgram-send-multi-buffer-copy
+Running 112 mutated tests for parallel/test-dgram-send-multi-buffer-copy...
+                                                                     === release test-child-process-stdout-flush-exit ===
+Path: parallel/test-child-process-stdout-flush-exit
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-child-process-stdout-flush-exit-pp.js
+--- TIMEOUT ---
+
+
+                                                                     [152:46|%  13|+ 460|-   0]: release test-dgram-send-multi-string-array
+Running 112 mutated tests for parallel/test-dgram-send-multi-string-array...
+                                                                      === release test-dgram-connect-send-multi-string-array ===
+Path: parallel/test-dgram-connect-send-multi-string-array
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-connect-send-multi-string-array-pp.js
+--- TIMEOUT ---
+
+
+                                                                      [153:20|%  13|+ 461|-   0]: release test-dgram-send-queue-info
+Running 116 mutated tests for parallel/test-dgram-send-queue-info...
+                                                              === release test-debugger-invalid-json ===
+Path: parallel/test-debugger-invalid-json
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-invalid-json-pp.mjs
+--- TIMEOUT ---
+
+
+                                                              [155:37|%  13|+ 462|-   0]: release test-dgram-sendto
+Running 100 mutated tests for parallel/test-dgram-sendto...
+                                                     === release test-debugger-profile ===
+Path: parallel/test-debugger-profile
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-profile-pp.js
+--- TIMEOUT ---
+
+
+                                                     [158:49|%  13|+ 463|-   0]: release test-dgram-setBroadcast
+Running 112 mutated tests for parallel/test-dgram-setBroadcast...
+                                                           === release test-debugger-random-port ===
+Path: parallel/test-debugger-random-port
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-random-port-pp.js
+--- TIMEOUT ---
+
+
+                                                           [159:42|%  13|+ 464|-   0]: release test-dgram-setTTL
+Running 112 mutated tests for parallel/test-dgram-setTTL...
+                                                     [160:14|%  13|+ 465|-   0]: release test-dgram-udp4
+Running 120 mutated tests for parallel/test-dgram-udp4...
+                                                   === release test-dgram-custom-lookup ===
+Path: parallel/test-dgram-custom-lookup
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-custom-lookup-pp.js
+--- TIMEOUT ---
+
+
+                                                   [161:13|%  13|+ 466|-   0]: release test-dgram-udp6-link-local-address
+Running 96 mutated tests for parallel/test-dgram-udp6-link-local-address...
+                                                                      === release test-dgram-async-dispose ===
+Path: parallel/test-dgram-async-dispose
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-async-dispose-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                      [161:14|%  13|+ 467|-   0]: release test-dgram-udp6-send-default-host
+Running 96 mutated tests for parallel/test-dgram-udp6-send-default-host...
+                                                                     === release test-debugger-random-port-with-inspect-port ===
+Path: parallel/test-debugger-random-port-with-inspect-port
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-random-port-with-inspect-port-pp.js
+--- TIMEOUT ---
+
+
+                                                                     [162:43|%  13|+ 468|-   0]: release test-dgram-unref
+Running 110 mutated tests for parallel/test-dgram-unref...
+                                                    === release test-crypto-worker-thread ===
+Path: parallel/test-crypto-worker-thread
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-worker-thread-pp.js
+--- TIMEOUT ---
+
+
+                                                    [163:29|%  13|+ 469|-   0]: release test-dgram-unref-in-cluster
+Running 164 mutated tests for parallel/test-dgram-unref-in-cluster...
+                                                               === release test-debugger-clear-breakpoints ===
+Path: parallel/test-debugger-clear-breakpoints
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-clear-breakpoints-pp.js
+--- TIMEOUT ---
+
+
+                                                               [163:42|%  13|+ 470|-   0]: release test-diagnostics-channel-bind-store
+Running 126 mutated tests for parallel/test-diagnostics-channel-bind-store...
+                                                                       === release test-dgram-cluster-close-during-bind ===
+Path: parallel/test-dgram-cluster-close-during-bind
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-cluster-close-during-bind-pp.js
+--- TIMEOUT ---
+
+
+                                                                       [164:23|%  13|+ 471|-   0]: release test-diagnostics-channel-has-subscriber...
+Running 96 mutated tests for parallel/test-diagnostics-channel-has-subscribers...
+                                                                              === release test-debugger-use-strict ===
+Path: parallel/test-debugger-use-strict
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-use-strict-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [164:42|%  13|+ 472|-   0]: release test-diagnostics-channel-http
+Running 206 mutated tests for parallel/test-diagnostics-channel-http...
+                                                                 === release test-debugger-run-after-quit-restart ===
+Path: parallel/test-debugger-run-after-quit-restart
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-run-after-quit-restart-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [166:02|%  13|+ 473|-   0]: release test-diagnostics-channel-http-server-st...
+Running 210 mutated tests for parallel/test-diagnostics-channel-http-server-start...
+                                                                              [168:19|%  13|+ 474|-   0]: release test-diagnostics-channel-memory-leak
+Running 94 mutated tests for parallel/test-diagnostics-channel-memory-leak...
+                                                                        === release test-debugger-watchers ===
+Path: parallel/test-debugger-watchers
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-watchers-pp.mjs
+--- TIMEOUT ---
+
+
+                                                                        [170:04|%  13|+ 475|-   0]: release test-diagnostics-channel-net
+Running 198 mutated tests for parallel/test-diagnostics-channel-net...
+                                                                === release test-crypto-verify-failure ===
+Path: parallel/test-crypto-verify-failure
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-crypto-verify-failure-pp.js
+--- TIMEOUT ---
+
+
+                                                                [171:18|%  13|+ 476|-   0]: release test-diagnostics-channel-object-channel...
+Running 104 mutated tests for parallel/test-diagnostics-channel-object-channel-pub-sub...
+                                                                              === release test-dgram-error-message-address ===
+Path: parallel/test-dgram-error-message-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-error-message-address-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [171:38|%  13|+ 477|-   0]: release test-diagnostics-channel-process
+Running 146 mutated tests for parallel/test-diagnostics-channel-process...
+                                                                    === release test-dgram-listen-after-bind ===
+Path: parallel/test-dgram-listen-after-bind
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-listen-after-bind-pp.js
+--- TIMEOUT ---
+
+
+                                                                    [173:16|%  13|+ 478|-   0]: release test-diagnostics-channel-pub-sub
+Running 104 mutated tests for parallel/test-diagnostics-channel-pub-sub...
+                                                                    [173:29|%  13|+ 479|-   0]: release test-diagnostics-channel-safe-subscribe...
+Running 106 mutated tests for parallel/test-diagnostics-channel-safe-subscriber-errors...
+                                                                              === release test-dgram-cluster-close-in-listening ===
+Path: parallel/test-dgram-cluster-close-in-listening
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-cluster-close-in-listening-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [173:49|%  13|+ 480|-   0]: release test-diagnostics-channel-symbol-named
+Running 104 mutated tests for parallel/test-diagnostics-channel-symbol-named...
+                                                                         === release test-debugger-websocket-secret-mismatch ===
+Path: parallel/test-debugger-websocket-secret-mismatch
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-websocket-secret-mismatch-pp.js
+--- TIMEOUT ---
+
+
+                                                                         [174:40|%  13|+ 481|-   0]: release test-diagnostics-channel-sync-unsubscri...
+Running 104 mutated tests for parallel/test-diagnostics-channel-sync-unsubscribe...
+                                                                              === release test-dgram-multicast-loopback ===
+Path: parallel/test-dgram-multicast-loopback
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-multicast-loopback-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [175:26|%  13|+ 482|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-async...
+                                                                              === release test-dgram-ref ===
+Path: parallel/test-dgram-ref
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-ref-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [175:46|%  13|+ 483|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 106 mutated tests for parallel/test-diagnostics-channel-tracing-channel-async-error...
+                                                                              === release test-dgram-multicast-set-interface ===
+Path: parallel/test-dgram-multicast-set-interface
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-multicast-set-interface-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [176:07|%  13|+ 484|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-callback-run-stores...
+                                                                              === release test-dgram-multicast-setTTL ===
+Path: parallel/test-dgram-multicast-setTTL
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-multicast-setTTL-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [176:07|%  13|+ 485|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-promise-run-stores...
+                                                                              === release test-dgram-send-address-types ===
+Path: parallel/test-dgram-send-address-types
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-address-types-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [176:27|%  13|+ 486|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-run-stores...
+                                                                              === release test-dgram-membership ===
+Path: parallel/test-dgram-membership
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-membership-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [177:07|%  14|+ 487|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-sync...
+                                                                              === release test-dgram-oob-buffer ===
+Path: parallel/test-dgram-oob-buffer
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-oob-buffer-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [177:46|%  14|+ 488|-   0]: release test-diagnostics-channel-tracing-channe...
+Running 104 mutated tests for parallel/test-diagnostics-channel-tracing-channel-sync-error...
+                                                                              === release test-dgram-msgsize ===
+Path: parallel/test-dgram-msgsize
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-msgsize-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [177:47|%  14|+ 489|-   0]: release test-diagnostics-channel-udp
+Running 110 mutated tests for parallel/test-diagnostics-channel-udp...
+                                                                === release test-dgram-send-callback-buffer ===
+Path: parallel/test-dgram-send-callback-buffer
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-callback-buffer-pp.js
+--- TIMEOUT ---
+
+
+                                                                [179:47|%  14|+ 490|-   0]: release test-diagnostics-channel-worker-threads
+Running 252 mutated tests for parallel/test-diagnostics-channel-worker-threads...
+                                                                           === release test-dgram-send-bad-arguments ===
+Path: parallel/test-dgram-send-bad-arguments
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-bad-arguments-pp.js
+--- TIMEOUT ---
+
+
+                                                                           [180:08|%  14|+ 491|-   0]: release test-directory-import
+Running 106 mutated tests for parallel/test-directory-import...
+                                                         === release test-cluster-disconnect ===
+Path: parallel/test-cluster-disconnect
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-cluster-disconnect-pp.js
+--- TIMEOUT ---
+
+
+                                                         [180:46|%  14|+ 492|-   0]: release test-disable-proto-delete
+Running 226 mutated tests for parallel/test-disable-proto-delete...
+                                                             [181:05|%  14|+ 493|-   0]: release test-disable-proto-throw
+Running 228 mutated tests for parallel/test-disable-proto-throw...
+                                                            [181:08|%  14|+ 494|-   0]: release test-dns
+Running 166 mutated tests for parallel/test-dns...
+                                            === release test-dgram-send-callback-buffer-length-empty-address ===
+Path: parallel/test-dgram-send-callback-buffer-length-empty-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-callback-buffer-length-empty-address-pp.js
+--- TIMEOUT ---
+
+
+                                            [182:07|%  14|+ 495|-   0]: release test-dns-cancel-reverse-lookup
+Running 114 mutated tests for parallel/test-dns-cancel-reverse-lookup...
+                                                                  [182:42|%  14|+ 496|-   0]: release test-dns-channel-cancel
+Running 112 mutated tests for parallel/test-dns-channel-cancel...
+                                                           [182:46|%  14|+ 497|-   0]: release test-dns-channel-cancel-promise
+Running 112 mutated tests for parallel/test-dns-channel-cancel-promise...
+                                                                   === release test-dgram-send-callback-recursive ===
+Path: parallel/test-dgram-send-callback-recursive
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-callback-recursive-pp.js
+--- TIMEOUT ---
+
+
+                                                                   [183:04|%  14|+ 498|-   0]: release test-dns-channel-timeout
+Running 122 mutated tests for parallel/test-dns-channel-timeout...
+                                                            === release test-dgram-send-callback-multi-buffer-empty-address ===
+Path: parallel/test-dgram-send-callback-multi-buffer-empty-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-callback-multi-buffer-empty-address-pp.js
+--- TIMEOUT ---
+
+
+                                                            [183:07|%  14|+ 499|-   0]: release test-dns-get-server
+Running 108 mutated tests for parallel/test-dns-get-server...
+                                                       === release test-dgram-deprecation-error ===
+Path: parallel/test-dgram-deprecation-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-deprecation-error-pp.js
+--- TIMEOUT ---
+
+
+                                                       [183:27|%  14|+ 500|-   0]: release test-dns-lookupService-promises
+Running 110 mutated tests for parallel/test-dns-lookupService-promises...
+                                                                   === release test-dgram-send-empty-buffer ===
+Path: parallel/test-dgram-send-empty-buffer
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-empty-buffer-pp.js
+--- TIMEOUT ---
+
+
+                                                                   [185:38|%  14|+ 501|-   0]: release test-dns-multi-channel
+Running 128 mutated tests for parallel/test-dns-multi-channel...
+                                                          [185:53|%  14|+ 502|-   0]: release test-dns-perf_hooks
+Running 114 mutated tests for parallel/test-dns-perf_hooks...
+                                                       === release test-dgram-send-default-host ===
+Path: parallel/test-dgram-send-default-host
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-default-host-pp.js
+--- TIMEOUT ---
+
+
+                                                       [186:07|%  14|+ 503|-   0]: release test-dns-promises-exists
+Running 100 mutated tests for parallel/test-dns-promises-exists...
+                                                            === release test-dgram-send-empty-packet ===
+Path: parallel/test-dgram-send-empty-packet
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-empty-packet-pp.js
+--- TIMEOUT ---
+
+
+                                                            [186:12|%  14|+ 504|-   0]: release test-dns-resolveany
+Running 132 mutated tests for parallel/test-dns-resolveany...
+                                                       === release test-dgram-send-multi-buffer-copy ===
+Path: parallel/test-dgram-send-multi-buffer-copy
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-multi-buffer-copy-pp.js
+--- TIMEOUT ---
+
+
+                                                       [186:27|%  14|+ 505|-   0]: release test-dns-resolveany-bad-ancount
+Running 128 mutated tests for parallel/test-dns-resolveany-bad-ancount...
+                                                                   [186:39|%  14|+ 506|-   0]: release test-dns-resolvens-typeerror
+Running 100 mutated tests for parallel/test-dns-resolvens-typeerror...
+                                                                [187:57|%  14|+ 507|-   0]: release test-dns-setlocaladdress
+Running 100 mutated tests for parallel/test-dns-setlocaladdress...
+                                                            === release test-dgram-send-multi-string-array ===
+Path: parallel/test-dgram-send-multi-string-array
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-multi-string-array-pp.js
+--- TIMEOUT ---
+
+
+                                                            [189:11|%  14|+ 508|-   0]: release test-dns-setserver-when-querying
+Running 110 mutated tests for parallel/test-dns-setserver-when-querying...
+                                                                    === release test-dgram-send-queue-info ===
+Path: parallel/test-dgram-send-queue-info
+Command: out/Release/node --test-udp-no-try-send --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-send-queue-info-pp.js
+--- TIMEOUT ---
+
+
+                                                                    [191:12|%  14|+ 509|-   0]: release test-dns-setservers-type-check
+Running 108 mutated tests for parallel/test-dns-setservers-type-check...
+                                                                  === release test-dgram-udp6-send-default-host ===
+Path: parallel/test-dgram-udp6-send-default-host
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-udp6-send-default-host-pp.js
+--- TIMEOUT ---
+
+
+                                                                  [192:32|%  14|+ 510|-   0]: release test-domain-abort-on-uncaught
+Running 188 mutated tests for parallel/test-domain-abort-on-uncaught...
+                                                                 === release test-dgram-udp6-link-local-address ===
+Path: parallel/test-dgram-udp6-link-local-address
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-udp6-link-local-address-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [192:33|%  14|+ 511|-   0]: release test-domain-add-remove
+Running 100 mutated tests for parallel/test-domain-add-remove...
+                                                          === release test-dgram-setBroadcast ===
+Path: parallel/test-dgram-setBroadcast
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-setBroadcast-pp.js
+--- TIMEOUT ---
+
+
+                                                          [195:10|%  14|+ 512|-   0]: release test-domain-async-id-map-leak
+Running 112 mutated tests for parallel/test-domain-async-id-map-leak...
+                                                                 === release test-diagnostics-channel-has-subscribers ===
+Path: parallel/test-diagnostics-channel-has-subscribers
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-has-subscribers-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [195:50|%  14|+ 513|-   0]: release test-domain-bind-timeout
+Running 110 mutated tests for parallel/test-domain-bind-timeout...
+                                                            === release test-dgram-setTTL ===
+Path: parallel/test-dgram-setTTL
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-setTTL-pp.js
+--- TIMEOUT ---
+
+
+                                                            [196:11|%  14|+ 514|-   0]: release test-domain-crypto
+Running 108 mutated tests for parallel/test-domain-crypto...
+                                                      === release test-debugger-unavailable-port ===
+Path: parallel/test-debugger-unavailable-port
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-debugger-unavailable-port-pp.js
+--- TIMEOUT ---
+
+
+                                                      [196:14|%  14|+ 515|-   0]: release test-domain-dep0097
+Running 116 mutated tests for parallel/test-domain-dep0097...
+                                                       === release test-dgram-unref ===
+Path: parallel/test-dgram-unref
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-unref-pp.js
+--- TIMEOUT ---
+
+
+                                                       [198:51|%  14|+ 516|-   0]: release test-domain-ee
+Running 108 mutated tests for parallel/test-domain-ee...
+                                                  === release test-diagnostics-channel-memory-leak ===
+Path: parallel/test-diagnostics-channel-memory-leak
+Command: out/Release/node --expose-gc --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-memory-leak-pp.js
+--- TIMEOUT ---
+
+
+                                                  [199:12|%  14|+ 517|-   0]: release test-domain-ee-error-listener
+Running 108 mutated tests for parallel/test-domain-ee-error-listener...
+                                                                 === release test-dgram-udp4 ===
+Path: parallel/test-dgram-udp4
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-udp4-pp.js
+--- TIMEOUT ---
+
+
+                                                                 [199:32|%  14|+ 518|-   0]: release test-domain-ee-implicit
+Running 108 mutated tests for parallel/test-domain-ee-implicit...
+                                                           [205:17|%  14|+ 519|-   0]: release test-domain-emit-error-handler-stack
+Running 108 mutated tests for parallel/test-domain-emit-error-handler-stack...
+                                                                        === release test-diagnostics-channel-bind-store ===
+Path: parallel/test-diagnostics-channel-bind-store
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-bind-store-pp.js
+--- TIMEOUT ---
+
+
+                                                                        [205:33|%  14|+ 520|-   0]: release test-domain-enter-exit
+Running 112 mutated tests for parallel/test-domain-enter-exit...
+                                                          === release test-diagnostics-channel-pub-sub ===
+Path: parallel/test-diagnostics-channel-pub-sub
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-pub-sub-pp.js
+--- TIMEOUT ---
+
+
+                                                          [207:20|%  15|+ 521|-   0]: release test-domain-error-types
+Running 108 mutated tests for parallel/test-domain-error-types...
+                                                           === release test-diagnostics-channel-symbol-named ===
+Path: parallel/test-diagnostics-channel-symbol-named
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-symbol-named-pp.js
+--- TIMEOUT ---
+
+
+                                                           [207:59|%  15|+ 522|-   0]: release test-domain-from-timer
+Running 102 mutated tests for parallel/test-domain-from-timer...
+                                                          === release test-diagnostics-channel-safe-subscriber-errors ===
+Path: parallel/test-diagnostics-channel-safe-subscriber-errors
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-safe-subscriber-errors-pp.js
+--- TIMEOUT ---
+
+
+                                                          [208:20|%  15|+ 523|-   0]: release test-domain-fs-enoent-stream
+Running 146 mutated tests for parallel/test-domain-fs-enoent-stream...
+                                                                === release test-diagnostics-channel-sync-unsubscribe ===
+Path: parallel/test-diagnostics-channel-sync-unsubscribe
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-sync-unsubscribe-pp.js
+--- TIMEOUT ---
+
+
+                                                                [208:40|%  15|+ 524|-   0]: release test-domain-http-server
+Running 266 mutated tests for parallel/test-domain-http-server...
+                                                           === release test-diagnostics-channel-tracing-channel-async ===
+Path: parallel/test-diagnostics-channel-tracing-channel-async
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-async-pp.js
+--- TIMEOUT ---
+
+
+                                                           [209:38|%  15|+ 525|-   0]: release test-domain-implicit-binding
+Running 114 mutated tests for parallel/test-domain-implicit-binding...
+                                                                === release test-diagnostics-channel-tracing-channel-callback-run-stores ===
+Path: parallel/test-diagnostics-channel-tracing-channel-callback-run-stores
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-callback-run-stores-pp.js
+--- TIMEOUT ---
+
+
+                                                                [210:19|%  15|+ 526|-   0]: release test-domain-implicit-fs
+Running 120 mutated tests for parallel/test-domain-implicit-fs...
+                                                           === release test-diagnostics-channel-tracing-channel-promise-run-stores ===
+Path: parallel/test-diagnostics-channel-tracing-channel-promise-run-stores
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-promise-run-stores-pp.js
+--- TIMEOUT ---
+
+
+                                                           [210:19|%  15|+ 527|-   0]: release test-domain-intercept
+Running 110 mutated tests for parallel/test-domain-intercept...
+                                                         === release test-diagnostics-channel-tracing-channel-run-stores ===
+Path: parallel/test-diagnostics-channel-tracing-channel-run-stores
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-run-stores-pp.js
+--- TIMEOUT ---
+
+
+                                                         [210:39|%  15|+ 528|-   0]: release test-domain-load-after-set-uncaught-exc...
+Running 102 mutated tests for parallel/test-domain-load-after-set-uncaught-exception-capture...
+                                                                              === release test-diagnostics-channel-tracing-channel-async-error ===
+Path: parallel/test-diagnostics-channel-tracing-channel-async-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-async-error-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [210:40|%  15|+ 529|-   0]: release test-domain-multi
+Running 244 mutated tests for parallel/test-domain-multi...
+                                                     === release test-diagnostics-channel-tracing-channel-sync ===
+Path: parallel/test-diagnostics-channel-tracing-channel-sync
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-sync-pp.js
+--- TIMEOUT ---
+
+
+                                                     [211:20|%  15|+ 530|-   0]: release test-domain-multiple-errors
+Running 108 mutated tests for parallel/test-domain-multiple-errors...
+                                                               === release test-diagnostics-channel-tracing-channel-sync-error ===
+Path: parallel/test-diagnostics-channel-tracing-channel-sync-error
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-tracing-channel-sync-error-pp.js
+--- TIMEOUT ---
+
+
+                                                               [211:59|%  15|+ 531|-   0]: release test-domain-nested
+Running 100 mutated tests for parallel/test-domain-nested...
+                                                      [213:55|%  15|+ 532|-   0]: release test-domain-nested-throw
+Running 130 mutated tests for parallel/test-domain-nested-throw...
+                                                            === release test-directory-import ===
+Path: parallel/test-directory-import
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-directory-import-pp.js
+--- TIMEOUT ---
+
+
+                                                            [214:56|%  15|+ 533|-   0]: release test-domain-nexttick
+Running 112 mutated tests for parallel/test-domain-nexttick...
+                                                        === release test-async-local-storage-http-multiclients ===
+Path: parallel/test-async-local-storage-http-multiclients
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-async-local-storage-http-multiclients-pp.js
+--- TIMEOUT ---
+
+
+                                                        [217:57|%  15|+ 534|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-0...
+                                                                              === release test-dgram-unref-in-cluster ===
+Path: parallel/test-dgram-unref-in-cluster
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dgram-unref-in-cluster-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [218:00|%  15|+ 535|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-1...
+                                                                              [218:35|%  15|+ 536|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-2...
+                                                                              === release test-dns-promises-exists ===
+Path: parallel/test-dns-promises-exists
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dns-promises-exists-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [218:46|%  15|+ 537|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-3...
+                                                                              [219:25|%  15|+ 538|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 176 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-4...
+                                                                              [219:26|%  15|+ 539|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-5...
+                                                                              [219:26|%  15|+ 540|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-6...
+                                                                              [219:27|%  15|+ 541|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-7...
+                                                                              [219:35|%  15|+ 542|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 176 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-8...
+                                                                              === release test-child-process-spawn-typeerror ===
+Path: parallel/test-child-process-spawn-typeerror
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-child-process-spawn-typeerror-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [219:47|%  15|+ 543|-   0]: release test-domain-no-error-handler-abort-on-u...
+Running 178 mutated tests for parallel/test-domain-no-error-handler-abort-on-uncaught-9...
+                                                                              === release test-diagnostics-channel-process ===
+Path: parallel/test-diagnostics-channel-process
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-diagnostics-channel-process-pp.js
+--- TIMEOUT ---
+
+
+                                                                              [220:05|%  15|+ 544|-   0]: release test-domain-promise
+Running 136 mutated tests for parallel/test-domain-promise...
+                                                       === release test-dns-setlocaladdress ===
+Path: parallel/test-dns-setlocaladdress
+Command: out/Release/node --no-opt /srv/source-code/js-runtime-taint/nodejs-taint/test/parallel/test-dns-setlocaladdress-pp.js
+--- TIMEOUT ---
+
+
+                                                       [220:46|%  15|+ 545|-   0]: release test-domain-run
+Running 100 mutated tests for parallel/test-domain-run...
+                                                   [223:04|%  15|+ 546|-   0]: release test-domain-safe-exit
+Running 120 mutated tests for parallel/test-domain-safe-exit...
+                                                         [224:59|%  15|+ 546|-   0]: Done
+
+All tests passed.
+Total execution time: 225 mins 27 secs

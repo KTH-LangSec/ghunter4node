@@ -1,0 +1,1403 @@
+diff --git a/.gitignore b/.gitignore
+index a575a4475b..f3c7c4432e 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -24,6 +24,7 @@
+ !.yamllint.yaml
+ 
+ # === Rules for root dir ===
++/fuzzing*
+ /core
+ /vgcore.*
+ /v8*.log
+diff --git a/deps/v8/src/builtins/builtins-definitions.h b/deps/v8/src/builtins/builtins-definitions.h
+index f7b94c4059..d3f30d1e6a 100644
+--- a/deps/v8/src/builtins/builtins-definitions.h
++++ b/deps/v8/src/builtins/builtins-definitions.h
+@@ -601,6 +601,7 @@ namespace internal {
+   CPP(GlobalEscape)                                                            \
+   CPP(GlobalUnescape)                                                          \
+   CPP(GlobalEval)                                                              \
++  CPP(GlobalLog)                                                               \
+   /* ES6 #sec-isfinite-number */                                               \
+   TFJ(GlobalIsFinite, kJSArgcReceiverSlots + 1, kReceiver, kNumber)            \
+   /* ES6 #sec-isnan-number */                                                  \
+diff --git a/deps/v8/src/builtins/builtins-global.cc b/deps/v8/src/builtins/builtins-global.cc
+index 137f7f3402..d426a13d12 100644
+--- a/deps/v8/src/builtins/builtins-global.cc
++++ b/deps/v8/src/builtins/builtins-global.cc
+@@ -112,5 +112,29 @@ BUILTIN(GlobalEval) {
+       Execution::Call(isolate, function, target_global_proxy, 0, nullptr));
+ }
+ 
++// log info about tained data from JS
++BUILTIN(GlobalLog) {
++  HandleScope scope(isolate);
++  Handle<String> str;
++  ASSIGN_RETURN_FAILURE_ON_EXCEPTION(
++      isolate, str,
++      Object::ToString(isolate, args.atOrUndefined(isolate, 1)));
++
++  {
++    str = i::String::Flatten(isolate, str);
++    int length = str->length();
++    uint8_t* message = new uint8_t[length + 1];
++    i::String::WriteToFlat(*str, message, 0, length);
++    message[length] = '\0';
++
++    // LOG!!!
++    FuzzStream os;
++    os << "[From JS] " << (char*)message << "\n";
++    delete[] message;
++  }
++
++  return ReadOnlyRoots(isolate).undefined_value();
++}
++
+ }  // namespace internal
+ }  // namespace v8
+diff --git a/deps/v8/src/codegen/compiler.cc b/deps/v8/src/codegen/compiler.cc
+index 9fab1cd40f..31ffc9aaa8 100644
+--- a/deps/v8/src/codegen/compiler.cc
++++ b/deps/v8/src/codegen/compiler.cc
+@@ -14,6 +14,7 @@
+ #include "src/base/logging.h"
+ #include "src/base/optional.h"
+ #include "src/base/platform/time.h"
++#include "src/base/strings.h"
+ #include "src/baseline/baseline.h"
+ #include "src/codegen/assembler-inl.h"
+ #include "src/codegen/compilation-cache.h"
+@@ -2148,6 +2149,12 @@ MaybeHandle<JSFunction> Compiler::GetFunctionFromEval(
+     Handle<Context> context, LanguageMode language_mode,
+     ParseRestriction restriction, int parameters_end_pos,
+     int eval_scope_position, int eval_position) {
++  if (strcasestr(source->ToCString().get(), "0xEFFACED")) {
++    // LOG!!!
++    FuzzStream os;
++    os << "EVAL!!!\n";
++  }
++
+   Isolate* isolate = context->GetIsolate();
+   int source_length = source->length();
+   isolate->counters()->total_eval_size()->Increment(source_length);
+diff --git a/deps/v8/src/ic/accessor-assembler.cc b/deps/v8/src/ic/accessor-assembler.cc
+index 505849b9b6..1cbb5233a5 100644
+--- a/deps/v8/src/ic/accessor-assembler.cc
++++ b/deps/v8/src/ic/accessor-assembler.cc
+@@ -3095,19 +3095,19 @@ void AccessorAssembler::LoadIC_NoFeedback(const LoadICParameters* p,
+   {
+     // Special case for Function.prototype load, because it's very common
+     // for ICs that are only executed once (MyFunc.prototype.foo = ...).
+-    Label not_function_prototype(this, Label::kDeferred);
+-    GotoIfNot(IsJSFunctionInstanceType(instance_type), &not_function_prototype);
+-    GotoIfNot(IsPrototypeString(p->name()), &not_function_prototype);
++    //Label not_function_prototype(this, Label::kDeferred);
++    GotoIfNot(IsJSFunctionInstanceType(instance_type), &miss);//&not_function_prototype);
++    GotoIfNot(IsPrototypeString(p->name()), &miss);//&not_function_prototype);
+ 
+     GotoIfPrototypeRequiresRuntimeLookup(CAST(lookup_start_object),
+                                          lookup_start_object_map,
+-                                         &not_function_prototype);
++                                         &miss);//&not_function_prototype);
+     Return(LoadJSFunctionPrototype(CAST(lookup_start_object), &miss));
+-    BIND(&not_function_prototype);
++    //BIND(&not_function_prototype);
+   }
+ 
+-  GenericPropertyLoad(CAST(lookup_start_object), lookup_start_object_map,
+-                      instance_type, p, &miss, kDontUseStubCache);
++  // GenericPropertyLoad(CAST(lookup_start_object), lookup_start_object_map,
++  //                     instance_type, p, &miss, kDontUseStubCache);
+ 
+   BIND(&miss);
+   {
+@@ -3311,10 +3311,10 @@ void AccessorAssembler::KeyedLoadIC(const LoadICParameters* p,
+ 
+   TVARIABLE(MaybeObject, var_handler);
+   Label if_handler(this, &var_handler), try_polymorphic(this, Label::kDeferred),
+-      try_megamorphic(this, Label::kDeferred),
+-      try_uninitialized(this, Label::kDeferred),
+-      try_polymorphic_name(this, Label::kDeferred),
+-      miss(this, Label::kDeferred), generic(this, Label::kDeferred);
++    try_megamorphic(this, Label::kDeferred),
++    try_uninitialized(this, Label::kDeferred),
++    try_polymorphic_name(this, Label::kDeferred),
++    miss(this, Label::kDeferred), generic(this, Label::kDeferred);
+ 
+   TNode<Map> lookup_start_object_map =
+       LoadReceiverMap(p->receiver_and_lookup_start_object());
+diff --git a/deps/v8/src/ic/ic.cc b/deps/v8/src/ic/ic.cc
+index b2e3b6fe25..743471f2d3 100644
+--- a/deps/v8/src/ic/ic.cc
++++ b/deps/v8/src/ic/ic.cc
+@@ -401,6 +401,8 @@ void IC::ConfigureVectorState(
+ MaybeHandle<Object> LoadIC::Load(Handle<Object> object, Handle<Name> name,
+                                  bool update_feedback,
+                                  Handle<Object> receiver) {
++  // FuzzStream os;
++  // os << "[LoadIC::Load]: " << name << "\n"; 
+   bool use_ic = (state() != NO_FEEDBACK) && FLAG_use_ic && update_feedback;
+ 
+   if (receiver.is_null()) {
+@@ -450,6 +452,13 @@ MaybeHandle<Object> LoadIC::Load(Handle<Object> object, Handle<Name> name,
+   // Named lookup in the object.
+   LookupForRead(&it, IsAnyHas());
+ 
++  if (!it.IsFound() && it.CheckedPrototype()) {
++    // Changed by mshc
++    // LOG!!!
++    FuzzStream os;
++    os << "[LoadIC::Load] NOT FOUND: " << name << "\n";
++  }
++
+   if (name->IsPrivate()) {
+     if (!IsAnyHas() && name->IsPrivateName() && !it.IsFound()) {
+       Handle<String> name_string(
+@@ -510,6 +519,9 @@ MaybeHandle<Object> LoadGlobalIC::Load(Handle<Name> name,
+                                        bool update_feedback) {
+   Handle<JSGlobalObject> global = isolate()->global_object();
+ 
++  // FuzzStream os;
++  // os << "[LoadGlobalIC::Load]: " << name << "\n";
++
+   if (name->IsString()) {
+     // Look up in script context table.
+     Handle<String> str_name = Handle<String>::cast(name);
+@@ -1528,6 +1540,9 @@ MaybeHandle<Object> KeyedLoadIC::RuntimeLoad(Handle<Object> object,
+                                              Handle<Object> key) {
+   Handle<Object> result;
+ 
++  // FuzzStream os;
++  // os << "[KeyedLoadIC::RuntimeLoad]: " << key << "\n";
++
+   if (IsKeyedLoadIC()) {
+     ASSIGN_RETURN_ON_EXCEPTION(
+         isolate(), result, Runtime::GetObjectProperty(isolate(), object, key),
+@@ -1543,6 +1558,9 @@ MaybeHandle<Object> KeyedLoadIC::RuntimeLoad(Handle<Object> object,
+ 
+ MaybeHandle<Object> KeyedLoadIC::Load(Handle<Object> object,
+                                       Handle<Object> key) {
++  // FuzzStream os;
++  // os << "[KeyedLoadIC::Load]: " << key << "\n";
++
+   if (MigrateDeprecated(isolate(), object)) {
+     return RuntimeLoad(object, key);
+   }
+@@ -2517,6 +2535,10 @@ RUNTIME_FUNCTION(Runtime_LoadIC_Miss) {
+   // Runtime functions don't follow the IC's calling convention.
+   Handle<Object> receiver = args.at(0);
+   Handle<Name> key = args.at<Name>(1);
++
++  // FuzzStream os;
++  // os << "[Runtime_LoadIC_Miss]: " << key << "\n";
++
+   Handle<TaggedIndex> slot = args.at<TaggedIndex>(2);
+   Handle<FeedbackVector> vector = args.at<FeedbackVector>(3);
+   FeedbackSlot vector_slot = FeedbackVector::ToSlot(slot->value());
+@@ -2551,6 +2573,16 @@ RUNTIME_FUNCTION(Runtime_LoadNoFeedbackIC_Miss) {
+   // Runtime functions don't follow the IC's calling convention.
+   Handle<Object> receiver = args.at(0);
+   Handle<Name> key = args.at<Name>(1);
++
++  // FuzzStream os;
++  // os << "[Runtime_LoadNoFeedbackIC_Miss]: " << key << "\n";
++
++  // base::ScopedVector<char> name_buffer(100);
++  // key->NameShortPrint(name_buffer);
++  // if (strcmp(name_buffer.begin(), "obj") == 0) {
++  //   os << "THIS IS obj!!\n";
++  // }
++
+   CONVERT_INT32_ARG_CHECKED(slot_kind, 2);
+   FeedbackSlotKind kind = static_cast<FeedbackSlotKind>(slot_kind);
+ 
+@@ -2571,6 +2603,9 @@ RUNTIME_FUNCTION(Runtime_LoadWithReceiverNoFeedbackIC_Miss) {
+   Handle<Object> object = args.at(1);
+   Handle<Name> key = args.at<Name>(2);
+ 
++  // FuzzStream os;
++  // os << "[Runtime_LoadWithReceiverNoFeedbackIC_Miss]: " << key << "\n";
++
+   Handle<FeedbackVector> vector = Handle<FeedbackVector>();
+   FeedbackSlot vector_slot = FeedbackSlot::Invalid();
+   LoadIC ic(isolate, vector, vector_slot, FeedbackSlotKind::kLoadProperty);
+@@ -2584,6 +2619,10 @@ RUNTIME_FUNCTION(Runtime_LoadGlobalIC_Miss) {
+   // Runtime functions don't follow the IC's calling convention.
+   Handle<JSGlobalObject> global = isolate->global_object();
+   Handle<String> name = args.at<String>(0);
++
++  // FuzzStream os;
++  // os << "[Runtime_LoadGlobalIC_Miss]: " << name << "\n";
++
+   Handle<TaggedIndex> slot = args.at<TaggedIndex>(1);
+   Handle<HeapObject> maybe_vector = args.at<HeapObject>(2);
+   CONVERT_INT32_ARG_CHECKED(typeof_value, 3);
+@@ -2612,6 +2651,9 @@ RUNTIME_FUNCTION(Runtime_LoadGlobalIC_Slow) {
+   DCHECK_EQ(3, args.length());
+   CONVERT_ARG_HANDLE_CHECKED(String, name, 0);
+ 
++  // FuzzStream os;
++  // os << "[Runtime_LoadGlobalIC_Slow]: " << name << "\n";
++
+   Handle<TaggedIndex> slot = args.at<TaggedIndex>(1);
+   Handle<FeedbackVector> vector = args.at<FeedbackVector>(2);
+   FeedbackSlot vector_slot = FeedbackVector::ToSlot(slot->value());
+@@ -2630,6 +2672,10 @@ RUNTIME_FUNCTION(Runtime_LoadWithReceiverIC_Miss) {
+   Handle<Object> receiver = args.at(0);
+   Handle<Object> object = args.at(1);
+   Handle<Name> key = args.at<Name>(2);
++
++  // FuzzStream os;
++  // os << "[Runtime_LoadWithReceiverIC_Miss]: " << key << "\n";
++
+   Handle<TaggedIndex> slot = args.at<TaggedIndex>(3);
+   Handle<FeedbackVector> vector = args.at<FeedbackVector>(4);
+   FeedbackSlot vector_slot = FeedbackVector::ToSlot(slot->value());
+@@ -3052,6 +3098,11 @@ RUNTIME_FUNCTION(Runtime_LoadPropertyWithInterceptor) {
+   HandleScope scope(isolate);
+   DCHECK_EQ(5, args.length());
+   Handle<Name> name = args.at<Name>(0);
++
++  // LOG!!!
++  FuzzStream os;
++  os << "[Runtime_LoadPropertyWithInterceptor]: " << name << "\n";
++
+   Handle<Object> receiver = args.at(1);
+   Handle<JSObject> holder = args.at<JSObject>(2);
+ 
+@@ -3148,6 +3199,10 @@ RUNTIME_FUNCTION(Runtime_LoadElementWithInterceptor) {
+   DCHECK_GE(args.smi_at(1), 0);
+   uint32_t index = args.smi_at(1);
+ 
++  // LOG!!!
++  FuzzStream os;
++  os << "[Runtime_LoadElementWithInterceptor]: " << "\n";
++
+   Handle<InterceptorInfo> interceptor(receiver->GetIndexedInterceptor(),
+                                       isolate);
+   PropertyCallbackArguments arguments(isolate, interceptor->data(), *receiver,
+diff --git a/deps/v8/src/init/bootstrapper.cc b/deps/v8/src/init/bootstrapper.cc
+index ea654ba103..77e9feb3f4 100644
+--- a/deps/v8/src/init/bootstrapper.cc
++++ b/deps/v8/src/init/bootstrapper.cc
+@@ -4705,6 +4705,10 @@ bool Genesis::InstallABunchOfRandomThings() {
+     native_context()->set_global_eval_fun(*eval);
+   }
+ 
++  // Install Global.log for tainting messages
++  InstallFunctionWithBuiltinId(isolate(), global_object, "log",
++                               Builtin::kGlobalLog, 1, false);
++
+   // Install Global.isFinite
+   InstallFunctionWithBuiltinId(isolate(), global_object, "isFinite",
+                                Builtin::kGlobalIsFinite, 1, true);
+diff --git a/deps/v8/src/objects/lookup-inl.h b/deps/v8/src/objects/lookup-inl.h
+index 41db47e40a..232c533a70 100644
+--- a/deps/v8/src/objects/lookup-inl.h
++++ b/deps/v8/src/objects/lookup-inl.h
+@@ -18,6 +18,7 @@
+ #include "src/objects/map-inl.h"
+ #include "src/objects/name-inl.h"
+ #include "src/objects/objects-inl.h"
++#include "src/utils/ostreams.h"
+ 
+ namespace v8 {
+ namespace internal {
+@@ -74,6 +75,15 @@ LookupIterator::LookupIterator(Isolate* isolate, Handle<Object> receiver,
+       receiver_(receiver),
+       lookup_start_object_(lookup_start_object),
+       index_(index) {
++  
++  // FuzzStream os;
++  // os << "[LookupIterator]: ";
++  // if (!name_.is_null()) {
++  //   os << name_;
++  // }
++
++  // os << "=CTOR=\n";
++
+   if (IsElement()) {
+     // If we're not looking at a TypedArray, we will need the key represented
+     // as an internalized string.
+diff --git a/deps/v8/src/objects/lookup.cc b/deps/v8/src/objects/lookup.cc
+index b53bbeb0e7..f133a25264 100644
+--- a/deps/v8/src/objects/lookup.cc
++++ b/deps/v8/src/objects/lookup.cc
+@@ -120,6 +120,7 @@ void LookupIterator::NextInternal(Map map, JSReceiver holder) {
+     holder = maybe_holder;
+     map = holder.map(isolate_);
+     state_ = LookupInHolder<is_element>(map, holder);
++    checked_prototype_ = true;
+   } while (!IsFound());
+ 
+   holder_ = handle(holder, isolate_);
+diff --git a/deps/v8/src/objects/lookup.h b/deps/v8/src/objects/lookup.h
+index de678f35b0..5f190d1712 100644
+--- a/deps/v8/src/objects/lookup.h
++++ b/deps/v8/src/objects/lookup.h
+@@ -12,6 +12,7 @@
+ #include "src/objects/js-objects.h"
+ #include "src/objects/map.h"
+ #include "src/objects/objects.h"
++#include "src/utils/ostreams.h"
+ 
+ #if V8_ENABLE_WEBASSEMBLY
+ #include "src/wasm/value-type.h"
+@@ -115,11 +116,35 @@ class V8_EXPORT_PRIVATE LookupIterator final {
+   // any integer for JSTypedArrays).
+   inline bool IsElement(JSReceiver object) const;
+ 
+-  bool IsFound() const { return state_ != NOT_FOUND; }
++  bool IsFound() const { 
++    // if (state_ == NOT_FOUND) {
++    //   FuzzStream os;
++    //   os << "[LookupIterator::IsFound] NOT FOUND: ";
++    //   if (!name_.is_null()) {
++    //     os << name_;
++    //   }
++
++    //   os << "\n";
++    // }
++
++    return state_ != NOT_FOUND; 
++  }
++  bool CheckedPrototype() const {
++    return checked_prototype_;
++  }
++
+   void Next();
+   void NotFound() {
+     has_property_ = false;
+     state_ = NOT_FOUND;
++
++    // FuzzStream os;
++    // os << "[LookupIterator::NotFound] NOT FOUND: ";
++    // if (!name_.is_null()) {
++    //   os << name_;
++    // }
++
++    // os << "=INTERNAL=\n";
+   }
+ 
+   Heap* heap() const { return isolate_->heap(); }
+@@ -292,6 +317,7 @@ class V8_EXPORT_PRIVATE LookupIterator final {
+   // HolderIsReceiverOrHiddenPrototype.
+   const Configuration configuration_;
+   State state_ = NOT_FOUND;
++  bool checked_prototype_ = false;
+   bool has_property_ = false;
+   InterceptorState interceptor_state_ = InterceptorState::kUninitialized;
+   PropertyDetails property_details_ = PropertyDetails::Empty();
+diff --git a/deps/v8/src/runtime/runtime-object.cc b/deps/v8/src/runtime/runtime-object.cc
+index 3da21358d8..7dfc3a3ac9 100644
+--- a/deps/v8/src/runtime/runtime-object.cc
++++ b/deps/v8/src/runtime/runtime-object.cc
+@@ -23,6 +23,7 @@
+ #include "src/objects/swiss-name-dictionary-inl.h"
+ #include "src/runtime/runtime-utils.h"
+ #include "src/runtime/runtime.h"
++#include "src/utils/ostreams.h"
+ 
+ namespace v8 {
+ namespace internal {
+@@ -44,6 +45,15 @@ MaybeHandle<Object> Runtime::GetObjectProperty(
+   LookupIterator it =
+       LookupIterator(isolate, receiver, lookup_key, lookup_start_object);
+ 
++  if (!it.IsFound() && it.CheckedPrototype()) {
++    // Changed by mshc
++    // LOG!!!
++    FuzzStream os;
++    os << "[Runtime::GetObjectProperty] NOT FOUND: " << key;
++    os << "\n";
++  }
++
++
+   MaybeHandle<Object> result = Object::GetProperty(&it);
+   if (is_found) *is_found = it.IsFound();
+ 
+@@ -713,6 +723,9 @@ RUNTIME_FUNCTION(Runtime_GetProperty) {
+     receiver_obj = args.at<Object>(2);
+   }
+ 
++  // FuzzStream os;
++  // os << "[Runtime_GetProperty]: " << key_obj << "\n";
++
+   // Fast cases for getting named properties of the lookup_start_obj JSObject
+   // itself.
+   //
+diff --git a/deps/v8/src/utils/ostreams.cc b/deps/v8/src/utils/ostreams.cc
+index a2a6f8574f..500a9916d4 100644
+--- a/deps/v8/src/utils/ostreams.cc
++++ b/deps/v8/src/utils/ostreams.cc
+@@ -5,6 +5,9 @@
+ #include "src/utils/ostreams.h"
+ 
+ #include <cinttypes>
++#include <unistd.h>
++#include <fcntl.h>
++
+ 
+ #include "src/base/lazy-instance.h"
+ #include "src/objects/objects.h"
+@@ -115,9 +118,64 @@ std::streamsize AndroidLogStream::xsputn(const char* s, std::streamsize n) {
+ }
+ #endif
+ 
++fdoutbuf::fdoutbuf(int fd) :fd(fd) {
++  if (this->fd == -1) {
++    std::perror("Error opening taint.log");
++    std::exit(1);
++  }
++}
++
++fdoutbuf::int_type fdoutbuf::overflow(int_type c) {
++  if (c != EOF) {
++    char z = c;
++    if (write(fd, &z, 1) != 1) {
++      return EOF;
++    }
++  }
++  return c;
++}
++
++int fdoutbuf::size = 0;
++std::streamsize fdoutbuf::xsputn(const char* s, std::streamsize num) {
++  // we assume that FuzzStream writes line by line and 1'000'000 
++  // lines is our threshold to avoid creating big files on a disk 
++  if (size > 1000000)
++    return 0;
++
++  size++;
++  return write(fd, s, num);
++}
++
+ DEFINE_LAZY_LEAKY_OBJECT_GETTER(base::RecursiveMutex,
+                                 StdoutStream::GetStdoutMutex)
+ 
++DEFINE_LAZY_LEAKY_OBJECT_GETTER(base::RecursiveMutex,
++                                FuzzStream::GetFuzzMutex)
++
++int FuzzStream::file = -1;
++FuzzStream::FuzzStream() {
++  buf = new fdoutbuf(getFile());
++  this->init(buf);
++}
++
++FuzzStream::~FuzzStream() {
++  delete buf;
++}
++
++int FuzzStream::getFile() {
++if (file < 0) {
++    const std::string folderPath = /*%PLACEHOLDER% LOGPATH*/ "/srv/source-code/js-runtime-taint/nodejs-taint/fuzzing/tmp/";
++    int count = 1;
++    do
++    {
++      std::string filePath = folderPath + "taint_" + std::to_string(count++) + ".log";
++      file = open(filePath.c_str(), O_WRONLY | O_CREAT | O_EXCL, 0644);
++    } while (file < 0);
++  }
++
++  return file;
++}
++
+ namespace {
+ 
+ // Locale-independent predicates.
+diff --git a/deps/v8/src/utils/ostreams.h b/deps/v8/src/utils/ostreams.h
+index 01966869af..bb7f9372a8 100644
+--- a/deps/v8/src/utils/ostreams.h
++++ b/deps/v8/src/utils/ostreams.h
+@@ -97,6 +97,33 @@ class StdoutStream : public OFStream {
+ 
+   base::RecursiveMutexGuard mutex_guard_{GetStdoutMutex()};
+ };
++
++class fdoutbuf : public std::streambuf {
++ public:
++  fdoutbuf(int fd);
++
++ protected:
++  virtual int_type overflow(int_type c) override;
++  virtual std::streamsize xsputn(const char* s, std::streamsize num) override;
++
++ private:
++  static int size;
++  int fd;
++};
++
++class FuzzStream : public std::ostream {
++ public:
++  FuzzStream();
++  virtual ~FuzzStream();
++
++ private:
++  static int file;
++  static int getFile();
++  static V8_EXPORT_PRIVATE base::RecursiveMutex* GetFuzzMutex();
++
++  base::RecursiveMutexGuard mutex_guard_{GetFuzzMutex()};
++  fdoutbuf* buf;
++};
+ #endif
+ 
+ // Wrappers to disambiguate uint16_t and base::uc16.
+diff --git a/lib/internal/bootstrap/loaders.js b/lib/internal/bootstrap/loaders.js
+index c392da2468..81490ea927 100644
+--- a/lib/internal/bootstrap/loaders.js
++++ b/lib/internal/bootstrap/loaders.js
+@@ -51,13 +51,60 @@ const {
+   ObjectCreate,
+   ObjectDefineProperty,
+   ObjectKeys,
++  ObjectGetOwnPropertyDescriptor,
+   ObjectPrototypeHasOwnProperty,
++  ObjectSetPrototypeOf,
++  ObjectValues,
+   ReflectGet,
++  ReflectHas,
+   SafeMap,
+   SafeSet,
+   String,
+   StringPrototypeStartsWith,
+   TypeError,
++  ReflectApply,
++  ReflectConstruct,
++  ReflectOwnKeys,
++  ReflectGetPrototypeOf,
++
++  // all known prototypes:
++  AggregateErrorPrototype,
++  ArrayPrototype,
++  ArrayBufferPrototype,
++  AsyncIteratorPrototype,
++  BigIntPrototype,
++  BigInt64ArrayPrototype,
++  BigUint64ArrayPrototype,
++  BooleanPrototype,
++  DataViewPrototype,
++  DatePrototype,
++  ErrorPrototype,
++  EvalErrorPrototype,
++  Float32ArrayPrototype,
++  Float64ArrayPrototype,
++  FunctionPrototype,
++  Int16ArrayPrototype,
++  Int32ArrayPrototype,
++  Int8ArrayPrototype,
++  MapPrototype,
++  NumberPrototype,
++  ObjectPrototype,
++  RangeErrorPrototype,
++  ReferenceErrorPrototype,
++  RegExpPrototype,
++  SetPrototype,
++  StringPrototype,
++  SymbolPrototype,
++  SyntaxErrorPrototype,
++  TypeErrorPrototype,
++  URIErrorPrototype,
++  Uint16ArrayPrototype,
++  Uint32ArrayPrototype,
++  Uint8ArrayPrototype,
++  Uint8ClampedArrayPrototype,
++  WeakMapPrototype,
++  WeakSetPrototype,
++  PromisePrototype,
+ } = primordials;
+ 
+ // Set up process.moduleLoadList.
+@@ -125,6 +172,9 @@ const legacyWrapperList = new SafeSet([
+ 
+   process.binding = function binding(module) {
+     module = String(module);
++    if (globalThis.log) {
++      globalThis.log(`binding[${moduleLoadList.length}]: ${module}`);
++    }
+     // Deprecated specific process.binding() modules, but not all, allow
+     // selective fallback to internalBinding for the deprecated ones.
+     if (internalBindingAllowlist.has(module)) {
+@@ -147,8 +197,13 @@ const legacyWrapperList = new SafeSet([
+   process._linkedBinding = function _linkedBinding(module) {
+     module = String(module);
+     let mod = bindingObj[module];
+-    if (typeof mod !== 'object')
++    if (typeof mod !== 'object') {
++      if (globalThis.log) {
++        globalThis.log(`_linkedBinding[${moduleLoadList.length}]: ${module}`);
++      }
++
+       mod = bindingObj[module] = getLinkedBinding(module);
++    }
+     return mod;
+   };
+ }
+@@ -158,15 +213,354 @@ const legacyWrapperList = new SafeSet([
+  * @type {InternalBinding}
+  */
+ let internalBinding;
++let wrapper;
+ {
++  // %PLACEHOLDER% WRAP
++  function Wrapper(logCallback, beforeFuncCallback, afterFuncCallback) {
++    this.log = logCallback;
++    this.beforeFunc = beforeFuncCallback;
++    this.afterFunc = afterFuncCallback;
++    this.cache = new WeakSet();
++  }
++  
++  Wrapper.prototype.wrapPrototype = function (source, accessPath, level) {
++    const proto = ReflectGetPrototypeOf(source);
++    if (proto) {
++      if (proto === ArrayPrototype ||
++          proto === ArrayBufferPrototype ||
++          proto === AsyncIteratorPrototype ||
++          proto === BigIntPrototype ||
++          proto === BigInt64ArrayPrototype ||
++          proto === BigUint64ArrayPrototype ||
++          proto === BooleanPrototype ||
++          proto === DataViewPrototype ||
++          proto === DatePrototype ||
++          proto === ErrorPrototype ||
++          proto === EvalErrorPrototype ||
++          proto === Float32ArrayPrototype ||
++          proto === Float64ArrayPrototype ||
++          proto === FunctionPrototype ||
++          proto === Int16ArrayPrototype ||
++          proto === Int32ArrayPrototype ||
++          proto === Int8ArrayPrototype ||
++          proto === MapPrototype ||
++          proto === NumberPrototype ||
++          proto === ObjectPrototype ||
++          proto === RangeErrorPrototype ||
++          proto === ReferenceErrorPrototype ||
++          proto === RegExpPrototype ||
++          proto === SetPrototype ||
++          proto === StringPrototype ||
++          proto === SymbolPrototype ||
++          proto === SyntaxErrorPrototype ||
++          proto === TypeErrorPrototype ||
++          proto === URIErrorPrototype ||
++          proto === Uint16ArrayPrototype ||
++          proto === Uint32ArrayPrototype ||
++          proto === Uint8ArrayPrototype ||
++          proto === Uint8ClampedArrayPrototype ||
++          proto === WeakMapPrototype ||
++          proto === WeakSetPrototype ||
++          proto === PromisePrototype) {
++        return;
++      }
++  
++      this.wrap(proto, accessPath + '.__proto__', level + 1);
++    }
++  }
++  
++  Wrapper.prototype.wrapProperty = function (source, key, dest, accessPath, level) {
++    const descriptor = ObjectGetOwnPropertyDescriptor(source, key);
++    if (descriptor) {
++      let keyString;
++      if (typeof key === 'symbol') {
++        keyString = `[symbol]${key.toString()}`
++      } else {
++        // key should be string
++        keyString = key;
++      }
++  
++      if (ObjectPrototypeHasOwnProperty(descriptor, 'value')) {
++        const wrappedValue = this.wrap(descriptor.value, accessPath + '.' + keyString, level + 1);
++        if (source !== dest) {
++          ObjectDefineProperty(dest, key, {
++            enumerable: descriptor.enumerable,
++            configurable: descriptor.configurable,
++            writable: descriptor.writable,
++            value: wrappedValue
++          });
++        } else if (typeof descriptor.value === 'function') {
++          if (descriptor.configurable) {
++            ObjectDefineProperty(dest, key, {
++              enumerable: descriptor.enumerable,
++              configurable: descriptor.configurable,
++              writable: descriptor.writable,
++              value: wrappedValue
++            });
++          } else if (descriptor.writable) {
++            dest[key] = wrappedValue;
++          } else {
++            this.log('[WARNING] Not replaced the property: ' + accessPath + '.' + keyString);
++          }
++        }
++      }
++      else {
++        if (source !== dest || descriptor.configurable) {
++          let wrappedGetter;
++          if (descriptor.get) {
++            wrappedGetter = this.wrap(descriptor.get, accessPath + '.[getter]' + keyString, level + 1);
++          }
++  
++          let wrappedSetter;
++          if (descriptor.set) {
++            wrappedSetter = this.wrap(descriptor.set, accessPath + '.[setter]' + keyString, level + 1);
++          }
++  
++          ObjectDefineProperty(dest, key, {
++              enumerable: descriptor.enumerable,
++              configurable: descriptor.configurable,
++              get: wrappedGetter,
++              set: wrappedSetter
++          })
++        } else {
++          this.log(`[WARNING] The property ${accessPath + '.' + keyString} cannot be wrapped due to configurable is ${descriptor.configurable}`)
++        }
++      }
++    }
++  }
++  
++  Wrapper.prototype.wrap = function (source, accessPath, level = 0) {
++    if (!source) {
++      return source;
++    }
++  
++    if (level > 9) {
++      this.log('[WARNING] Interrupt wrapping the object: ' + accessPath)
++      return source;
++    }
++  
++    if (typeof source === 'function') {
++      if (source.constructor.name === "AsyncFunction") {
++        this.log('[WARNING] Not support async functions');
++        return source;
++      }
++  
++      if (this.cache.has(source)) {
++        // we already wrapped the function
++        return source;
++      }
++  
++      if (source.constructor.name === 'GeneratorFunction' || 
++          source.constructor.name === 'AsyncGeneratorFunction') {
++        // https://stackoverflow.com/a/19660350/1815957
++        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator
++        // https://javascript.info/generators
++        this.log('[WARNING] Not support Generator functions');
++        return source;
++      }
++  
++      const wrapperThis = this;
++      const f = function () {
++        let accessPathNew = accessPath + '()';
++        // if (!accessPath.includes('(') && arguments.length > 0) {
++        //   accessPathNew = accessPath + `('${arguments[0]}')`;
++        // } else {
++        //   accessPathNew = accessPath + '()';
++        // }
++  
++        const needToWrap = wrapperThis.beforeFunc(accessPathNew, arguments);
++        let ret;
++        if (new.target) {
++          const newTarget = ReflectGetPrototypeOf(this).constructor;
++          ret = ReflectConstruct(source, arguments, newTarget);
++        } else {
++          ret = ReflectApply(source, this, arguments);
++        }
++  
++        if (wrapperThis.afterFunc) {
++          wrapperThis.afterFunc(accessPathNew, arguments, ret);
++        }
++  
++        if (needToWrap) {
++          return wrapperThis.wrap(ret, accessPathNew, level + 1);
++        } else {
++          return ret;
++        }
++      }
++  
++      if (source.name && source.name != '') {
++        ObjectDefineProperty(f, 'name', { value: source.name, writable: false });
++      }
++  
++      // if source is a class, then properties are static members
++      for (const key of ReflectOwnKeys(source)) {
++        if (key === 'length' ||
++            key === 'name' ||
++            key === 'prototype') {
++          // ignore built-in properties of functions
++          continue;
++        }
++  
++        this.wrapProperty(source, key, f, accessPath + '.' + source.name, level);
++      }
++  
++      if (source.prototype) {
++        for (const key of ReflectOwnKeys(source.prototype)) {
++          if (key === 'constructor') {  // recursive link to the function `source`
++            ObjectDefineProperty(source.prototype, 'constructor', {
++              enumerable: false,
++              configurable: true,
++              writable: true,
++              value: f
++            })
++          } else {
++            this.wrapProperty(source.prototype, key, source.prototype, accessPath + '.' + source.name + '.prototype', level);
++          }
++        }
++  
++        f.prototype = source.prototype;
++      }
++      else {
++        f.prototype = null;
++      }
++  
++      this.cache.add(f);
++      return f;
++    }
++    
++    if (typeof source === 'object') {
++      if (this.cache.has(source)) {
++        return source;
++      }
++  
++      this.cache.add(source);
++      // HOW to wrap arrays?
++      this.wrapPrototype(source, accessPath, level);
++      for (const key of ReflectOwnKeys(source)) {
++        this.wrapProperty(source, key, source, accessPath, level);
++      }
++  
++      return source;
++    }
++  
++    // seems it is a primitive value
++    return source;
++  }
++  // %PLACEHOLDER% END
++
++  function beforeFuncCallback(accessPath, args) {
++    function searchTaintedImpl(obj, level) {
++      if (level <= 0) {
++        log('[WARNING] Interrupt looking for a taint mark.')
++        return undefined;
++      }
++
++      if (obj === undefined || obj === null)
++        return undefined;
++
++      const objType = typeof obj;
++      if (objType === 'function')
++        return undefined;
++
++      if (objType === 'string') {
++        if (obj === '0xEFFACED')
++          return { path: "", value: '0xEFFACED' };
++
++        if (obj.startsWith('// %TESTCASE%'))
++          return undefined;
++
++        if (obj.match(/EFFACED|251636973/i))  // 251636973 is 0xEFFACED in dec
++          return { path: "", value: obj };
++      }
++      else if (objType === 'number') {
++        if (obj === 0xEFFACED) {
++          return { path: "", value: '[Number]0xEFFACED' };
++        }
++
++        let s = obj.toString(16);
++        if (s.includes('effaced')) {
++          return { path: "", value: '[Number]' + s };
++        }
++      }
++      else if (objType === 'object') {
++        if (ReflectHas(obj, Symbol.iterator) && typeof ReflectGet(obj, Symbol.iterator) === 'function') {
++          try {
++            let index = 0;
++            for (const item of obj) {
++              let res = searchTaintedImpl(item, level - 1);
++              if (res) {
++                return { path: `[${index}]${res.path}`, value: res.value};
++              }
++
++              index++;
++            }
++          } catch { }
++        }
++
++        for (const key of ReflectOwnKeys(obj)) {
++          if (key === '__effaced')
++            return { path: ".__effaced", value: obj.__effaced };
++
++          let val = undefined;
++          try {
++            // the getter can throw an exception, just ignore it
++            val = obj[key];
++          } catch { }
++
++          let res = searchTaintedImpl(val, level - 1);
++          if (res) {
++            return { path: `[${key}]${res.path}`, value: res.value };
++          }
++        }
++
++        let toStringVal = undefined;
++        try {
++          toStringVal = obj.toString();
++        } catch { }
++
++        if (toStringVal) {
++          let res = searchTaintedImpl(toStringVal, level - 1);
++          if (res) {
++            return { path: `.toString()${res.path}`, value: res.value };
++          }
++        }
++      }
++
++      return undefined;
++    }
++
++    for (let i = 0; i < args.length; i++) {
++      let res = searchTaintedImpl(args[i], 10);
++      if (res) {
++        let msg = '    ' + accessPath + ' has ' + i + 'th TAINTED arg: ' + res.value.replace(/\n/g, '\\n').replace(/\r/g, '\\r') + (res.path ? (' at ' + res.path) : '');
++        try {
++          throw new Error();
++        } catch (error) {
++          msg = msg + ' | sink stack: ' + error.stack.replace(/\n/g, '\\n').replace(/\r/g, '\\r');
++        }
++
++        log(msg);
++      }
++    }
++
++    return false;
++  }
++
++  wrapper = new Wrapper(log, beforeFuncCallback);
++
+   const bindingObj = ObjectCreate(null);
+   // eslint-disable-next-line no-global-assign
+   internalBinding = function internalBinding(module) {
+     let mod = bindingObj[module];
+     if (typeof mod !== 'object') {
+-      mod = bindingObj[module] = getInternalBinding(module);
++      if (globalThis.log) {
++        globalThis.log(`internalBinding[${moduleLoadList.length}]: ${module}`);
++      }
++      
++      mod = bindingObj[module] = wrapper.wrap(getInternalBinding(module), module);
+       ArrayPrototypePush(moduleLoadList, `Internal Binding ${module}`);
+     }
++
+     return mod;
+   };
+ }
+@@ -291,7 +685,7 @@ class NativeModule {
+         const exportName = names[i];
+         if (exportName === 'default') continue;
+         this.module.setExport(exportName,
+-                              getOwn(this.exports, exportName, this.exports));
++          getOwn(this.exports, exportName, this.exports));
+       }
+     }
+   }
+@@ -316,6 +710,8 @@ class NativeModule {
+       this.loading = false;
+     }
+ 
++    // "NativeModule" is a legacy name of "BuiltinModule". We keep it
++    // here to avoid breaking users who parse process.moduleLoadList.
+     ArrayPrototypePush(moduleLoadList, `NativeModule ${id}`);
+     return this.exports;
+   }
+diff --git a/test/message/testcfg.py b/test/message/testcfg.py
+index 4be454b55c..7ebb64ac0c 100644
+--- a/test/message/testcfg.py
++++ b/test/message/testcfg.py
+@@ -38,7 +38,12 @@ class MessageTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, expected, arch, mode, context, config):
+     super(MessageTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.expected = expected
+     self.config = config
+     self.arch = arch
+diff --git a/test/pseudo-tty/testcfg.py b/test/pseudo-tty/testcfg.py
+index df380ad31e..91782c931e 100644
+--- a/test/pseudo-tty/testcfg.py
++++ b/test/pseudo-tty/testcfg.py
+@@ -42,7 +42,12 @@ class TTYTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, expected, input_arg, arch, mode, context, config):
+     super(TTYTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.expected = expected
+     self.input = input_arg
+     self.config = config
+diff --git a/test/testpy/__init__.py b/test/testpy/__init__.py
+index c89ab6e8b5..a033d48360 100644
+--- a/test/testpy/__init__.py
++++ b/test/testpy/__init__.py
+@@ -39,7 +39,12 @@ class SimpleTestCase(test.TestCase):
+ 
+   def __init__(self, path, file, arch, mode, context, config, additional=None):
+     super(SimpleTestCase, self).__init__(context, path, arch, mode)
+-    self.file = file
++    # self.file = file
++    self.original_file = file
++    tmp = os.path.splitext(file)
++    base = tmp[0]
++    ext = tmp[1]
++    self.file = base + '-pp' + ext
+     self.config = config
+     self.arch = arch
+     self.mode = mode
+diff --git a/tools/test.py b/tools/test.py
+index f204004c7a..cc32a3d235 100755
+--- a/tools/test.py
++++ b/tools/test.py
+@@ -43,7 +43,12 @@ import utils
+ import multiprocessing
+ import errno
+ import copy
++import io
++import shutil
+ 
++def dump(obj):
++  for attr in dir(obj):
++    print("obj.%s = %r" % (attr, getattr(obj, attr)))
+ 
+ if sys.version_info >= (3, 5):
+   from importlib import machinery, util
+@@ -93,6 +98,19 @@ os.environ['NODE_OPTIONS'] = ''
+ # --- P r o g r e s s   I n d i c a t o r s ---
+ # ---------------------------------------------
+ 
++def LoadJSHelper(path):
++  skip = False
++  def predicate(line):
++    nonlocal skip
++    if (not skip) and ('%PLACEHOLDER% SKIP' in line):
++      skip = True
++      return False
++    if skip and ('%PLACEHOLDER% END' in line):
++      skip = False
++      return False
++    return not skip
++
++  return ''.join(filter(predicate, open(path, encoding='utf8').readlines()))
+ 
+ class ProgressIndicator(object):
+ 
+@@ -115,6 +133,11 @@ class ProgressIndicator(object):
+     self.crashed = 0
+     self.lock = threading.Lock()
+     self.shutdown_event = threading.Event()
++    self.js_proxy = LoadJSHelper('../src/proxy.js')
++    self.js_buildins = LoadJSHelper('../src/buildins.js')
++    self.js_wrapper = LoadJSHelper('../src/wrapper.js')
++    self.taint_results_dir = generateNewResultPath('./fuzzing')
++    self.taint_init_data = loadTaintInitData('./fuzzing/init')
+ 
+   def GetFailureOutput(self, failure):
+     output = []
+@@ -186,6 +209,7 @@ class ProgressIndicator(object):
+           return
+       case = test
+       case.thread_id = thread_id
++      case.taint_results_dir = self.taint_results_dir
+       self.lock.acquire()
+       case.serial_id = self.serial_id
+       self.serial_id += 1
+@@ -193,22 +217,39 @@ class ProgressIndicator(object):
+       self.lock.release()
+       try:
+         start = datetime.now()
+-        output = case.Run()
+-        # SmartOS has a bug that causes unexpected ECONNREFUSED errors.
+-        # See https://smartos.org/bugview/OS-2767
+-        # If ECONNREFUSED on SmartOS, retry the test one time.
+-        if (output.UnexpectedOutput() and
+-          sys.platform == 'sunos5' and
+-          'ECONNREFUSED' in output.output.stderr):
+-            output = case.Run()
+-            output.diagnostic.append('ECONNREFUSED received, test retried')
++        if not self.taint_init_data:
++          output = case.Run()
++          # SmartOS has a bug that causes unexpected ECONNREFUSED errors.
++          # See https://smartos.org/bugview/OS-2767
++          # If ECONNREFUSED on SmartOS, retry the test one time.
++          if (output.UnexpectedOutput() and
++            sys.platform == 'sunos5' and
++            'ECONNREFUSED' in output.output.stderr):
++              output = case.Run()
++              output.diagnostic.append('ECONNREFUSED received, test retried')
++        else:
++          if case.original_file in self.taint_init_data:
++            unique_props = self.taint_init_data[case.original_file]
++            print()
++            print(f'Running {len(unique_props) + 1} mutated tests for {"/".join(case.path)}...')
++            for prop in unique_props:
++              output = case.Run(prop) # self.js_buildins, self.js_wrapper,
++              output = case.Run(prop, self.js_proxy)
++            output = case.Run("'FORIN'") # self.js_buildins, self.js_wrapper,
++            output = case.Run("'FORIN'", self.js_proxy)
++
++          else:
++            print()
++            print(f'Skip mutated tests for {"/".join(case.path)}, not found props.')
++            output = TestOutput(case, "", CommandOutput(0, False, "", ""), False)
++
+         case.duration = (datetime.now() - start)
+       except IOError:
+         return
+       if self.shutdown_event.is_set():
+         return
+       self.lock.acquire()
+-      if output.UnexpectedOutput():
++      if not self.taint_init_data and output.UnexpectedOutput():  # check output only for original (not mutated) test cases
+         if FLAKY in output.test.outcomes and self.flaky_tests_mode == DONTCARE:
+           self.flaky_failed.append(output)
+         else:
+@@ -545,6 +586,92 @@ class CommandOutput(object):
+     self.stderr = stderr
+     self.failed = None
+ 
++def uniquify(path):
++  if not os.path.exists(path):
++    return path
++
++  filename, extension = os.path.splitext(path)
++  counter = 1
++
++  while os.path.exists(path):
++      path = filename + "-" + str(counter) + extension
++      counter += 1
++
++  return path
++
++def generateNewResultPath(dir_path):
++  # Regular expression to match 'number-' pattern
++  pattern = re.compile(r'^(\d+)-')
++  n_max = 0
++  entries = os.listdir(dir_path)
++  for entry in entries:
++    match = pattern.match(entry)
++    if match and os.path.isdir(os.path.join(dir_path, entry)):
++      try:
++        # Extract number and update n_max if it's larger
++        n = int(match.group(1))
++        if n > n_max:
++          n_max = n
++      except ValueError:
++        # Skip if the entry after number is not valid
++        continue
++
++  # Generate new subdir name using n_max + 1 and current date
++  new_n = n_max + 1
++  current_date = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
++  new_subdir_name = f"{new_n}-{current_date}"
++
++  # Return the complete path of the new subdir
++  return os.path.join(dir_path, new_subdir_name)
++
++start_pattern = re.compile(r"===== START ===== \[(.*?)\]")
++undefined_prop_regex = re.compile(r'.+NOT FOUND:(.+<String\[\d+\]: #(?P<str_prop>.+)>| (?P<num_prop>\d+))')
++def collectUndefinedProps(taintLog):
++  test = ""
++  props = []
++  start = False
++  for line in taintLog:
++    line = line.strip()
++    if not start:
++      start_match = start_pattern.match(line)
++      if (start_match):
++        test = start_match.group(1).strip()
++        start = True
++      continue
++
++    # if line.startswith("[LoadIC::Load]") or line.startswith("[Runtime::GetObjectProperty]"):
++    prop_match = undefined_prop_regex.match(line)
++    if prop_match:
++      str_prop = prop_match.group('str_prop')
++      if str_prop:
++        props.append(f"'{str_prop.strip()}'")
++        
++      num_prop = prop_match.group('num_prop')
++      if num_prop:
++        props.append(f"{num_prop.strip()}")
++
++  return test, list(set(props))
++
++
++def loadTaintInitData(dir_path):
++  taint_files = {}
++
++  if not os.path.exists(dir_path):
++    return taint_files
++
++  # Enumerate all files in the directory
++  for root, dirs, files in os.walk(dir_path):
++    for file in files:
++      file_path = os.path.join(root, file)
++      with open(file_path, 'r') as f:
++        test, props = collectUndefinedProps(f.readlines())
++        if test:
++          if test in taint_files:
++            taint_files[test] = list(set(taint_files[test] + props))
++          else:
++            taint_files[test] = props
++
++  return taint_files
+ 
+ class TestCase(object):
+ 
+@@ -585,14 +712,89 @@ class TestCase(object):
+                       output,
+                       self.context.store_unexpected_output)
+ 
+-  def Run(self):
++  def Run(self, undefined_prop = '', js_proxy = '', js_buildins = '', js_wrapper = ''):
+     try:
++      with open(self.file, 'w') as f:
++        f.write("// %TESTCASE%\n")
++        if undefined_prop:
++          if js_proxy:
++            f.write(js_proxy.replace('\n', ''))
++            ret_value = 'createProxy(returnValue)'
++          else:
++            ret_value = 'returnValue'
++
++          inj_code = '''let __pollutedValue = '0xEFFACED', __accessIndex = 0;
++Object.defineProperty(
++  Object.prototype,
++  %s,
++  {
++    get: function() {
++      const returnValue = __pollutedValue + __accessIndex;
++      __accessIndex += 1;
++
++      try {
++          throw new Error();
++      } catch(error) {
++          log(returnValue + ' source stack: ' + error.stack.replace(/\\n/g, '\\\\n'));
++      }
++
++      return %s;
++    },
++    set: function(newValue) {
++      Object.defineProperty(
++        this,
++        %s,
++        {
++          value: newValue,
++          writable: true,
++          enumerable: true,
++          configurable: true
++        }
++      );
++    },
++    enumerable: %s,
++    configurable: true
++  }
++);                  
++''' % (undefined_prop, ret_value, undefined_prop, ("true" if undefined_prop == "'FORIN'" else "false"))
++          f.write(inj_code.replace('\n', ''))
++          f.write("\n")
++          if js_wrapper:
++            f.write("{\n")
++            f.write(js_buildins)
++            f.write(js_wrapper)
++            f.write('''
++const { inspect } = require('util');
++function beforeFuncCallback(accessPath) {
++  log('[call]: ' + accessPath)
++//  if (accessPath === "REQUIRE('assert')") {
++//    return false;
++//  }
++
++  return false;
++}
++function afterFuncCallback(accessPath, args, ret) {
++  log('[ret]:  ' + accessPath)
++  //log('[ret]:  ' + accessPath + '-->' + inspect(ret, {breakLength: Infinity}))
++}
++
++const w = new Wrapper(log, beforeFuncCallback, afterFuncCallback);
++const m = require('module');
++m.prototype.require = w.wrap(m.prototype.require, 'REQUIRE');
++}
++''')
++        # LOG!!!
++        f.write(f'log("\\n===== START ===== [{self.original_file}] [{undefined_prop}]\\n");\n')
++        f.writelines(open(self.original_file, encoding='utf8').readlines())
++
+       result = self.RunCommand(self.GetCommand(), {
+         "TEST_SERIAL_ID": "%d" % self.serial_id,
+         "TEST_THREAD_ID": "%d" % self.thread_id,
+         "TEST_PARALLEL" : "%d" % self.parallel
+       })
++
+     finally:
++      os.remove(self.file)
+       # Tests can leave the tty in non-blocking mode. If the test runner
+       # tries to print to stdout/stderr after that and the tty buffer is
+       # full, it'll die with a EAGAIN OSError. Ergo, put the tty back in
+@@ -644,7 +846,6 @@ class TestOutput(object):
+     else:
+       return execution_failed
+ 
+-
+ def KillProcessWithID(pid, signal_to_send=signal.SIGTERM):
+   if utils.IsWindows():
+     os.popen('taskkill /T /F /PID %d' % pid)
+@@ -670,12 +871,12 @@ def Win32SetErrorMode(mode):
+ 
+ 
+ def KillTimedOutProcess(context, pid):
+-  signal_to_send = signal.SIGTERM
++  signal_to_send = signal.SIGTERM #SIGKILL
+   if context.abort_on_timeout:
+     # Using SIGABRT here allows the OS to generate a core dump that can be
+     # looked at post-mortem, which helps for investigating failures that are
+     # difficult to reproduce.
+-    signal_to_send = signal.SIGABRT
++    signal_to_send = signal.SIGABRT #SIGKILL
+   KillProcessWithID(pid, signal_to_send)
+ 
+ 
+@@ -924,7 +1125,9 @@ class Context(object):
+   def GetVm(self, arch, mode):
+     if self.vm is not None:
+       return self.vm
+-    if arch == 'none':
++    if arch == 'sys':
++      name = '/home/yuske/.nvm/versions/node/v21.0.0/bin/node'
++    elif arch == 'none':
+       name = 'out/Debug/node' if mode == 'debug' else 'out/Release/node'
+     else:
+       name = 'out/%s.%s/node' % (arch, mode)
+@@ -1558,8 +1761,13 @@ def get_env_type(vm, options_type, context):
+       env_type = 'fips'
+   return env_type
+ 
++def ignore_signal(signum, frame):
++  print("Received SIGTERM, but ignoring it.")
+ 
+ def Main():
++  # Registering the signal handler
++  signal.signal(signal.SIGTERM, ignore_signal)
++
+   parser = BuildOptions()
+   (options, args) = parser.parse_args()
+   if not ProcessOptions(options):

@@ -1,0 +1,25 @@
+{
+  "name": "js-runtime-taint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "uvu tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuske/js-runtime-taint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuske/js-runtime-taint/issues"
+  },
+  "homepage": "https://github.com/yuske/js-runtime-taint#readme",
+  "devDependencies": {
+    "uvu": "^0.5.6"
+  }
+}

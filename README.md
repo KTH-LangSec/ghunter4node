@@ -1,6 +1,20 @@
 # Gadget Hunter (GHunter) for the Node.js runtime
 
-This artifact contains the part of tool and experiments from the paper "GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes" for the Node.js analysis.
+This artifact contains the part of tool and experiments from the paper ["GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes"][publication] for the Node.js analysis.
+
+## Citation
+
+If you use the paper, tool, and/or experiment results for academic research we encourage you to cite it as:
+
+```bibtex
+@inproceedings{GHunter2024,
+  title={GHunter: Universal Prototype Pollution Gadgets in JavaScript Runtimes},
+  author={Cornelissen, Eric and Shcherbakov, Mikhail and Balliu, Musard},
+  booktitle={33rd USENIX Security Symposium (USENIX Security 24)},
+  pages={3693--3710},
+  year={2024}
+}
+```
 
 ## Artifact
 
@@ -177,3 +191,5 @@ This repository also contains:
 - `results`: A snapshot of results from an earlier run.
 - `src`: Various scripts and files to run GHunter on Node.js.
 - `tests`: A set of basic tests for GHunter.
+
+[publication]: https://www.usenix.org/conference/usenixsecurity24/presentation/cornelissen
